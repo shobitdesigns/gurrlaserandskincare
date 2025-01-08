@@ -1,0 +1,95 @@
+/*--------------------------------------------------------------
+    Loader
+--------------------------------------------------------------*/
+
+.pre-loader { height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 999991; background-color: var(--wdtBodyBGColor); }
+.loader-inner { margin: auto; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+
+
+
+.loader2 .loader-inner .wdt_loader--content {
+  text-align: center; height: 2em; max-width: 100%; position: absolute; top: 0; right: 0; bottom: 3em; left: 0; margin: auto; }
+
+.loader2 .loader-inner .wdt_loader--content .wdt_loading-dots { transform: translateX(-50%); opacity: 0; 
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0);
+  -webkit-animation: wdt-loading-hyp-fadein .5s linear forwards; animation: wdt-loading-hyp-fadein .5s linear forwards; 
+  display: flex; width: 100px; justify-content: center; margin-left: -0.6rem; }
+
+.loader2 .loader-inner .wdt_loader--content .wdt_loading-dots span {
+  width: 0.7rem; height: 0.7rem; display: inline-block; vertical-align: middle; background: var(--wdtLinkHoverColor);
+  -webkit-border-radius: 50%; border-radius: 50%; margin: 3px;
+  -webkit-animation: loading-dots-middle-dots .5s linear infinite;
+  animation: loading-dots-middle-dots .5s linear infinite;
+}
+
+.loader2 .loader-inner .wdt_loader--content .wdt_loading-dots span:first-child {
+  -webkit-animation: wdt-loading-hyp-first .5s infinite; animation: wdt-loading-hyp-first .5s linear infinite;
+  opacity: 0; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0);
+  -webkit-transform: translate(-1em); transform: translate(-1em); }
+
+.loader2 .loader-inner .wdt_loader--content .wdt_loading-dots span:last-child {
+  -webkit-animation: wdt-loading-hyp-last .5s linear infinite; animation: wdt-loading-hyp-last .5s linear infinite; }
+
+
+@-webkit-keyframes wdt-loading-hyp-fadein { 
+  100% { opacity: 1; -ms-filter: none; filter: none; }
+}
+@keyframes wdt-loading-hyp-fadein { 
+  100% { opacity: 1; -ms-filter: none; filter: none; }
+}
+
+
+
+@-webkit-keyframes wdt-loading-hyp-first { 
+  100% { -webkit-transform: translate(1em); transform: translate(1em); opacity: 1; -ms-filter: none; filter: none; }
+}
+@keyframes wdt-loading-hyp-first { 
+  100% { -webkit-transform: translate(1em); transform: translate(1em); opacity: 1; -ms-filter: none; filter: none; }
+}
+
+
+
+@-webkit-keyframes loading-dots-middle-dots { 
+  100% { -webkit-transform: translate(1em); transform: translate(1em); }
+}
+@keyframes loading-dots-middle-dots { 
+  100% { -webkit-transform: translate(1em); transform: translate(1em); }
+}
+
+
+
+@-webkit-keyframes wdt-loading-hyp-last { 
+  100% { -webkit-transform: translate(2em); transform: translate(2em); opacity: 0; 
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0); }
+}
+@keyframes wdt-loading-hyp-last { 
+  100% { -webkit-transform: translate(2em); transform: translate(2em); opacity: 0; 
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0); }
+}
+
+/*--------------------------------------------------------------
+    Accents
+--------------------------------------------------------------*/
+
+    .loader2{background-color: var(--wdtTertiaryColor) !important;}
+    .loader-inner .loader-text:after { background-color: var(--wdtPrimaryColor) ; }
+
+
+/*--------------------------------------------------------------
+    Responsive
+--------------------------------------------------------------*/
+
+/*----*****---- << Mobile (Landscape) >> ----*****----*/
+
+/* Note: Design for a width of 480px */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+
+
+/* Common Styles for the devices below 479px width */
+
+@media only screen and (max-width: 479px) {
+
+}
