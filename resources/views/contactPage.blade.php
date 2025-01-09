@@ -56,6 +56,32 @@
         .CustomColor{
             filter: brightness(0) invert(0);
         }
+        .customHeightmenu{
+            max-height: 400px;
+            overflow: auto;
+        }
+        ::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 255, 255, 0.3);
+}
+
 
         @media (max-width: 700px) {
 
@@ -2406,16 +2432,16 @@
                                                                                                     <li id="menu-item-149"
 																										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-149 menu-item-depth-0">
 																										<a
-																											href="/"><span
+																											href="javascript:void(0)"><span
 																												data-text="%1$s">Laser Treatment Options</span></a>
 																										 <ul
-																											class="sub-menu is-hidden">
+																											class="sub-menu is-hidden customHeightmenu">
                                                                                                             @foreach($laserHairRemovalOptions as $laserHairRemovalOption)
 
 																											<li id="menu-item-142"
 																												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-142 menu-item-depth-1">
 																												<a
-																													href=" /"><span
+																													href="{{ route('laserServiceDetail',['id'=>$laserHairRemovalOption->id]) }}"><span
 																														data-text="%1$s">{{ $laserHairRemovalOption->name }}</span></a>
 																											</li>
 
@@ -3191,7 +3217,7 @@
                                                                                 <li id="menu-item-149"
                                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-149 menu-item-depth-0">
                                                                                  <a
-                                                                                    href="/"><span
+                                                                                    href="javascript:void(0)"><span
                                                                                         data-text="%1$s">Laser Treatment Options</span></a>
                                                                                  <ul
                                                                                     class="sub-menu is-hidden">
@@ -3208,7 +3234,7 @@
                                                                                     <li id="menu-item-142"
                                                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-142 menu-item-depth-1">
                                                                                         <a
-                                                                                            href=" /"><span
+                                                                                            href=" {{ route('laserServiceDetail',['id'=>$laserHairRemovalOption->id]) }}"><span
                                                                                                 data-text="%1$s">{{ $laserHairRemovalOption->name }}</span></a>
                                                                                     </li>
                                                                                     @endforeach

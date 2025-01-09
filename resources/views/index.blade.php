@@ -108,6 +108,34 @@
             padding-top: 27px !important;
         }
 
+        .customHeightmenu{
+            max-height: 400px;
+            overflow: auto;
+        }
+        ::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+
+
 		@media (max-width: 700px) {
 
             .customTransform{
@@ -2118,10 +2146,10 @@
 																									<li
 																										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-301 menu-item-depth-0">
 																										<a
-																											href=" /shop/"><span
+																											href="javascript:void(0)"><span
 																												data-text="%1$s">Laser Treatment Options</span></a>
 																										<ul
-																											class="sub-menu is-hidden">
+																											class="sub-menu is-hidden customHeightmenu">
 																											<li
 																												class="close-nav">
 																												<a
@@ -2139,7 +2167,7 @@
                                                                                                                 <li
                                                                                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-586 menu-item-depth-1">
                                                                                                                     <a
-                                                                                                                        href=" javascript:void(0)"><span
+                                                                                                                        href="{{ route('laserServiceDetail',['id'=>$laserHairRemovalOption->id]) }}"><span
                                                                                                                             data-text="%1$s">{{ $laserHairRemovalOption->name }}</span></a>
                                                                                                                 </li>
                                                                                                             @endforeach
@@ -2470,7 +2498,7 @@
                                                                                     <li
 																										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-301 menu-item-depth-0">
 																										<a
-																											href=" /shop/"><span
+																											href=" javascript:void(0)"><span
 																												data-text="%1$s">Laser Treatment Options</span></a>
 																										<ul
 																											class="sub-menu is-hidden">
@@ -2491,7 +2519,7 @@
                                                                                                                 <li
                                                                                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-586 menu-item-depth-1">
                                                                                                                     <a
-                                                                                                                        href="javascript:void(0)"><span
+                                                                                                                        href="{{ route('laserServiceDetail',['id'=>$laserHairRemovalOption->id]) }}"><span
                                                                                                                             data-text="%1$s">{{ $laserHairRemovalOption->name }}</span></a>
                                                                                                                 </li>
                                                                                                             @endforeach

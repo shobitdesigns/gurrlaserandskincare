@@ -59,11 +59,42 @@
 			flex-wrap: wrap;
 		}
 
-		.swiper-wrapper.custom {
+		.customSection{
 			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-around;
+			justify-content: space-between;
+            width: 100%;
+            align-items: center;
 		}
+
+        .leftOne{
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+        }
+        .rightOne{
+            width:40%;
+            display: flex;
+            flex-direction: column;
+        }
+        .rightOne span img{
+            width: 100%;
+            height: 100%;
+                }
+
+        .calltoaction{
+            width: 180px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            background-color: var(--wdtPrimaryColor);
+            padding: 15px 0;
+            font-weight: bold;
+            border-radius:50px;
+        }
+        .desc{
+            margin: 20px 0;
+            margin-top: 10px;
+        }
 
 		.customWidthright {
 			width: 100% !important;
@@ -121,7 +152,6 @@
 ::-webkit-scrollbar-thumb:window-inactive {
   background: rgba(255, 255, 255, 0.3);
 }
-
 
 
 
@@ -502,11 +532,11 @@
 			line-height: 1.6;
 		}
 	</style>
-	<link rel="stylesheet" id="contact-form-7-css" href="{{ asset('assets/css/styles.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="dermis-plus-elementor-css" href="{{ asset('assets/css/elementor.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="dermis-plus-common-css" href="{{ asset('assets/css/common.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="dermis-pro-widget-css" href="{{ asset('assets/css/widget.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="wdt-elementor-addon-core-css" href="{{ asset('assets/css/core.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="contact-form-7-css" href="{{ asset('/assets/css/styles.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="dermis-plus-elementor-css" href="{{ asset('/assets/css/elementor.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="dermis-plus-common-css" href="{{ asset('/assets/css/common.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="dermis-pro-widget-css" href="{{ asset('/assets/css/widget.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="wdt-elementor-addon-core-css" href="{{ asset('/assets/css/core.css')}}" type="text/css" media="all">
 	<style id="wdt-elementor-addon-core-inline-css" type="text/css">
 		:root {
 			--wdt-elementor-color-primary: #000000;
@@ -535,21 +565,21 @@
 			--wdt-elementor-typo-accent-font-weight: 400;
 		}
 	</style>
-	<link rel="stylesheet" id="fontawesome-all-css" href="{{ asset('assets/css/fontawesome-all.min.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="dt-dropdown-css" href="{{ asset('assets/css/dropdown.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="wdt-ultimate-booking-css" href="{{ asset('assets/css/booking.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="wdt-ultimate-booking-swiper-css" href="{{ asset('assets/css/swiper.min_1.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="jquery-ui-datepicker-css" href="{{ asset('assets/css/jquery-ui.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="woocommerce-layout-css" href="{{ asset('assets/css/woocommerce-layout.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="woocommerce-smallscreen-css" href="{{ asset('assets/css/woocommerce-smallscreen.css')}}" type="text/css"
+	<link rel="stylesheet" id="fontawesome-all-css" href="{{ asset('/assets/css/fontawesome-all.min.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="dt-dropdown-css" href="{{ asset('/assets/css/dropdown.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="wdt-ultimate-booking-css" href="{{ asset('/assets/css/booking.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="wdt-ultimate-booking-swiper-css" href="{{ asset('/assets/css/swiper.min_1.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="jquery-ui-datepicker-css" href="{{ asset('/assets/css/jquery-ui.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="woocommerce-layout-css" href="{{ asset('/assets/css/woocommerce-layout.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="woocommerce-smallscreen-css" href="{{ asset('/assets/css/woocommerce-smallscreen.css')}}" type="text/css"
 		media="only screen and (max-width: 768px)">
-	<link rel="stylesheet" id="woocommerce-general-css" href="{{ asset('assets/css/woocommerce.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="woocommerce-general-css" href="{{ asset('/assets/css/woocommerce.css')}}" type="text/css" media="all">
 	<style id="woocommerce-inline-inline-css" type="text/css">
 		.woocommerce form .form-row .required {
 			visibility: visible;
 		}
 	</style>
-	<link rel="stylesheet" id="woo-variation-swatches-css" href="{{ asset('assets/css/frontend.min.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="woo-variation-swatches-css" href="{{ asset('/assets/css/frontend.min.css')}}" type="text/css" media="all">
 	<style id="woo-variation-swatches-inline-css" type="text/css">
 		:root {
 			--wvs-tick: url("data:image/svg+xml;utf8,%3Csvg filter='drop-shadow(0px 0px 2px rgb(0 0 0 / .8))' xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 30 30'%3E%3Cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='4' d='M4 16L11 23 27 7'/%3E%3C/svg%3E");
@@ -561,22 +591,22 @@
 		}
 	</style>
 	<link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" id="tinvwl-webfont-font-css"
-		href=" /wp-content/plugins/ti-woocommerce-wishlist/assets/fonts/tinvwl-webfont.woff2?ver=xu2uyi" media="all">
-	<link rel="stylesheet" id="tinvwl-webfont-css" href="{{ asset('assets/css/webfont.min.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="tinvwl-css" href="{{ asset('assets/css/public.min.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="elementor-frontend-css" href="{{ asset('assets/css/custom-frontend.min.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="swiper-css" href="{{ asset('assets/css/swiper.min.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="e-swiper-css" href="{{ asset('assets/css/e-swiper.min.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="elementor-post-13-css" href="{{ asset('assets/css/post-13.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="e-animation-fadeInLeft-css" href="{{ asset('assets/css/fadeInLeft.min.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="e-animation-fadeInRight-css" href="{{ asset('assets/css/fadeInRight.min.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="widget-spacer-css" href="{{ asset('assets/css/widget-spacer.min.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="widget-text-editor-css" href="{{ asset('assets/css/widget-text-editor.min.css')}}" type="text/css"
+		href=" /wp-content/plugins/ti-woocommerce-wishlist//assets/fonts/tinvwl-webfont.woff2?ver=xu2uyi" media="all">
+	<link rel="stylesheet" id="tinvwl-webfont-css" href="{{ asset('/assets/css/webfont.min.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="tinvwl-css" href="{{ asset('/assets/css/public.min.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="elementor-frontend-css" href="{{ asset('/assets/css/custom-frontend.min.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="swiper-css" href="{{ asset('/assets/css/swiper.min.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="e-swiper-css" href="{{ asset('/assets/css/e-swiper.min.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="elementor-post-13-css" href="{{ asset('/assets/css/post-13.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="e-animation-fadeInLeft-css" href="{{ asset('/assets/css/fadeInLeft.min.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="e-animation-fadeInRight-css" href="{{ asset('/assets/css/fadeInRight.min.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="widget-spacer-css" href="{{ asset('/assets/css/widget-spacer.min.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="widget-text-editor-css" href="{{ asset('/assets/css/widget-text-editor.min.css')}}" type="text/css"
 		media="all">
-	<link rel="stylesheet" id="widget-icon-list-css" href="{{ asset('assets/css/custom-widget-icon-list.min.css')}}" type="text/css"
+	<link rel="stylesheet" id="widget-icon-list-css" href="{{ asset('/assets/css/custom-widget-icon-list.min.css')}}" type="text/css"
 		media="all">
-	<link rel="stylesheet" id="elementor-post-111-css" href="{{ asset('assets/css/post-111.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="flatpickr-css" href="{{ asset('assets/css/flatpickr.min.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="elementor-post-111-css" href="{{ asset('/assets/css/post-111.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="flatpickr-css" href="{{ asset('/assets/css/flatpickr.min.css')}}" type="text/css" media="all">
 	<link rel="stylesheet" id="a971fbc1c37daacff709eb88c7fe0bfb-css"
 		href="//fonts.googleapis.com/css?family=Outfit:100,200,300,400,500,600,700,800,900&amp;subset=latin-ext"
 		type="text/css" media="all">
@@ -588,7 +618,7 @@
 		type="text/css" media="all">
 	<link rel="stylesheet" id="a711e411de3c02c6a9857f9076d85f1f-css"
 		href="//fonts.googleapis.com/css?family=Marcellus:400,700&amp;subset=latin-ext" type="text/css" media="all">
-	<link rel="stylesheet" id="dermis-css" href="{{ asset('assets/css/style.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="dermis-css" href="{{ asset('/assets/css/style.css')}}" type="text/css" media="all">
 	<style id="dermis-inline-css" type="text/css">
 		:root {
 			--wdtPrimaryColor: #F8C8DC;
@@ -649,30 +679,30 @@
 			--wdtLineHeight_Ext: 1.1;
 		}
 	</style>
-	<link rel="stylesheet" id="dermis-icons-css" href="{{ asset('assets/css/icons.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="dermis-base-css" href="{{ asset('assets/css/base.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="dermis-grid-css" href="{{ asset('assets/css/grid.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="dermis-layout-css" href="{{ asset('assets/css/layout.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="dermis-widget-css" href="{{ asset('assets/css/widget_1.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="site-breadcrumb-css" href="{{ asset('assets/css/breadcrumb_1.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="site-header-css" href="{{ asset('assets/css/header.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="site-loader-css" href="{{ asset('assets/css/loader-2.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="site-to-top-css" href="{{ asset('assets/css/totop.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="site-sidebar-css" href="{{ asset('assets/css/sidebar.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="sidebar-css" href="{{ asset('assets/css/sidebar.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="wdt-blog-css" href="{{ asset('assets/css/blog_2.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="wdt-blog-archive-classic-css" href="{{ asset('assets/css/blog-archive-classic.css')}}" type="text/css"
+	<link rel="stylesheet" id="dermis-icons-css" href="{{ asset('/assets/css/icons.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="dermis-base-css" href="{{ asset('/assets/css/base.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="dermis-grid-css" href="{{ asset('/assets/css/grid.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="dermis-layout-css" href="{{ asset('/assets/css/layout.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="dermis-widget-css" href="{{ asset('/assets/css/widget_1.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="site-breadcrumb-css" href="{{ asset('/assets/css/breadcrumb_1.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="site-header-css" href="{{ asset('/assets/css/header.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="site-loader-css" href="{{ asset('/assets/css/loader-2.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="site-to-top-css" href="{{ asset('/assets/css/totop.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="site-sidebar-css" href="{{ asset('/assets/css/sidebar.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="sidebar-css" href="{{ asset('/assets/css/sidebar.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="wdt-blog-css" href="{{ asset('/assets/css/blog_2.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="wdt-blog-archive-classic-css" href="{{ asset('/assets/css/blog-archive-classic.css')}}" type="text/css"
 		media="all">
-	<link rel="stylesheet" id="jquery-bxslider-css" href="{{ asset('assets/css/jquery.bxslider.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="dermis-breadcrumb-css" href="{{ asset('assets/css/breadcrumb.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="dermis-comments-css" href="{{ asset('assets/css/comments.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="dermis-footer-css" href="{{ asset('assets/css/footer.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="dermis-header-css" href="{{ asset('assets/css/header_1.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="dermis-pagination-css" href="{{ asset('assets/css/pagination.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="dermis-magnific-popup-css" href="{{ asset('assets/css/magnific-popup.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="dermis-quick-search-css" href="{{ asset('assets/css/search.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="dermis-secondary-css" href="{{ asset('assets/css/sidebar_1.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="dermis-woo-css" href="{{ asset('assets/css/default.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="jquery-bxslider-css" href="{{ asset('/assets/css/jquery.bxslider.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="dermis-breadcrumb-css" href="{{ asset('/assets/css/breadcrumb.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="dermis-comments-css" href="{{ asset('/assets/css/comments.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="dermis-footer-css" href="{{ asset('/assets/css/footer.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="dermis-header-css" href="{{ asset('/assets/css/header_1.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="dermis-pagination-css" href="{{ asset('/assets/css/pagination.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="dermis-magnific-popup-css" href="{{ asset('/assets/css/magnific-popup.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="dermis-quick-search-css" href="{{ asset('/assets/css/search.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="dermis-secondary-css" href="{{ asset('/assets/css/sidebar_1.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="dermis-woo-css" href="{{ asset('/assets/css/default.css')}}" type="text/css" media="all">
 	<style id="dermis-woo-cart-notification-inline-css" type="text/css">
 		/*--------------------------------------------------------------*/
 		/* #region - Add-to-Cart Notification Widget */
@@ -1183,15 +1213,15 @@
 
 		/* #endregion - Responsive */
 	</style>
-	<link rel="stylesheet" id="dermis-plus-blog-css" href="{{ asset('assets/css/blog.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="dtplugin-nav-menu-animations-css" href="{{ asset('assets/css/nav-menu-animations.css')}}" type="text/css"
+	<link rel="stylesheet" id="dermis-plus-blog-css" href="{{ asset('/assets/css/blog.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="dtplugin-nav-menu-animations-css" href="{{ asset('/assets/css/nav-menu-animations.css')}}" type="text/css"
 		media="all">
-	<link rel="stylesheet" id="dtplugin-nav-menu-css" href="{{ asset('assets/css/nav-menu.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="dermis-pro-advance-field-css" href="{{ asset('assets/css/style_1.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="dermis-pro-blog-css" href="{{ asset('assets/css/blog_1.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="dermis-pro-auth-css" href="{{ asset('assets/css/style_4.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="jquery-select2-css" href="{{ asset('assets/css/select2.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="dermis-theme-css" href="{{ asset('assets/css/theme.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="dtplugin-nav-menu-css" href="{{ asset('/assets/css/nav-menu.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="dermis-pro-advance-field-css" href="{{ asset('/assets/css/style_1.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="dermis-pro-blog-css" href="{{ asset('/assets/css/blog_1.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="dermis-pro-auth-css" href="{{ asset('/assets/css/style_4.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="jquery-select2-css" href="{{ asset('/assets/css/select2.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="dermis-theme-css" href="{{ asset('/assets/css/theme.css')}}" type="text/css" media="all">
 	<style id="dermis-admin-inline-css" type="text/css">
 		.loader2 {
 			background-color: var(--wdtBodyBGColor);
@@ -1263,37 +1293,37 @@
 		.main-title-section-wrapper.overlay-wrapper>.main-title-section-bg,
 		.main-title-section-wrapper.dark-bg-breadcrumb>.main-title-section-bg,
 		.main-title-section-wrapper>.main-title-section-bg {
-			background-image: url("assets/images/breadcrumb-background.jpg");
+			background-image: url("/assets/images/breadcrumb-background.jpg");
 			background-attachment: inherit;
 			background-position: center center;
 			background-size: cover;
 			background-repeat: no-repeat;
 		}
 	</style>
-	<link rel="stylesheet" id="wdt-ultimate-booking-default-css" href="{{ asset('assets/css/default_1.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="wdt-ultimate-booking-layout-ad-css" href="{{ asset('assets/css/layout-ad.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="wdt-ultimate-booking-default-css" href="{{ asset('/assets/css/default_1.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="wdt-ultimate-booking-layout-ad-css" href="{{ asset('/assets/css/layout-ad.css')}}" type="text/css" media="all">
 	<link rel="stylesheet" id="google-fonts-1-css"
 		href="https://fonts.googleapis.com/css?family=Marcellus%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=swap&amp;ver=6.6.2"
 		type="text/css" media="all">
 	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-	<script type="text/javascript" src="{{ asset('assets/js/jquery.min.js')}}" id="jquery-core-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/jquery-migrate.min.js')}}" id="jquery-migrate-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/jquery.blockUI.min.js')}}" id="jquery-blockui-js"
+	<script type="text/javascript" src="{{ asset('/assets/js/jquery.min.js')}}" id="jquery-core-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/jquery-migrate.min.js')}}" id="jquery-migrate-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/jquery.blockUI.min.js')}}" id="jquery-blockui-js"
 		data-wp-strategy="defer"></script>
 	<script type="text/javascript" id="wc-add-to-cart-js-extra">
 		/* <![CDATA[ */
 		var wc_add_to_cart_params = { "ajax_url": "\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/?wc-ajax=%%endpoint%%", "i18n_view_cart": "View cart", "cart_url": "https:\/\/dermis.wpengine.com\/cart\/", "is_cart": "", "cart_redirect_after_add": "no" };
 		/* ]]> */
 	</script>
-	<script type="text/javascript" src="{{ asset('assets/js/add-to-cart.min.js')}}" id="wc-add-to-cart-js" defer="defer"
+	<script type="text/javascript" src="{{ asset('/assets/js/add-to-cart.min.js')}}" id="wc-add-to-cart-js" defer="defer"
 		data-wp-strategy="defer"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/js.cookie.min.js')}}" id="js-cookie-js" data-wp-strategy="defer"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/js.cookie.min.js')}}" id="js-cookie-js" data-wp-strategy="defer"></script>
 	<script type="text/javascript" id="woocommerce-js-extra">
 		/* <![CDATA[ */
 		var woocommerce_params = { "ajax_url": "\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/?wc-ajax=%%endpoint%%" };
 		/* ]]> */
 	</script>
-	<script type="text/javascript" src="{{ asset('assets/js/woocommerce.min.js')}}" id="woocommerce-js" defer="defer"
+	<script type="text/javascript" src="{{ asset('/assets/js/woocommerce.min.js')}}" id="woocommerce-js" defer="defer"
 		data-wp-strategy="defer"></script>
 	<link rel="https://api.w.org/" href=" /wp-json/">
 	<link rel="alternate" title="JSON" type="application/json" href=" /wp-json/wp/v2/pages/111">
@@ -1365,9 +1395,9 @@
 			src: url('fonts/cardo_normal_400.woff2') format('woff2');
 		}
 	</style>
-	<link rel="icon" href="assets/images/favicon.png" sizes="32x32">
-	<link rel="icon" href="assets/images/favicon.png" sizes="192x192">
-	<link rel="apple-touch-icon" href="assets/images/favicon.png">
+	<link rel="icon" href="/assets/images/favicon.png" sizes="32x32">
+	<link rel="icon" href="/assets/images/favicon.png" sizes="192x192">
+	<link rel="apple-touch-icon" href="/assets/images/favicon.png">
 	<meta name="msapplication-TileImage" content=" /wp-content/uploads/2024/09/favicon.png">
 	<style type="text/css" id="wp-custom-css">
 		a.glink img {
@@ -1386,7 +1416,7 @@
 			max-width: 550px !important;
 		}
 	</style>
-	<script src="{{ asset('assets/js/wp-emoji-release.min.js')}}" defer=""></script>
+	<script src="{{ asset('/assets/js/wp-emoji-release.min.js')}}" defer=""></script>
 </head>
 
 <body
@@ -1528,7 +1558,7 @@
                                                         <div class="elementor-widget-container mobile_logo">
                                                             <div id="dermis-28d1b06"
                                                                 class="wdt-logo-container"> <a href=" /"
-                                                                    rel="home"><img src="assets/images/lbg_logo.png"
+                                                                    rel="home"><img src="/assets/images/lbg_logo.png"
                                                                         alt="Dermis Site" class="CustomColor"></a></div>
                                                         </div>
 														{{-- <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-61f7d3d "
@@ -1820,7 +1850,7 @@
 																												class="wdt-logo-container">
 																												<a href=" /"
 																													rel="home"><img
-																														src="assets/images/lbg_logo.png"
+																														src="/assets/images/lbg_logo.png"
 																														alt="Dermis Site" class="CustomColor"></a>
 																											</div>
 																										</div>
@@ -2492,7 +2522,7 @@
 																						<div id="dermis-e7009e0"
 																							class="wdt-logo-container">
 																							<a href=" /" rel="home"><img
-																									src="assets/images/lbg_logo.png"
+																									src="/assets/images/lbg_logo.png"
 																									alt="Dermis Site" class="CustomColor"></a>
 																						</div>
 																					</div>
@@ -2683,7 +2713,7 @@
 																						<div id="dermis-a3b2649"
 																							class="wdt-logo-container">
 																							<a href=" /" rel="home"><img
-																									src="assets/images/lbg_logo.png"
+																									src="/assets/images/lbg_logo.png"
 																									alt="Dermis Site" class="CustomColor"></a>
 																						</div>
 																					</div>
@@ -3598,9 +3628,9 @@
 					<div class="main-title-section-container">
 						<div class="container">
 							<div class="main-title-section">
-								<h1>Services</h1>
+								<h1>{{$laserService->name}}</h1>
 							</div>
-							<div class="breadcrumb"><a href=" /">Home</a><span
+							<div class="breadcrumb"><a href="{{route('dashboard')}}">Home</a><span
 									class="breadcrumb-default-delimiter"></span><span class="current">Services</span>
 							</div>
 						</div>
@@ -3628,7 +3658,7 @@
 								<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7ae3ea1"
 									data-id="7ae3ea1" data-element_type="column">
 									<div class="elementor-widget-wrap elementor-element-populated">
-										<section
+										{{-- <section
 											class="elementor-section elementor-inner-section elementor-element elementor-element-695abd1 wdt-no-full-section elementor-section-boxed elementor-section-height-default elementor-section-height-default"
 											data-id="695abd1" data-element_type="section" data-settings="{"
 											wdt_bg_image":{"url":"","id":"","size":""},"wdt_bg_image_laptop":{"url":"","id":"","size":""},"wdt_bg_image_tablet_extra":{"url":"","id":"","size":""},"wdt_bg_image_tablet":{"url":"","id":"","size":""},"wdt_bg_image_mobile_extra":{"url":"","id":"","size":""},"wdt_bg_image_mobile":{"url":"","id":"","size":""},"wdt_bg_position":"center=""
@@ -3671,9 +3701,7 @@
 															<div class="elementor-widget-container">
 																<div class="wdt-heading-holder "
 																	id="wdt-heading-97441f2">
-																	<div class="wdt-heading-content-wrapper">Nascetur
-																		tincidunt quis etiam in nullam himenaeos. Justo
-																		semper eu eleifend hac maecenas urna consequat.
+																	<div class="wdt-heading-content-wrapper">Explore our wide range of services and visit our store for best treatments and leading skincare expert.
 																	</div>
 																</div>
 															</div>
@@ -3695,7 +3723,7 @@
 													</div>
 												</div>
 											</div>
-										</section>
+										</section> --}}
 
 
 
@@ -3719,7 +3747,25 @@
 																	<div class="swiper-container custom">
 																		<div class="swiper-wrapper custom">
 
-                                                                            @foreach($services as $service)
+                                                                            <div class="customSection">
+                                                                                <div class="leftOne">
+                                                                                    <div class="heading">
+                                                                                        <h2>{{$laserService->name}}</h2>
+                                                                                    </div>
+                                                                                    <div class="desc">
+                                                                                        <p>{{$laserService->description}}</p>
+                                                                                    </div>
+
+                                                                                    <a href="" class="calltoaction">Book now</a>
+                                                                                </div>
+                                                                                <div class="rightOne">
+                                                                                    <span>
+                                                                                        <img src="{{asset('uploads/services/'.$laserService->image)}}" alt="">
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            {{-- @foreach($services as $service)
                                                                                 <div class="swiper-slide custom">
                                                                                     <div class="dt-sc-service-item type1">
                                                                                         <div class="image">
@@ -3759,7 +3805,7 @@
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
-                                                                            @endforeach
+                                                                            @endforeach --}}
 
 																		</div>
 																	</div>
@@ -4532,6 +4578,26 @@
                                                                                 </div>
                                                                             </div>
 
+                                                                            @php
+
+                                                                                $options=[];
+                                                                                foreach($laserHairRemovalOptions as $laserHairRemovalOption)
+                                                                                {
+                                                                                    $option             =   $laserHairRemovalOption->name.'&nbsp;&nbsp;-&nbsp;&nbsp;$ '.$laserHairRemovalOption->price;
+                                                                                    $options[$option]   =   $option;
+                                                                                }
+
+                                                                            @endphp
+
+                                                                            <div class="dt-sc-one-column column">
+                                                                                <div class="frm-group">
+                                                                                    <div class="placeholder">
+                                                                                        <label for="laser_service">Select Laser Service</label>
+                                                                                    </div>
+                                                                                    {!! Form::select('laser_service', $options,null, ['class'=>'frm-control','required','placeholder'=>'Select Laser Service','data-placeholder'=>'Select Laser Service']) !!}
+                                                                                </div>
+                                                                            </div>
+
                                                                             {{-- <div class="dt-sc-one-column column">
                                                                                 <div class="frm-group">
                                                                                     <input type="checkbox" name="chkterms"
@@ -4568,7 +4634,7 @@
 						</section>
 
 
-						<section
+						{{-- <section
 							class="elementor-section elementor-top-section elementor-element elementor-element-e08778d elementor-section-full_width elementor-section-height-default elementor-section-height-default"
 							data-id="e08778d" data-element_type="section" data-settings="{"
 							wdt_bg_image":{"url":"","id":"","size":""},"wdt_bg_image_laptop":{"url":"","id":"","size":""},"wdt_bg_image_tablet_extra":{"url":"","id":"","size":""},"wdt_bg_image_tablet":{"url":"","id":"","size":""},"wdt_bg_image_mobile_extra":{"url":"","id":"","size":""},"wdt_bg_image_mobile":{"url":"","id":"","size":""},"wdt_bg_position":"center=""
@@ -4618,10 +4684,10 @@
 																										decoding="async"
 																										width="420"
 																										height="300"
-																										src="assets/images/INSTA-1.jpg"
+																										src="/assets/images/INSTA-1.jpg"
 																										class="attachment-full size-full wp-image-698"
 																										alt=""
-																										srcset="assets/images/INSTA-1.jpg 420w, assets/images/INSTA-1-300x214.jpg 300w"
+																										srcset="/assets/images/INSTA-1.jpg 420w, /assets/images/INSTA-1-300x214.jpg 300w"
 																										sizes="(max-width: 420px) 100vw, 420px"></a>
 																							</div>
 																						</div>
@@ -4653,10 +4719,10 @@
 																										decoding="async"
 																										width="420"
 																										height="300"
-																										src="assets/images/INSTA-2.jpg"
+																										src="/assets/images/INSTA-2.jpg"
 																										class="attachment-full size-full wp-image-699"
 																										alt=""
-																										srcset="assets/images/INSTA-2.jpg 420w, assets/images/INSTA-2-300x214.jpg 300w"
+																										srcset="/assets/images/INSTA-2.jpg 420w, /assets/images/INSTA-2-300x214.jpg 300w"
 																										sizes="(max-width: 420px) 100vw, 420px"></a>
 																							</div>
 																						</div>
@@ -4690,10 +4756,10 @@
 																										decoding="async"
 																										width="420"
 																										height="300"
-																										src="assets/images/INSTA-3.jpg"
+																										src="/assets/images/INSTA-3.jpg"
 																										class="attachment-full size-full wp-image-700"
 																										alt=""
-																										srcset="assets/images/INSTA-3.jpg 420w, assets/images/INSTA-3-300x214.jpg 300w"
+																										srcset="/assets/images/INSTA-3.jpg 420w, /assets/images/INSTA-3-300x214.jpg 300w"
 																										sizes="(max-width: 420px) 100vw, 420px"></a>
 																							</div>
 																						</div>
@@ -4725,10 +4791,10 @@
 																										decoding="async"
 																										width="420"
 																										height="300"
-																										src="assets/images/INSTA-4.jpg"
+																										src="/assets/images/INSTA-4.jpg"
 																										class="attachment-full size-full wp-image-701"
 																										alt=""
-																										srcset="assets/images/INSTA-4.jpg 420w, assets/images/INSTA-4-300x214.jpg 300w"
+																										srcset="/assets/images/INSTA-4.jpg 420w, /assets/images/INSTA-4-300x214.jpg 300w"
 																										sizes="(max-width: 420px) 100vw, 420px"></a>
 																							</div>
 																						</div>
@@ -4760,10 +4826,10 @@
 																										decoding="async"
 																										width="420"
 																										height="300"
-																										src="assets/images/INSTA-5.jpg"
+																										src="/assets/images/INSTA-5.jpg"
 																										class="attachment-full size-full wp-image-702"
 																										alt=""
-																										srcset="assets/images/INSTA-5.jpg 420w, assets/images/INSTA-5-300x214.jpg 300w"
+																										srcset="/assets/images/INSTA-5.jpg 420w, /assets/images/INSTA-5-300x214.jpg 300w"
 																										sizes="(max-width: 420px) 100vw, 420px"></a>
 																							</div>
 																						</div>
@@ -4797,7 +4863,7 @@
 									</div>
 								</div>
 							</div>
-						</section>
+						</section> --}}
 
 
 
@@ -4839,7 +4905,7 @@
 																<div class="elementor-widget-container">
 																	<div id="dermis-ff7cabf" class="wdt-logo-container">
 																		<a href=" /" rel="home"><img
-																				src="assets/images/lbg_logo.png"
+																				src="/assets/images/lbg_logo.png"
 																				alt="Dermis Site" class="CustomColor"></a>
 																	</div>
 																</div>
@@ -5397,12 +5463,12 @@
 																											loading="lazy"
 																											width="500"
 																											height="450"
-																											src="assets/images/Our-Expert.jpg"
+																											src="/assets/images/Our-Expert.jpg"
 																											class="attachment-full size-full"
 																											alt=""
 																											aria-describedby="gallery-1-1122"
 																											decoding="async"
-																											srcset="assets/images/Our-Expert.jpg 500w, assets/images/Our-Expert-300x270.jpg 300w"
+																											srcset="/assets/images/Our-Expert.jpg 500w, /assets/images/Our-Expert-300x270.jpg 300w"
 																											sizes="(max-width: 500px) 100vw, 500px"></a>
 																								</div>
 																								<figcaption
@@ -5423,12 +5489,12 @@
 																											loading="lazy"
 																											width="500"
 																											height="450"
-																											src="assets/images/Our-Transform.jpg"
+																											src="/assets/images/Our-Transform.jpg"
 																											class="attachment-full size-full"
 																											alt=""
 																											aria-describedby="gallery-1-1123"
 																											decoding="async"
-																											srcset="assets/images/Our-Transform.jpg 500w, assets/images/Our-Transform-300x270.jpg 300w"
+																											srcset="/assets/images/Our-Transform.jpg 500w, /assets/images/Our-Transform-300x270.jpg 300w"
 																											sizes="(max-width: 500px) 100vw, 500px"></a>
 																								</div>
 																								<figcaption
@@ -5449,12 +5515,12 @@
 																											loading="lazy"
 																											width="500"
 																											height="450"
-																											src="assets/images/Treatment-Way.jpg"
+																											src="/assets/images/Treatment-Way.jpg"
 																											class="attachment-full size-full"
 																											alt=""
 																											aria-describedby="gallery-1-1124"
 																											decoding="async"
-																											srcset="assets/images/Treatment-Way.jpg 500w, assets/images/Treatment-Way-300x270.jpg 300w"
+																											srcset="/assets/images/Treatment-Way.jpg 500w, /assets/images/Treatment-Way-300x270.jpg 300w"
 																											sizes="(max-width: 500px) 100vw, 500px"></a>
 																								</div>
 																								<figcaption
@@ -5475,12 +5541,12 @@
 																											loading="lazy"
 																											width="500"
 																											height="450"
-																											src="assets/images/Lesar-Treatment.jpg"
+																											src="/assets/images/Lesar-Treatment.jpg"
 																											class="attachment-full size-full"
 																											alt=""
 																											aria-describedby="gallery-1-1125"
 																											decoding="async"
-																											srcset="assets/images/Lesar-Treatment.jpg 500w, assets/images/Lesar-Treatment-300x270.jpg 300w"
+																											srcset="/assets/images/Lesar-Treatment.jpg 500w, /assets/images/Lesar-Treatment-300x270.jpg 300w"
 																											sizes="(max-width: 500px) 100vw, 500px"></a>
 																								</div>
 																								<figcaption
@@ -5501,12 +5567,12 @@
 																											loading="lazy"
 																											width="500"
 																											height="450"
-																											src="assets/images/Organic-Face-Cream.jpg"
+																											src="/assets/images/Organic-Face-Cream.jpg"
 																											class="attachment-full size-full"
 																											alt=""
 																											aria-describedby="gallery-1-1126"
 																											decoding="async"
-																											srcset="assets/images/Organic-Face-Cream.jpg 500w, assets/images/Organic-Face-Cream-300x270.jpg 300w"
+																											srcset="/assets/images/Organic-Face-Cream.jpg 500w, /assets/images/Organic-Face-Cream-300x270.jpg 300w"
 																											sizes="(max-width: 500px) 100vw, 500px"></a>
 																								</div>
 																								<figcaption
@@ -5527,12 +5593,12 @@
 																											loading="lazy"
 																											width="500"
 																											height="450"
-																											src="assets/images/Spa-Expert.jpg"
+																											src="/assets/images/Spa-Expert.jpg"
 																											class="attachment-full size-full"
 																											alt="Spa-Expert"
 																											aria-describedby="gallery-1-1307"
 																											decoding="async"
-																											srcset="assets/images/Spa-Expert.jpg 500w, assets/images/Spa-Expert-300x270.jpg 300w"
+																											srcset="/assets/images/Spa-Expert.jpg 500w, /assets/images/Spa-Expert-300x270.jpg 300w"
 																											sizes="(max-width: 500px) 100vw, 500px"></a>
 																								</div>
 																								<figcaption
@@ -5639,7 +5705,7 @@
 																<div class="elementor-widget-container">
 																	<div id="dermis-c45d4aa" class="wdt-logo-container">
 																		<a href=" /" rel="home"><img
-																				src="assets/images/lbg_logo.png"
+																				src="/assets/images/lbg_logo.png"
 																				alt="Dermis Site" class="CustomColor"></a>
 																	</div>
 																</div>
@@ -5881,12 +5947,12 @@
 																											loading="lazy"
 																											width="500"
 																											height="450"
-																											src="assets/images/Our-Expert.jpg"
+																											src="/assets/images/Our-Expert.jpg"
 																											class="attachment-full size-full"
 																											alt=""
 																											aria-describedby="gallery-2-1122"
 																											decoding="async"
-																											srcset="assets/images/Our-Expert.jpg 500w, assets/images/Our-Expert-300x270.jpg 300w"
+																											srcset="/assets/images/Our-Expert.jpg 500w, /assets/images/Our-Expert-300x270.jpg 300w"
 																											sizes="(max-width: 500px) 100vw, 500px"></a>
 																								</div>
 																								<figcaption
@@ -5907,12 +5973,12 @@
 																											loading="lazy"
 																											width="500"
 																											height="450"
-																											src="assets/images/Our-Transform.jpg"
+																											src="/assets/images/Our-Transform.jpg"
 																											class="attachment-full size-full"
 																											alt=""
 																											aria-describedby="gallery-2-1123"
 																											decoding="async"
-																											srcset="assets/images/Our-Transform.jpg 500w, assets/images/Our-Transform-300x270.jpg 300w"
+																											srcset="/assets/images/Our-Transform.jpg 500w, /assets/images/Our-Transform-300x270.jpg 300w"
 																											sizes="(max-width: 500px) 100vw, 500px"></a>
 																								</div>
 																								<figcaption
@@ -5933,12 +5999,12 @@
 																											loading="lazy"
 																											width="500"
 																											height="450"
-																											src="assets/images/Treatment-Way.jpg"
+																											src="/assets/images/Treatment-Way.jpg"
 																											class="attachment-full size-full"
 																											alt=""
 																											aria-describedby="gallery-2-1124"
 																											decoding="async"
-																											srcset="assets/images/Treatment-Way.jpg 500w, assets/images/Treatment-Way-300x270.jpg 300w"
+																											srcset="/assets/images/Treatment-Way.jpg 500w, /assets/images/Treatment-Way-300x270.jpg 300w"
 																											sizes="(max-width: 500px) 100vw, 500px"></a>
 																								</div>
 																								<figcaption
@@ -5959,12 +6025,12 @@
 																											loading="lazy"
 																											width="500"
 																											height="450"
-																											src="assets/images/Lesar-Treatment.jpg"
+																											src="/assets/images/Lesar-Treatment.jpg"
 																											class="attachment-full size-full"
 																											alt=""
 																											aria-describedby="gallery-2-1125"
 																											decoding="async"
-																											srcset="assets/images/Lesar-Treatment.jpg 500w, assets/images/Lesar-Treatment-300x270.jpg 300w"
+																											srcset="/assets/images/Lesar-Treatment.jpg 500w, /assets/images/Lesar-Treatment-300x270.jpg 300w"
 																											sizes="(max-width: 500px) 100vw, 500px"></a>
 																								</div>
 																								<figcaption
@@ -5985,12 +6051,12 @@
 																											loading="lazy"
 																											width="500"
 																											height="450"
-																											src="assets/images/Organic-Face-Cream.jpg"
+																											src="/assets/images/Organic-Face-Cream.jpg"
 																											class="attachment-full size-full"
 																											alt=""
 																											aria-describedby="gallery-2-1126"
 																											decoding="async"
-																											srcset="assets/images/Organic-Face-Cream.jpg 500w, assets/images/Organic-Face-Cream-300x270.jpg 300w"
+																											srcset="/assets/images/Organic-Face-Cream.jpg 500w, /assets/images/Organic-Face-Cream-300x270.jpg 300w"
 																											sizes="(max-width: 500px) 100vw, 500px"></a>
 																								</div>
 																								<figcaption
@@ -6011,12 +6077,12 @@
 																											loading="lazy"
 																											width="500"
 																											height="450"
-																											src="assets/images/Spa-Expert.jpg"
+																											src="/assets/images/Spa-Expert.jpg"
 																											class="attachment-full size-full"
 																											alt="Spa-Expert"
 																											aria-describedby="gallery-2-1307"
 																											decoding="async"
-																											srcset="assets/images/Spa-Expert.jpg 500w, assets/images/Spa-Expert-300x270.jpg 300w"
+																											srcset="/assets/images/Spa-Expert.jpg 500w, /assets/images/Spa-Expert-300x270.jpg 300w"
 																											sizes="(max-width: 500px) 100vw, 500px"></a>
 																								</div>
 																								<figcaption
@@ -6591,48 +6657,48 @@
 	{{-- <script type="text/javascript">
 		(function () {
 			var c = document.body.className;
-			c = c.replace(/woocommerce-no-{{ asset('assets/js/, 'woocommerce-js');
+			c = c.replace(/woocommerce-no-{{ asset('/assets/js/, 'woocommerce-js');
 			document.body.className = c;
 		})();
 	</script> --}}
-	<link rel="stylesheet" id="wc-blocks-style-css" href="{{ asset('assets/css/wc-blocks.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="wdt-elementor-icons-css" href="{{ asset('assets/css/custom-widget-icon-list.min_1.css')}}" type="text/css"
+	<link rel="stylesheet" id="wc-blocks-style-css" href="{{ asset('/assets/css/wc-blocks.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="wdt-elementor-icons-css" href="{{ asset('/assets/css/custom-widget-icon-list.min_1.css')}}" type="text/css"
 		media="all">
-	<link rel="stylesheet" id="elementor-post-140-css" href="{{ asset('assets/css/post-140.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="wdt-header-icons-css" href="{{ asset('assets/css/header-icons.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="wdt-header-carticons-css" href="{{ asset('assets/css/header-carticon.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="wdt-logo-css" href="{{ asset('assets/css/logo.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="elementor-post-557-css" href="{{ asset('assets/css/post-557.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="wdt-advanced-slider-css" href="{{ asset('assets/css/style_2.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="jquery.magnific-popup-css" href="{{ asset('assets/css/jquery.magnific-popup.css')}}" type="text/css"
+	<link rel="stylesheet" id="elementor-post-140-css" href="{{ asset('/assets/css/post-140.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="wdt-header-icons-css" href="{{ asset('/assets/css/header-icons.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="wdt-header-carticons-css" href="{{ asset('/assets/css/header-carticon.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="wdt-logo-css" href="{{ asset('/assets/css/logo.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="elementor-post-557-css" href="{{ asset('/assets/css/post-557.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="wdt-advanced-slider-css" href="{{ asset('/assets/css/style_2.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="jquery.magnific-popup-css" href="{{ asset('/assets/css/jquery.magnific-popup.css')}}" type="text/css"
 		media="all">
-	<link rel="stylesheet" id="wdt-popup-box-css" href="{{ asset('assets/css/style_3.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="wdt-button-css" href="{{ asset('assets/css/style_6.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="wdt-heading-css" href="{{ asset('assets/css/style_7.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="wdt-accordion-and-toggle-css" href="{{ asset('assets/css/style_5.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="wdt-repeater-content-css" href="{{ asset('assets/css/style_8.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="wdt-counter-css" href="{{ asset('assets/css/style_9.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="jquery-swiper-css" href="{{ asset('assets/css/swiper.min_2.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="wdt-carousel-css" href="{{ asset('assets/css/carousel.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="wdt-icon-box-css" href="{{ asset('assets/css/style_10.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="wdt-image-box-css" href="{{ asset('assets/css/style_12.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="jquery.magnific-image-box-popup-css" href="{{ asset('assets/css/jquery.magnific-popup_1.css')}}"
+	<link rel="stylesheet" id="wdt-popup-box-css" href="{{ asset('/assets/css/style_3.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="wdt-button-css" href="{{ asset('/assets/css/style_6.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="wdt-heading-css" href="{{ asset('/assets/css/style_7.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="wdt-accordion-and-toggle-css" href="{{ asset('/assets/css/style_5.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="wdt-repeater-content-css" href="{{ asset('/assets/css/style_8.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="wdt-counter-css" href="{{ asset('/assets/css/style_9.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="jquery-swiper-css" href="{{ asset('/assets/css/swiper.min_2.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="wdt-carousel-css" href="{{ asset('/assets/css/carousel.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="wdt-icon-box-css" href="{{ asset('/assets/css/style_10.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="wdt-image-box-css" href="{{ asset('/assets/css/style_12.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="jquery.magnific-image-box-popup-css" href="{{ asset('/assets/css/jquery.magnific-popup_1.css')}}"
 		type="text/css" media="all">
-	<link rel="stylesheet" id="elementor-post-156-css" href="{{ asset('assets/css/post-156.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="widget-image-gallery-css" href="{{ asset('assets/css/custom-widget-image-gallery.min.css')}}" type="text/css"
+	<link rel="stylesheet" id="elementor-post-156-css" href="{{ asset('/assets/css/post-156.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="widget-image-gallery-css" href="{{ asset('/assets/css/custom-widget-image-gallery.min.css')}}" type="text/css"
 		media="all">
-	<link rel="stylesheet" id="wdt-mailchimp-css" href="{{ asset('assets/css/style_14.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="wdt-elementor-sections-css" href="{{ asset('assets/css/style_11.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="wdt-elementor-widgets-css" href="{{ asset('assets/css/style_13.css')}}" type="text/css" media="all">
-	<link rel="stylesheet" id="wdt-e-animations-css" href="{{ asset('assets/css/animations.min.css')}}" type="text/css" media="all">
-	<script type="text/javascript" src="{{ asset('assets/js/hooks.min.js')}}" id="wp-hooks-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/i18n.min.js')}}" id="wp-i18n-js"></script>
+	<link rel="stylesheet" id="wdt-mailchimp-css" href="{{ asset('/assets/css/style_14.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="wdt-elementor-sections-css" href="{{ asset('/assets/css/style_11.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="wdt-elementor-widgets-css" href="{{ asset('/assets/css/style_13.css')}}" type="text/css" media="all">
+	<link rel="stylesheet" id="wdt-e-animations-css" href="{{ asset('/assets/css/animations.min.css')}}" type="text/css" media="all">
+	<script type="text/javascript" src="{{ asset('/assets/js/hooks.min.js')}}" id="wp-hooks-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/i18n.min.js')}}" id="wp-i18n-js"></script>
 	<script type="text/javascript" id="wp-i18n-js-after">
 		/* <![CDATA[ */
 		wp.i18n.setLocaleData({ 'text direction\u0004ltr': ['ltr'] });
 		/* ]]> */
 	</script>
-	<script type="text/javascript" src="{{ asset('assets/js/index.js')}}" id="swv-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/index.js')}}" id="swv-js"></script>
 	<script type="text/javascript" id="contact-form-7-js-before">
 		/* <![CDATA[ */
 		var wpcf7 = {
@@ -6644,16 +6710,16 @@
 		};
 		/* ]]> */
 	</script>
-	<script type="text/javascript" src="{{ asset('assets/js/index_1.js')}}" id="contact-form-7-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/index_1.js')}}" id="contact-form-7-js"></script>
 	<script type="text/javascript" id="wdt-elementor-addon-core-js-extra">
 		/* <![CDATA[ */
 		var wdtElementorAddonGlobals = { "ajaxUrl": "https:\/\/dermis.wpengine.com\/wp-admin\/admin-ajax.php" };
 		/* ]]> */
 	</script>
-	<script type="text/javascript" src="{{ asset('assets/js/core.js')}}" id="wdt-elementor-addon-core-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/dropdown.js')}}" id="dt-dropdown-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/core.min.js')}}" id="jquery-ui-core-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/datepicker.min.js')}}" id="jquery-ui-datepicker-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/core.js')}}" id="wdt-elementor-addon-core-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/dropdown.js')}}" id="dt-dropdown-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/core.min.js')}}" id="jquery-ui-core-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/datepicker.min.js')}}" id="jquery-ui-datepicker-js"></script>
 	<script type="text/javascript" id="jquery-ui-datepicker-js-after">
 		/* <![CDATA[ */
 		jQuery(function (jQuery) { jQuery.datepicker.setDefaults({ "closeText": "Close", "currentText": "Today", "monthNames": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], "monthNamesShort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "nextText": "Next", "prevText": "Previous", "dayNames": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "dayNamesShort": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], "dayNamesMin": ["S", "M", "T", "W", "T", "F", "S"], "dateFormat": "M d, yy", "firstDay": 1, "isRTL": false }); });
@@ -6664,30 +6730,30 @@
 		var ultimateBookingPro = { "ajaxurl": "https:\/\/dermis.wpengine.com\/wp-admin\/admin-ajax.php", "name": "Name:", "phone": "Phone:", "email": "Email", "address": "Address", "message": "Message", "plugin_url": "https:\/\/dermis.wpengine.com\/wp-content\/plugins\/Code Academics-ultimate-booking-addon\/vc\/", "eraptdatepicker": "Please Select Service and Date!", "stripe_pub_api": null };
 		/* ]]> */
 	</script>
-	<script type="text/javascript" src="{{ asset('assets/js/reservation.js')}}" id="dt-reservation-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/swiper.min.js')}}" id="wdt-ultimate-booking-swiper-js-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/reservation.js')}}" id="dt-reservation-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/swiper.min.js')}}" id="wdt-ultimate-booking-swiper-js-js"></script>
 	<script type="text/javascript" id="dt-cal-reservation-js-extra">
 		/* <![CDATA[ */
 		var ultimateBookingProCal = { "staffServiceEmpty": "Please select staff and service!" };
 		/* ]]> */
 	</script>
-	<script type="text/javascript" src="{{ asset('assets/js/cal-reservation.js')}}" id="dt-cal-reservation-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/jquery.validate.min.js')}}" id="jquery-validate-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/underscore.min.js')}}" id="underscore-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/cal-reservation.js')}}" id="dt-cal-reservation-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/jquery.validate.min.js')}}" id="jquery-validate-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/underscore.min.js')}}" id="underscore-js"></script>
 	<script type="text/javascript" id="wp-util-js-extra">
 		/* <![CDATA[ */
 		var _wpUtilSettings = { "ajax": { "url": "\/wp-admin\/admin-ajax.php" } };
 		/* ]]> */
 	</script>
-	<script type="text/javascript" src="{{ asset('assets/js/wp-util.min.js')}}" id="wp-util-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/wp-util.min.js')}}" id="wp-util-js"></script>
 	<script type="text/javascript" id="wp-api-request-js-extra">
 		/* <![CDATA[ */
 		var wpApiSettings = { "root": "https:\/\/dermis.wpengine.com\/wp-json\/", "nonce": "a231757073", "versionString": "wp\/v2\/" };
 		/* ]]> */
 	</script>
-	<script type="text/javascript" src="{{ asset('assets/js/api-request.min.js')}}" id="wp-api-request-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/url.min.js')}}" id="wp-url-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/api-fetch.min.js')}}" id="wp-api-fetch-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/api-request.min.js')}}" id="wp-api-request-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/url.min.js')}}" id="wp-url-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/api-fetch.min.js')}}" id="wp-api-fetch-js"></script>
 	<script type="text/javascript" id="wp-api-fetch-js-after">
 		/* <![CDATA[ */
 		wp.apiFetch.use(wp.apiFetch.createRootURLMiddleware(" /wp-json/"));
@@ -6697,68 +6763,68 @@
 		wp.apiFetch.nonceEndpoint = " /wp-admin/admin-ajax.php?action=rest-nonce";
 		/* ]]> */
 	</script>
-	<script type="text/javascript" src="{{ asset('assets/js/wp-polyfill.min.js')}}" id="wp-polyfill-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/wp-polyfill.min.js')}}" id="wp-polyfill-js"></script>
 	<script type="text/javascript" id="woo-variation-swatches-js-extra">
 		/* <![CDATA[ */
 		var woo_variation_swatches_options = { "show_variation_label": "1", "clear_on_reselect": "", "variation_label_separator": ":", "is_mobile": "", "show_variation_stock": "", "stock_label_threshold": "5", "cart_redirect_after_add": "no", "enable_ajax_add_to_cart": "yes", "cart_url": "https:\/\/dermis.wpengine.com\/cart\/", "is_cart": "" };
 		/* ]]> */
 	</script>
-	<script type="text/javascript" src="{{ asset('assets/js/frontend.min.js')}}" id="woo-variation-swatches-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/frontend.min.js')}}" id="woo-variation-swatches-js"></script>
 	<script type="text/javascript" id="wc-cart-fragments-js-extra">
 		/* <![CDATA[ */
 		var wc_cart_fragments_params = { "ajax_url": "\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/?wc-ajax=%%endpoint%%", "cart_hash_key": "wc_cart_hash_e02fa4b09b2435d7cabdb26201bca581", "fragment_name": "wc_fragments_e02fa4b09b2435d7cabdb26201bca581", "request_timeout": "5000" };
 		/* ]]> */
 	</script>
-	<script type="text/javascript" src="{{ asset('assets/js/cart-fragments.min.js')}}" id="wc-cart-fragments-js"
+	<script type="text/javascript" src="{{ asset('/assets/js/cart-fragments.min.js')}}" id="wc-cart-fragments-js"
 		data-wp-strategy="defer"></script>
 	<script type="text/javascript" id="tinvwl-js-extra">
 		/* <![CDATA[ */
 		var tinvwl_add_to_wishlist = { "text_create": "Create New", "text_already_in": "{product_name} already in {wishlist_title}", "simple_flow": "", "hide_zero_counter": "", "i18n_make_a_selection_text": "Please select some product options before adding this product to your wishlist.", "tinvwl_break_submit": "No items or actions are selected.", "tinvwl_clipboard": "Copied!", "allow_parent_variable": "", "block_ajax_wishlists_data": "", "update_wishlists_data": "", "hash_key": "ti_wishlist_data_e02fa4b09b2435d7cabdb26201bca581", "nonce": "a231757073", "rest_root": "https:\/\/dermis.wpengine.com\/wp-json\/", "plugin_url": "https:\/\/dermis.wpengine.com\/wp-content\/plugins\/ti-woocommerce-wishlist\/", "wc_ajax_url": "\/?wc-ajax=tinvwl", "stats": "", "popup_timer": "6000" };
 		/* ]]> */
 	</script>
-	<script type="text/javascript" src="{{ asset('assets/js/public.min.js')}}" id="tinvwl-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/public.min.js')}}" id="tinvwl-js"></script>
 	<script type="text/javascript" id="dermis-jqcustom-js-extra">
 		/* <![CDATA[ */
 		var ajax_object = { "ajax_url": "https:\/\/dermis.wpengine.com\/wp-admin\/admin-ajax.php", "ajax_nonce": "80d592517d" };
 		/* ]]> */
 	</script>
-	<script type="text/javascript" src="{{ asset('assets/js/custom.js')}}" id="dermis-jqcustom-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/sourcebuster.min.js')}}" id="sourcebuster-js-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/custom.js')}}" id="dermis-jqcustom-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/sourcebuster.min.js')}}" id="sourcebuster-js-js"></script>
 	<script type="text/javascript" id="wc-order-attribution-js-extra">
 		/* <![CDATA[ */
 		var wc_order_attribution = { "params": { "lifetime": 1.0e-5, "session": 30, "base64": false, "ajaxurl": "https:\/\/dermis.wpengine.com\/wp-admin\/admin-ajax.php", "prefix": "wc_order_attribution_", "allowTracking": true }, "fields": { "source_type": "current.typ", "referrer": "current_add.rf", "utm_campaign": "current.cmp", "utm_source": "current.src", "utm_medium": "current.mdm", "utm_content": "current.cnt", "utm_id": "current.id", "utm_term": "current.trm", "utm_source_platform": "current.plt", "utm_creative_format": "current.fmt", "utm_marketing_tactic": "current.tct", "session_entry": "current_add.ep", "session_start_time": "current_add.fd", "session_pages": "session.pgs", "session_count": "udata.vst", "user_agent": "udata.uag" } };
 		/* ]]> */
 	</script>
-	<script type="text/javascript" src="{{ asset('assets/js/order-attribution.min.js')}}" id="wc-order-attribution-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/accordion.min.js')}}" id="jquery-ui-accordion-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/select2.full.js')}}" id="jquery-select2-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/flatpickr.min.js')}}" id="flatpickr-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/order-attribution.min.js')}}" id="wc-order-attribution-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/accordion.min.js')}}" id="jquery-ui-accordion-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/select2.full.js')}}" id="jquery-select2-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/flatpickr.min.js')}}" id="flatpickr-js"></script>
 	<script type="text/javascript" id="post-infinite-js-extra">
 		/* <![CDATA[ */
 		var dermis_urls = { "ajaxurl": "https:\/\/dermis.wpengine.com\/wp-admin\/admin-ajax.php" };
 		/* ]]> */
 	</script>
-	<script type="text/javascript" src="{{ asset('assets/js/post-infinite.js')}}" id="post-infinite-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/post-infinite.js')}}" id="post-infinite-js"></script>
 	<script type="text/javascript" id="post-loadmore-js-extra">
 		/* <![CDATA[ */
 		var dermis_urls = { "ajaxurl": "https:\/\/dermis.wpengine.com\/wp-admin\/admin-ajax.php" };
 		/* ]]> */
 	</script>
-	<script type="text/javascript" src="{{ asset('assets/js/post-loadmore.js')}}" id="post-loadmore-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/mega-menu.js')}}" id="dtplugin-mega-menu-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/post-loadmore.js')}}" id="post-loadmore-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/mega-menu.js')}}" id="dtplugin-mega-menu-js"></script>
 	<script type="text/javascript" id="dermis-pro-auth-js-extra">
 		/* <![CDATA[ */
 		var dermis_pro_ajax_object = { "ajax_url": "https:\/\/dermis.wpengine.com\/wp-admin\/admin-ajax.php" };
 		/* ]]> */
 	</script>
-	<script type="text/javascript" src="{{ asset('assets/js/script_1.js')}}" id="dermis-pro-auth-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/isotope.pkgd.js')}}" id="isotope-pkgd-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/matchHeight.js')}}" id="matchheight-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/jquery.bxslider.js')}}" id="jquery-bxslider-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/jquery.fitvids.js')}}" id="jquery-fitvids-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/jquery.debouncedresize.js')}}" id="jquery-debouncedresize-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/jquery.magnific-popup.js')}}" id="jquery-magnific-popup-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/jquery.nicescroll.js')}}" id="jquery-nicescroll-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/script_1.js')}}" id="dermis-pro-auth-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/isotope.pkgd.js')}}" id="isotope-pkgd-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/matchHeight.js')}}" id="matchheight-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/jquery.bxslider.js')}}" id="jquery-bxslider-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/jquery.fitvids.js')}}" id="jquery-fitvids-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/jquery.debouncedresize.js')}}" id="jquery-debouncedresize-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/jquery.magnific-popup.js')}}" id="jquery-magnific-popup-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/jquery.nicescroll.js')}}" id="jquery-nicescroll-js"></script>
 	<script type="text/javascript" id="dermis-woo-cart-notification-js-after">
 		/* <![CDATA[ */
 		jQuery.noConflict();
@@ -6855,42 +6921,42 @@
 		});
 		/* ]]> */
 	</script>
-	<script type="text/javascript" src="{{ asset('assets/js/site-loader.js')}}" id="site-loader-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/go-to-top.js')}}" id="go-to-top-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/theia-sticky-sidebar.min.js')}}" id="theia-sticky-sidebar-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/side-bar.js')}}" id="sidebar-sticky-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/header-icons.js')}}" id="wdt-header-icons-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/jquery.cookie.min.js')}}" id="jquery.cookie-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/jquery.magnific-popup.min.js')}}" id="jquery.magnific-popup-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/script.js')}}" id="wdt-popup-box-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/site-loader.js')}}" id="site-loader-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/go-to-top.js')}}" id="go-to-top-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/theia-sticky-sidebar.min.js')}}" id="theia-sticky-sidebar-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/side-bar.js')}}" id="sidebar-sticky-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/header-icons.js')}}" id="wdt-header-icons-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/jquery.cookie.min.js')}}" id="jquery.cookie-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/jquery.magnific-popup.min.js')}}" id="jquery.magnific-popup-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/script.js')}}" id="wdt-popup-box-js"></script>
 	<script type="text/javascript" id="gt_widget_script_61176065-js-before">
 		/* <![CDATA[ */
 		window.gtranslateSettings = /* document.write */ window.gtranslateSettings || {}; window.gtranslateSettings['61176065'] = { "default_language": "en", "languages": ["en", "fr"], "url_structure": "none", "flag_style": "2d", "flag_size": 24, "wrapper_selector": "#gt-wrapper-61176065", "alt_flags": { "en": "usa" }, "horizontal_position": "inline", "flags_location": "\/wp-content\/plugins\/gtranslate\/flags\/" };
 		/* ]]> */
 	</script>
-	<script src="{{ asset('assets/js/fc.js')}}" data-no-optimize="1" data-no-minify="1" data-gt-orig-url="/services/"
+	<script src="{{ asset('/assets/js/fc.js')}}" data-no-optimize="1" data-no-minify="1" data-gt-orig-url="/services/"
 		data-gt-orig-domain="dermis.wpengine.com" data-gt-widget-id="61176065" defer=""></script>
-	<script type="text/javascript" src="{{ asset('assets/js/script_3.js')}}" id="wdt-accordion-and-toggle-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/jquery.countTo.js')}}" id="jquery-countTo-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/script_2.js')}}" id="wdt-counter-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/swiper.min_1.js')}}" id="jquery-swiper-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/carousel.js')}}" id="wdt-carousel-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/jquery.magnific-popup.min_1.js')}}"
+	<script type="text/javascript" src="{{ asset('/assets/js/script_3.js')}}" id="wdt-accordion-and-toggle-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/jquery.countTo.js')}}" id="jquery-countTo-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/script_2.js')}}" id="wdt-counter-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/swiper.min_1.js')}}" id="jquery-swiper-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/carousel.js')}}" id="wdt-carousel-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/jquery.magnific-popup.min_1.js')}}"
 		id="jquery.magnific-image-box-popup-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/script_4.js')}}" id="wdt-image-box-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/script_7.js')}}" id="wdt-mailchimp-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/webpack.runtime.min.js')}}" id="elementor-webpack-runtime-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/frontend-modules.min.js')}}" id="elementor-frontend-modules-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/script_4.js')}}" id="wdt-image-box-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/script_7.js')}}" id="wdt-mailchimp-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/webpack.runtime.min.js')}}" id="elementor-webpack-runtime-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/frontend-modules.min.js')}}" id="elementor-frontend-modules-js"></script>
 	<script type="text/javascript" id="elementor-frontend-js-before">
 		/* <![CDATA[ */
 		var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close", "a11yCarouselWrapperAriaLabel": "Carousel | Horizontal scrolling: Arrow Left & Right", "a11yCarouselPrevSlideMessage": "Previous slide", "a11yCarouselNextSlideMessage": "Next slide", "a11yCarouselFirstSlideMessage": "This is the first slide", "a11yCarouselLastSlideMessage": "This is the last slide", "a11yCarouselPaginationBulletMessage": "Go to slide" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 480, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile Portrait", "value": 479, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Landscape", "value": 767, "default_value": 880, "direction": "max", "is_enabled": true }, "tablet": { "label": "Tablet Portrait", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Landscape", "value": 1280, "default_value": 1200, "direction": "max", "is_enabled": true }, "laptop": { "label": "Laptop", "value": 1540, "default_value": 1366, "direction": "max", "is_enabled": true }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } }, "hasCustomBreakpoints": true }, "version": "3.25.5", "is_static": false, "experimentalFeatures": { "e_font_icon_svg": true, "additional_custom_breakpoints": true, "e_swiper_latest": true, "e_nested_atomic_repeaters": true, "e_optimized_control_loading": true, "e_onboarding": true, "e_css_smooth_scroll": true, "home_screen": true, "nested-elements": true, "e_element_cache": true, "link-in-bio": true, "floating-buttons": true }, "urls": { "assets": "https:\/\/dermis.wpengine.com\/wp-content\/plugins\/elementor\/assets\/", "ajaxurl": "https:\/\/dermis.wpengine.com\/wp-admin\/admin-ajax.php", "uploadUrl": "https:\/\/dermis.wpengine.com\/wp-content\/uploads" }, "nonces": { "floatingButtonsClickTracking": "ea215e7140" }, "swiperClass": "swiper", "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_mobile_extra", "viewport_tablet", "viewport_tablet_extra", "viewport_laptop"], "viewport_mobile": 479, "viewport_mobile_extra": 767, "viewport_tablet": "1024", "viewport_tablet_extra": "1280", "viewport_laptop": "1540", "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 111, "title": "Services%20%E2%80%93%20Dermis%20Site", "excerpt": "", "featuredImage": false } };
 		/* ]]> */
 	</script>
-	<script type="text/javascript" src="{{ asset('assets/js/frontend.min_1.js')}}" id="elementor-frontend-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/script_5.js')}}" id="wdt-elementor-sections-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/parallax-scroll.min.js')}}" id="wdt-parallax-scroll-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/parallax.min.js')}}" id="wdt-parallax-js"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/script_6.js')}}" id="wdt-elementor-widgets-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/frontend.min_1.js')}}" id="elementor-frontend-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/script_5.js')}}" id="wdt-elementor-sections-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/parallax-scroll.min.js')}}" id="wdt-parallax-scroll-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/parallax.min.js')}}" id="wdt-parallax-js"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/script_6.js')}}" id="wdt-elementor-widgets-js"></script>
 	<a id="back-to-top" href="#">
 		<span id="back-to-top-hover"></span>
 		<span class="back-to-top-icon"><i class="wdticon-angle-up"></i></span>

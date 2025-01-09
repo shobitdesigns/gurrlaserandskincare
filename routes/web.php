@@ -19,13 +19,14 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return redirect(route('login'));
 // });
-Route::get('/',             [DashboardController::class,'index'])->name('dashboard');
-Route::get('/about',        [DashboardController::class,'about'])->name('about');
-Route::get('/contact-us',   [DashboardController::class,'contact'])->name('contact');
-Route::get('/service',      [DashboardController::class,'service'])->name('services');
+Route::get('/',                         [DashboardController::class,'index'])->name('dashboard');
+Route::get('/about',                    [DashboardController::class,'about'])->name('about');
+Route::get('/contact-us',               [DashboardController::class,'contact'])->name('contact');
+Route::get('/service',                  [DashboardController::class,'service'])->name('services');
+Route::get('/laser-service/{id}',       [DashboardController::class,'laserServiceDetail'])->name('laserServiceDetail');
 
 
-Route::post('submit-enquiry',       [EnquiryController::class,'storeEnquiry'])->name('storeEnquiry');
+Route::post('submit-enquiry',           [EnquiryController::class,'storeEnquiry'])->name('storeEnquiry');
 
 
 

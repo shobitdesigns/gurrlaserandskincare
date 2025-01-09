@@ -23,6 +23,7 @@
                             <tr>
                                 <th>Id</th>
                                 <th>Name</th>
+                                <th>Service</th>
                                 <th>Email</th>
                                 <th>Location</th>
                                 <th>Date</th>
@@ -47,7 +48,7 @@
                 "serverSide": true,
                 ajax: "{{ route('enquiryList') }}",
                 order: [
-                    [4, "desc"]
+                    [5, "desc"]
                 ],
                 sorting: true,
                 columns: [{
@@ -59,6 +60,10 @@
                     {
                         data: 'name',
                         name: 'name',
+                    },
+                    {
+                        data: 'service',
+                        name: 'service',
                     },
                     {
                         data: 'email',
