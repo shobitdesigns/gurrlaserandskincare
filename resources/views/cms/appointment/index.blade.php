@@ -5,7 +5,7 @@
             <div class="row mb-2">
                 <div class="col">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item active">Enquiry List</li>
+                        <li class="breadcrumb-item active">Appointment List</li>
                     </ol>
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -14,7 +14,7 @@
     <div class="col-12">
         <div class="card card-primary card-outline">
             <div class="card-header">
-                <h3 class="card-title">Enquiry List</h3>
+                <h3 class="card-title">Appointment List</h3>
             </div>
             <div class="table-responsive">
                 <div class="card-body">
@@ -24,8 +24,12 @@
                                 <th>Id</th>
                                 <th>Name</th>
                                 <th>Email</th>
+                                <th>Service</th>
                                 <th>Location</th>
                                 <th>Date</th>
+                                <th>Time</th>
+                                <th>Status</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -45,9 +49,9 @@
                 "responsive": true,
                 "processing": true,
                 "serverSide": true,
-                ajax: "{{ route('enquiryList') }}",
+                ajax: "{{ route('appointment.index') }}",
                 order: [
-                    [4, "desc"]
+                    [5, "desc"]
                 ],
                 sorting: true,
                 columns: [{
@@ -65,12 +69,30 @@
                         name: 'email',
                     },
                     {
+                        data: 'laser_service',
+                        name: 'laser_service',
+                    },
+                    {
                         data: 'location',
                         name: 'location',
                     },
                     {
                         data: 'date',
                         name: 'date',
+                    },
+                    {
+                        data: 'time',
+                        name: 'time',
+                    },
+                    {
+                        data: 'status',
+                        name: 'status',
+                    },
+                    {
+                        data: 'action',
+                        name: 'action',
+                        orderable: false,
+                        searchable: false
                     },
 
                 ]

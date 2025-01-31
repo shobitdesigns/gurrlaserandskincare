@@ -590,8 +590,6 @@
 			--wvs-single-product-item-font-size: 16px
 		}
 	</style>
-	<link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" id="tinvwl-webfont-font-css"
-		href=" /wp-content/plugins/ti-woocommerce-wishlist//assets/fonts/tinvwl-webfont.woff2?ver=xu2uyi" media="all">
 	<link rel="stylesheet" id="tinvwl-webfont-css" href="{{ asset('/assets/css/webfont.min.css')}}" type="text/css" media="all">
 	<link rel="stylesheet" id="tinvwl-css" href="{{ asset('/assets/css/public.min.css')}}" type="text/css" media="all">
 	<link rel="stylesheet" id="elementor-frontend-css" href="{{ asset('/assets/css/custom-frontend.min.css')}}" type="text/css" media="all">
@@ -4532,7 +4530,7 @@
 																	<div class="dt-sc-title">
 																		<h2>Reserve A Consultation</h2>
 																	</div>
-																	{!! Form::open(['url'=> route('storeEnquiry'),'method'=>'POST','class'=>'dt-sc-reservation-form dt-appointment-form'])!!}
+																	{!! Form::open(['url'=> route('appintmentStore'),'method'=>'POST','class'=>'dt-sc-reservation-form dt-appointment-form'])!!}
 
 
                                                                             <div class="dt-sc-one-column column">
@@ -4563,7 +4561,18 @@
                                                                                             Date</label>
                                                                                         <span class="star">*</span>
                                                                                     </div> --}}
-                                                                                    {!! Form::date('date', null, ['class'=>'frm-control','required']) !!}
+                                                                                    {!! Form::date('date', null, ['class'=>'frm-control','required','id'=>'appointment_date']) !!}
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="dt-sc-one-column column">
+                                                                                <div
+                                                                                    class="frm-group dt-appoint-date form-calendar-icon">
+                                                                                    {{-- <div class="placeholder">
+                                                                                        <label for="name">Preferred
+                                                                                            Date</label>
+                                                                                        <span class="star">*</span>
+                                                                                    </div> --}}
+                                                                                    {!! Form::time('time', null, ['class'=>'frm-control','required','id'=>'appointment_time']) !!}
                                                                                 </div>
                                                                             </div>
 
@@ -4609,7 +4618,7 @@
 
                                                                             <div class="dt-sc-one-column column">
                                                                                 <div class="alignleft">
-                                                                                    <input name="subschedule"
+                                                                                    <input name="subschedule" id="bookAppointment"
                                                                                         class="dt-sc-button filled medium show-time-shortcode"
                                                                                         value="Send Enquiry" type="submit">
                                                                                 </div>
@@ -6627,7 +6636,58 @@
 		</div><!-- **Inner Wrapper - End** -->
 
 	</div><!-- **Wrapper - End** -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let dateInput = document.getElementById("appointment_date");
+            let timeInput = document.getElementById("appointment_time");
 
+            // Disable past dates
+            let today = new Date().toISOString().split("T")[0];
+            dateInput.setAttribute("min", today);
+
+            // Disable past times if today is selected
+            dateInput.addEventListener("change", function () {
+                let selectedDate = new Date(dateInput.value);
+                let now = new Date();
+
+                if (selectedDate.toDateString() === now.toDateString()) {
+                    // If selected date is today, disable past times
+                    let currentTime = now.getHours().toString().padStart(2, '0') + ":" + now.getMinutes().toString().padStart(2, '0');
+                    timeInput.setAttribute("min", currentTime);
+                } else {
+                    timeInput.removeAttribute("min");
+                }
+            });
+
+            // Check if the selected time slot is available
+            timeInput.addEventListener("change", function () {
+                let selectedDate = dateInput.value;
+                let selectedTime = timeInput.value;
+
+                if (selectedDate && selectedTime) {
+                    fetch('/check-appointment', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-CSRF-TOKEN': '{{ csrf_token() }}' // Laravel CSRF token
+                        },
+                        body: JSON.stringify({ date: selectedDate, time: selectedTime })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (!data.available) {
+                            alert("This time slot is already booked. Please select another time.");
+                            timeInput.value = ""; // Reset the time field
+                        }
+                    })
+                    .catch(error => {
+                        console.error("Error checking appointment availability:", error);
+                        alert("Error checking appointment availability. Please try again.");
+                    });
+                }
+            });
+        });
+        </script>
 	<script type="text/javascript">
 		const lazyloadRunObserver = () => {
 			const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);

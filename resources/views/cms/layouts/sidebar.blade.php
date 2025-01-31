@@ -43,6 +43,12 @@
                         <p>Enquiry List</p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{ route('appointment.index') }}" class="nav-link @if (Route::currentRouteName() == 'appointment.index') active @endif">
+                        <i class="far fa-dot-circle nav-icon"></i>
+                        <p>Appointment List</p>
+                    </a>
+                </li>
 
                 <li class="nav-item">
                     <a href="{{ route('service.index') }}" class="nav-link @if (Route::currentRouteName() == 'service.index') active @endif">

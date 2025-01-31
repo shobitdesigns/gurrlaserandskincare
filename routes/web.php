@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\cms\AppointmentController;
 use App\Http\Controllers\cms\EnquiryController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProfileController;
@@ -27,7 +28,8 @@ Route::get('/laser-service/{id}',       [DashboardController::class,'laserServic
 
 
 Route::post('submit-enquiry',           [EnquiryController::class,'storeEnquiry'])->name('storeEnquiry');
-
+Route::post('appintment-store',         [AppointmentController::class,'store'])->name('appintmentStore');
+Route::post('/check-appointment',       [AppointmentController::class, 'checkAppointment'])->name('checkAppointment');
 
 
 require __DIR__.'/auth.php';

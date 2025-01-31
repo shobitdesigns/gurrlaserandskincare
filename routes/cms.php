@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\cms\AppointmentController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\cms\UserController;
@@ -22,3 +23,4 @@ Route::get("/change/password",              [UserController::class,'changePasswo
 Route::post("/update/password",             [UserController::class,'updatePassword'])->name("updatePassword");
 Route::get('enquiry',                       [EnquiryController::class,'index'])->name('enquiryList');
 Route::resource('service',                  ServiceController::class);
+Route::resource('appointment',              AppointmentController::class);

@@ -18,16 +18,7 @@ class EnquiryController extends Controller
             $data = Enquiry::select('*');
 
             return DataTables::of($data)
-                ->addColumn('service',function($data){
-                    if(!empty($data->laser_service))
-                    {
-                        return '<span class="badge badge-primary">'. ucfirst('Laser Service') .'</span>';
-                    }else{
-                        return '<span class="badge badge-success">'. ucfirst('Service') .'</span>';
-                    }
-                })
                 ->addIndexColumn()
-                ->rawColumns(['service'])
                 ->make(true);
         }
         return view('cms.enquiry.index');
@@ -42,10 +33,9 @@ class EnquiryController extends Controller
         // $enquiry->looking_for       =       $request->looking_for;
         // $enquiry->treatment_for     =       $request->treatment_for;
         $enquiry->location          =       $request->location;
-        $enquiry->laser_service     =       $request->laser_service ?? null;
         $enquiry->save();
 
-        Mail::to('laserbygurr@gmail.com')->send(new EnquiryMail($enquiry));
+        // Mail::to('laserbygurr@gmail.com')->send(new EnquiryMail($enquiry));
 
         return redirect(route('dashboard'));
     }
