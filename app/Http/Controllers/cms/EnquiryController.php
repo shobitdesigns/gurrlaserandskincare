@@ -35,7 +35,7 @@ class EnquiryController extends Controller
         $enquiry->location          =       $request->location;
         $enquiry->save();
 
-        // Mail::to('laserbygurr@gmail.com')->send(new EnquiryMail($enquiry));
+        Mail::to('laserbygurr@gmail.com')->send(new EnquiryMail($enquiry));
 
         return redirect(route('dashboard'));
     }

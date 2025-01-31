@@ -4528,7 +4528,7 @@
                                                                                             Date</label>
                                                                                         <span class="star">*</span>
                                                                                     </div> --}}
-                                                                                    {!! Form::time('time', null, ['class'=>'frm-control','required','id'=>'appointment_time']) !!}
+                                                                                    {!! Form::time('time', null, ['class'=>'frm-control','required','id'=>'appointment_time',"min"=>"09:00" ,"max"=>"16:00"]) !!}
                                                                                 </div>
                                                                             </div>
 
@@ -6631,6 +6631,40 @@
                 }
             });
         });
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+    let timeInput = document.getElementById("appointment_time");
+
+    timeInput.addEventListener("change", function () {
+        let selectedTime = timeInput.value; // Selected time in HH:MM format
+        let minTime = "09:00";
+        let maxTime = "16:00";
+
+        console.log("Selected Time:", selectedTime); // Debugging
+        console.log("Min Time:", minTime);
+        console.log("Max Time:", maxTime);
+
+        // Convert times to total minutes for proper comparison
+        function timeToMinutes(time) {
+            let [hours, minutes] = time.split(":").map(Number);
+            return hours * 60 + minutes;
+        }
+
+        let selectedMinutes = timeToMinutes(selectedTime);
+        let minMinutes = timeToMinutes(minTime);
+        let maxMinutes = timeToMinutes(maxTime);
+
+        console.log("Selected Minutes:", selectedMinutes);
+        console.log("Min Minutes:", minMinutes);
+        console.log("Max Minutes:", maxMinutes);
+
+        if (selectedMinutes < minMinutes || selectedMinutes > maxMinutes) {
+            alert("Please select a time between 9:00 AM and 4:00 PM.");
+            timeInput.value = ""; // Reset input
+        }
+    });
+});
         </script>
 	<script type="text/javascript">
 		const lazyloadRunObserver = () => {

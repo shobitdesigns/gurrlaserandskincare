@@ -4,6 +4,7 @@ namespace App\Http\Controllers\cms;
 
 use App\Models\Appointment;
 use Illuminate\Http\Request;
+use App\Mail\NewAppointmentMail;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\AppointmentApprovedMail;
@@ -77,7 +78,7 @@ class AppointmentController extends Controller
         $appointment->time              =       $request->time;
         $appointment->status            =       'pending';
         $appointment->save();
-        // Mail::to('laserbygurr@gmail.com')->send(new EnquiryMail($enquiry));
+        Mail::to('laserbygurr@gmail.com')->send(new NewAppointmentMail($appointment));
 
         return back()->with('success','Appointment Submitted');
     }
@@ -134,7 +135,7 @@ class AppointmentController extends Controller
         if( $appointment->status == 'approved')
         {
             $data                   =       $appointment;
-            // Mail::to('laserbygurr@gmail.com')->send(new AppointmentApprovedMail($data));
+            Mail::to('laserbygurr@gmail.com')->send(new AppointmentApprovedMail($data));
         }
 
         return redirect()->route('appointment.index')->with('success', 'Data updated successfully!');

@@ -50,6 +50,7 @@
                 "responsive": true,
                 "processing": true,
                 "serverSide": true,
+                dom: 'lrtp',
                 ajax: "{{ route('appointment.index') }}",
                 order: [
                     [6, "desc"]
@@ -72,6 +73,8 @@
                     {
                         data: 'service_type',
                         name: 'service_type',
+                        orderable: false,
+                        searchable: false
                     },
                     {
                         data: 'service',
