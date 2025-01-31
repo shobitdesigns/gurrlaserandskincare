@@ -7809,7 +7809,7 @@
 																				data-widget_type="text-editor.default">
 																				<div class="elementor-widget-container">
 																					<p>@2024 <a
-																							href="/">Code Academics</a>.
+																							href="/">Globency Media</a>.
 																						All Rights Reserved</p>
 																				</div>
 																			</div>
@@ -8746,7 +8746,7 @@
 																				data-widget_type="text-editor.default">
 																				<div class="elementor-widget-container">
 																					<p>@2024 <a
-																							href="/">Code Academics</a>.
+																							href="/">Globency Media</a>.
 																						All Rights Reserved</p>
 																				</div>
 																			</div>

@@ -40,6 +40,22 @@
 			padding: 0 !important;
 		}
 
+        .image-item.customMinheight{
+            min-height: 290px!important;
+            overflow: hidden;
+        }
+
+        .outerCustom {
+            padding: 20px 140px;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+
+        .customTopMargin{
+            margin-top: 100px;
+            padding-bottom: 100px;
+        }
+
 		.swiper-container {
 			width: 100%;
 			height: 100%;
@@ -1810,7 +1826,7 @@
 																					data-widget_type="text-editor.default">
 																					<div
 																						class="elementor-widget-container">
-																						<p>Mon – Sun 09:00AM – 05:00PM
+																						<p>Mon – Sat 09:00AM – 07:00PM
 																						</p>
 																					</div>
 																				</div>
@@ -3103,16 +3119,15 @@
 																																			<span
 																																				class="wdt-content-counter-number"
 																																				data-from="0"
-																																				data-to="24"
+																																				data-to="10"
 																																				data-speed="1000"
 																																				data-refresh-interval="100"></span><span
-																																				class="wdt-content-counter-suffix">/7</span>
+																																				class="wdt-content-counter-suffix">+</span>
 																																		</div>
 																																	</div>
 																																	<div
 																																		class="wdt-content-subtitle">
-																																		Customer
-																																		Support
+																																		Years of experience
 																																	</div>
 																																</div>
 																															</div>
@@ -3287,9 +3302,7 @@
 																	id="wdt-heading-a1ebd0d">
 																	<h3
 																		class="wdt-heading-title-wrapper wdt-heading-align- wdt-heading-deco-wrapper">
-																		<span class="wdt-heading-title">Make
-																			Your
-																			Appointment</span>
+																		<span class="wdt-heading-title">Contact Us Now for More</span>
 																	</h3>
 																</div>
 															</div>
@@ -3639,7 +3652,7 @@
                                                                                 <div class="swiper-slide custom">
                                                                                     <div class="dt-sc-service-item type1">
                                                                                         <div class="image">
-                                                                                            <div class="image-item"><img
+                                                                                            <div class="image-item customMinheight"><img
                                                                                                     fetchpriority="high"
                                                                                                     decoding="async"
                                                                                                     width="1620"
@@ -3911,269 +3924,12 @@
 						</section>
 
 
-						<section
-							class="elementor-section elementor-top-section elementor-element elementor-element-0e834bb wdt-no-full-section elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-							data-id="0e834bb" data-element_type="section" data-settings="{"
-							wdt_bg_image":{"url":"","id":"","size":""},"wdt_bg_image_laptop":{"url":"","id":"","size":""},"wdt_bg_image_tablet_extra":{"url":"","id":"","size":""},"wdt_bg_image_tablet":{"url":"","id":"","size":""},"wdt_bg_image_mobile_extra":{"url":"","id":"","size":""},"wdt_bg_image_mobile":{"url":"","id":"","size":""},"wdt_bg_position":"center=""
-							center","wdt_animation_effect":"none"}"="">
-							<div class="elementor-container elementor-column-gap-no">
-								<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-435ce79"
-									data-id="435ce79" data-element_type="column" data-settings="{"
-									background_background":"classic"}"="">
-									<div class="elementor-widget-wrap elementor-element-populated">
-										<div class="elementor-element elementor-element-b369089 elementor-widget__width-auto elementor-absolute elementor-widget elementor-widget-image"
-											data-id="b369089" data-element_type="widget" data-settings="{"
-											_position":"absolute","wdt_animation_effect":"scroll","wdt_sle_parallax_y_direction":"true","wdt_sle_parallax_y_depth":{"unit":"dpt","size":50,"sizes":[]},"wdt_sle_parallax_y_depth_laptop":{"unit":"px","size":"","sizes":[]},"wdt_sle_parallax_y_depth_tablet_extra":{"unit":"px","size":"","sizes":[]},"wdt_sle_parallax_y_depth_tablet":{"unit":"px","size":"","sizes":[]},"wdt_sle_parallax_y_depth_mobile_extra":{"unit":"px","size":"","sizes":[]},"wdt_sle_parallax_y_depth_mobile":{"unit":"px","size":"","sizes":[]}}"=""
-											data-widget_type="image.default">
-											<div class="elementor-widget-container">
-												<img loading="lazy" decoding="async" width="900" height="908"
-													src="assets/images/Shape-Bg-1.png"
-													class="attachment-full size-full wp-image-42" alt=""
-													srcset="assets/images/Shape-Bg-1.png 900w, assets/images/Shape-Bg-1-297x300.png 297w, assets/images/Shape-Bg-1-150x150.png 150w, assets/images/Shape-Bg-1-768x775.png 768w"
-													sizes="(max-width: 900px) 100vw, 900px">
-											</div>
-										</div>
-										<div class="elementor-element elementor-element-ae35c8f elementor-widget__width-auto elementor-absolute wdt-cus-h1-filller-popup-01 elementor-hidden-tablet elementor-hidden-mobile_extra elementor-hidden-mobile elementor-invisible elementor-widget elementor-widget-wdt-popup-box"
-											data-id="ae35c8f" data-element_type="widget" data-settings="{"
-											trigger_element_normal_background_background":"classic","_position":"absolute","wdt_animation_effect":"scroll","_animation":"fadeinup","wdt_sle_parallax_y_direction":"true","wdt_sle_parallax_y_depth":{"unit":"dpt","size":100,"sizes":[]},"show_close_button":"true","esc_to_exit":"true","click_to_exit":"true","wdt_sle_parallax_y_depth_laptop":{"unit":"px","size":"","sizes":[]},"wdt_sle_parallax_y_depth_tablet_extra":{"unit":"px","size":"","sizes":[]},"wdt_sle_parallax_y_depth_tablet":{"unit":"px","size":"","sizes":[]},"wdt_sle_parallax_y_depth_mobile_extra":{"unit":"px","size":"","sizes":[]},"wdt_sle_parallax_y_depth_mobile":{"unit":"px","size":"","sizes":[]}}"=""
-											data-widget_type="wdt-popup-box.default">
-											<div class="elementor-widget-container">
-												<div class="wdt-popup-box-trigger-holder wdt-click-element-label-n-icon wdt-click-element-on-click"
-													id="wdt-popup-box-trigger-ae35c8f" data-settings="{"
-													module_id":"ae35c8f","module_ref_id":"wdt-popup-box-ae35c8f","popup_class":"wdt-popup-box-window=""
-													wdt-popup-box-window-ae35c8f=""
-													wdt-fade-zoom","trigger_type":"on-click","on_load_delay":null,"on_load_after":null,"external_class":null,"external_id":null,"show_close_button":true,"esc_to_exit":true,"click_to_exit":true,"mfp_src":"https:=""
-													www.youtube.com=""
-													watch?v="4KtHgUEKBts&quot;,&quot;mfp_type&quot;:&quot;iframe&quot;}&quot;">
-													<div class="wdt-popup-box-trigger-element"><span
-															class="wdt-popup-box-trigger-item wdt-popup-box-trigger-label">Our
-															Process</span><span
-															class="wdt-popup-box-trigger-item wdt-popup-box-trigger-icon"><i><svg
-																	xmlns="http://www.w3.org/2000/svg"
-																	viewBox="0 0 34.67 40">
-																	<path d="M34.67,20,0,40V0Z"></path>
-																</svg></i></span></div>
-												</div>
-											</div>
-										</div>
-										<section
-											class="elementor-section elementor-inner-section elementor-element elementor-element-828fd86 elementor-section-full_width wdt-cus-home-1-bg-video-sec elementor-section-height-default elementor-section-height-default"
-											data-id="828fd86" data-element_type="section" data-settings="{"
-											background_background":"video","background_video_link":"https:\="" \=""
-											wedesignthemes.s3.us-east-1.amazonaws.com\="" dermis\=""
-											dermis-home+-1-+video-01.mp4","background_play_on_mobile":"yes","wdt_bg_image":{"url":"","id":"","size":""},"wdt_bg_image_laptop":{"url":"","id":"","size":""},"wdt_bg_image_tablet_extra":{"url":"","id":"","size":""},"wdt_bg_image_tablet":{"url":"","id":"","size":""},"wdt_bg_image_mobile_extra":{"url":"","id":"","size":""},"wdt_bg_image_mobile":{"url":"","id":"","size":""},"wdt_bg_position":"center=""
-											center","wdt_animation_effect":"none"}"="">
-											<div class="elementor-background-video-container">
-												<video class="elementor-background-video-hosted elementor-html5-video"
-													autoplay="" muted="" playsinline="" loop=""></video>
-											</div>
-											<div class="elementor-container elementor-column-gap-no">
-												<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-30d3873"
-													data-id="30d3873" data-element_type="column">
-													<div class="elementor-widget-wrap elementor-element-populated">
-														<div class="elementor-element elementor-element-06a1cef elementor-widget elementor-widget-spacer"
-															data-id="06a1cef" data-element_type="widget"
-															data-settings="{" wdt_animation_effect":"none"}"=""
-															data-widget_type="spacer.default">
-															<div class="elementor-widget-container">
-																<div class="elementor-spacer">
-																	<div class="elementor-spacer-inner"></div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</section>
-									</div>
-								</div>
-								<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-f389011"
-									data-id="f389011" data-element_type="column">
-									<div class="elementor-widget-wrap elementor-element-populated">
-										<div class="elementor-element elementor-element-d5afb1d wdt-common-heading elementor-widget-tablet__width-initial elementor-widget-mobile_extra__width-inherit elementor-widget-mobile__width-inherit animated-fast elementor-invisible elementor-widget elementor-widget-wdt-heading"
-											data-id="d5afb1d" data-element_type="widget" data-settings="{"
-											_animation":"fadeinright","wdt_animation_effect":"none"}"=""
-											data-widget_type="wdt-heading.default">
-											<div class="elementor-widget-container">
-												<div class="wdt-heading-holder " id="wdt-heading-d5afb1d">
-													<div class="wdt-heading-subtitle-wrapper wdt-heading-align- "><span
-															class="wdt-heading-subtitle">Elevate Your Skincare
-															Ritual</span></div>
-													<h2
-														class="wdt-heading-title-wrapper wdt-heading-align- wdt-heading-deco-wrapper">
-														<span class="wdt-heading-title">Our Leading Specialist Takes Care of You!</span>
-													</h2>
-												</div>
-											</div>
-										</div>
-										<div class="elementor-element elementor-element-e009f6e elementor-invisible elementor-widget elementor-widget-wdt-heading"
-											data-id="e009f6e" data-element_type="widget" data-settings="{"
-											_animation":"fadeinright","wdt_animation_effect":"none"}"=""
-											data-widget_type="wdt-heading.default">
-											<div class="elementor-widget-container">
-												<div class="wdt-heading-holder " id="wdt-heading-e009f6e">
-													<h5
-														class="wdt-heading-title-wrapper wdt-heading-align- wdt-heading-deco-wrapper">
-														<span class="wdt-heading-title">Vision</span>
-													</h5>
-												</div>
-											</div>
-										</div>
-										<div class="elementor-element elementor-element-d6c07d5 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-invisible elementor-widget elementor-widget-icon-list"
-											data-id="d6c07d5" data-element_type="widget" data-settings="{"
-											_animation":"fadeinright","wdt_animation_effect":"none"}"=""
-											data-widget_type="icon-list.default">
-											<div class="elementor-widget-container">
-												<ul class="elementor-icon-list-items">
-													<li class="elementor-icon-list-item">
-														<span class="elementor-icon-list-icon">
-															<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 2">
-																<rect width="40" height="2"></rect>
-															</svg> </span>
-														<span class="elementor-icon-list-text">To revolutionize dermatological care by combining advanced technology with personalized treatment plans, ensuring everyone can achieve radiant, healthy skin.</span>
-													</li>
-												</ul>
-											</div>
-										</div>
-										<div class="elementor-element elementor-element-5405cd7 elementor-invisible elementor-widget elementor-widget-wdt-heading"
-											data-id="5405cd7" data-element_type="widget" data-settings="{"
-											_animation":"fadeinright","wdt_animation_effect":"none"}"=""
-											data-widget_type="wdt-heading.default">
-											<div class="elementor-widget-container">
-												<div class="wdt-heading-holder " id="wdt-heading-5405cd7">
-													<h5
-														class="wdt-heading-title-wrapper wdt-heading-align- wdt-heading-deco-wrapper">
-														<span class="wdt-heading-title">Mission</span>
-													</h5>
-												</div>
-											</div>
-										</div>
-										<div class="elementor-element elementor-element-ba099c9 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-invisible elementor-widget elementor-widget-icon-list"
-											data-id="ba099c9" data-element_type="widget" data-settings="{"
-											_animation":"fadeinright","wdt_animation_effect":"none"}"=""
-											data-widget_type="icon-list.default">
-											<div class="elementor-widget-container">
-												<ul class="elementor-icon-list-items">
-													<li class="elementor-icon-list-item">
-														<span class="elementor-icon-list-icon">
-															<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 2">
-																<rect width="40" height="2"></rect>
-															</svg> </span>
-														<span class="elementor-icon-list-text">To provide exceptional skin care solutions tailored to individual needs.</span>
-													</li>
-													<li class="elementor-icon-list-item">
-														<span class="elementor-icon-list-icon">
-															<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 2">
-																<rect width="40" height="2"></rect>
-															</svg> </span>
-														<span class="elementor-icon-list-text">To educate our clients about the importance of skincare and overall dermatological health.</span>
-													</li>
-													<li class="elementor-icon-list-item">
-														<span class="elementor-icon-list-icon">
-															<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 2">
-																<rect width="40" height="2"></rect>
-															</svg> </span>
-														<span class="elementor-icon-list-text">To foster a compassionate and professional environment for all treatments.</span>
-													</li>
-												</ul>
-											</div>
-										</div>
-										{{-- <section
-											class="elementor-section elementor-inner-section elementor-element elementor-element-96728ba elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-											data-id="96728ba" data-element_type="section" data-settings="{"
-											wdt_bg_image":{"url":"","id":"","size":""},"wdt_bg_image_laptop":{"url":"","id":"","size":""},"wdt_bg_image_tablet_extra":{"url":"","id":"","size":""},"wdt_bg_image_tablet":{"url":"","id":"","size":""},"wdt_bg_image_mobile_extra":{"url":"","id":"","size":""},"wdt_bg_image_mobile":{"url":"","id":"","size":""},"wdt_bg_position":"center=""
-											center","wdt_animation_effect":"none"}"="">
-											<div class="elementor-container elementor-column-gap-no">
-												<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-e2bf820"
-													data-id="e2bf820" data-element_type="column">
-													<div class="elementor-widget-wrap elementor-element-populated">
-														<div class="elementor-element elementor-element-78f25a9 wdt-cus-h1-client-imgBox animated-fast elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-wdt-image-box"
-															data-id="78f25a9" data-element_type="widget"
-															data-settings="{"
-															columns":"1","columns_laptop":"1","columns_tablet_extra":"1","columns_tablet":"1","_animation":"fadeinright","columns_mobile_extra":1,"columns_mobile":1,"carousel_arrows_prev_arrow_vertical_top_indent":{"unit":"%","size":"","sizes":[]},"carousel_arrows_prev_arrow_vertical_top_indent_laptop":{"unit":"px","size":"","sizes":[]},"carousel_arrows_prev_arrow_vertical_top_indent_tablet_extra":{"unit":"px","size":"","sizes":[]},"carousel_arrows_prev_arrow_vertical_top_indent_tablet":{"unit":"%","size":"","sizes":[]},"carousel_arrows_prev_arrow_vertical_top_indent_mobile_extra":{"unit":"px","size":"","sizes":[]},"carousel_arrows_prev_arrow_vertical_top_indent_mobile":{"unit":"%","size":"","sizes":[]},"carousel_arrows_prev_arrow_horizontal_left_indent":{"unit":"%","size":"","sizes":[]},"carousel_arrows_prev_arrow_horizontal_left_indent_laptop":{"unit":"px","size":"","sizes":[]},"carousel_arrows_prev_arrow_horizontal_left_indent_tablet_extra":{"unit":"px","size":"","sizes":[]},"carousel_arrows_prev_arrow_horizontal_left_indent_tablet":{"unit":"%","size":"","sizes":[]},"carousel_arrows_prev_arrow_horizontal_left_indent_mobile_extra":{"unit":"px","size":"","sizes":[]},"carousel_arrows_prev_arrow_horizontal_left_indent_mobile":{"unit":"%","size":"","sizes":[]},"carousel_arrows_next_arrow_vertical_top_indent":{"unit":"%","size":"","sizes":[]},"carousel_arrows_next_arrow_vertical_top_indent_laptop":{"unit":"px","size":"","sizes":[]},"carousel_arrows_next_arrow_vertical_top_indent_tablet_extra":{"unit":"px","size":"","sizes":[]},"carousel_arrows_next_arrow_vertical_top_indent_tablet":{"unit":"%","size":"","sizes":[]},"carousel_arrows_next_arrow_vertical_top_indent_mobile_extra":{"unit":"px","size":"","sizes":[]},"carousel_arrows_next_arrow_vertical_top_indent_mobile":{"unit":"%","size":"","sizes":[]},"carousel_arrows_next_arrow_horizontal_left_indent":{"unit":"%","size":"","sizes":[]},"carousel_arrows_next_arrow_horizontal_left_indent_laptop":{"unit":"px","size":"","sizes":[]},"carousel_arrows_next_arrow_horizontal_left_indent_tablet_extra":{"unit":"px","size":"","sizes":[]},"carousel_arrows_next_arrow_horizontal_left_indent_tablet":{"unit":"%","size":"","sizes":[]},"carousel_arrows_next_arrow_horizontal_left_indent_mobile_extra":{"unit":"px","size":"","sizes":[]},"carousel_arrows_next_arrow_horizontal_left_indent_mobile":{"unit":"%","size":"","sizes":[]},"wdt_animation_effect":"none"}"=""
-															data-widget_type="wdt-image-box.default">
-															<div class="elementor-widget-container">
-																<div class="wdt-image-box-holder wdt-content-item-holder wdt-column-holder wdt-rc-template-custom-template"
-																	id="wdt-image-box-78f25a9" data-settings="{"
-																	enable_popup":"","enable_hover_class":""}"="">
-																	<div class="wdt-column-wrapper wdt-column-gap-no "
-																		data-column-settings=""
-																		data-module-id="wdt-module-id-78f25a9"
-																		id="wdt-module-id-78f25a9">
-																		<div class="wdt-column">
-																			<div class="wdt-content-item">
-																				<div class="wdt-content-media-group">
-																					<div
-																						class="wdt-content-image-wrapper ">
-																						<div class="wdt-content-image">
-																							<a href="#"><img
-																									loading="lazy"
-																									decoding="async"
-																									width="152"
-																									height="152"
-																									src="assets/images/Dernis-client-img-1.jpg"
-																									class="attachment-full size-full wp-image-40"
-																									alt=""
-																									srcset="assets/images/Dernis-client-img-1.jpg 152w, assets/images/Dernis-client-img-1-150x150.jpg 150w"
-																									sizes="(max-width: 152px) 100vw, 152px"></a>
-																						</div>
-																					</div>
-																				</div>
-																				<div class="wdt-content-detail-group">
-																					<div class="wdt-content-title">
-																						<h5><a href="#">William
-																								Center</a></h5>
-																					</div>
-																					<div class="wdt-content-subtitle">
-																						Dermotolgy</div>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="elementor-element elementor-element-e5b69e4 elementor-widget__width-auto animated-fast elementor-invisible elementor-widget elementor-widget-wdt-button"
-															data-id="e5b69e4" data-element_type="widget"
-															data-settings="{"
-															_animation":"fadeinright","wdt_animation_effect":"none"}"=""
-															data-widget_type="wdt-button.default">
-															<div class="elementor-widget-container">
-																<div class="wdt-button-holder wdt-template-filled wdt-button-link wdt-button-style-default wdt-button-size-nm wdt-animation- wdt-button-icon-before"
-																	id="wdt-button-e5b69e4"><a class="wdt-button"
-																		href="#">
-																		<div class="wdt-button-icon"><span><i><svg
-																						xmlns="http://www.w3.org/2000/svg"
-																						viewBox="0 0 20 20">
-																						<path
-																							d="M17.5,19.8c-0.2,0-0.4,0-0.6-0.1C13.1,19.1,9.2,17,6.3,14C3.4,11,1.5,7.2,0.8,3c0-0.2-0.1-0.3-0.1-0.5H0.4l0.5-1 C1.1,1.2,1.4,1,1.7,0.9c2.8-0.7,2.9-0.7,2.9-0.7C5.3,0.1,6,0.6,6.2,1.4c0.3,0.9,0.5,1.8,1,2.7c0.3,0.7,0.1,1.6-0.5,2L6,6.6 C5.9,6.6,5.9,6.7,5.8,6.8c0,0.6,1.7,2.9,3.2,4.4c1.4,1.4,3.6,3.2,4.1,3.2c0,0,0,0,0,0c0.1,0,0.2-0.1,0.2-0.2l0.4-0.7 c0.4-0.7,1.2-0.9,1.9-0.5c0.5,0.3,1.4,0.6,2.1,0.9c1.1,0.4,1.2,0.5,1.3,0.6c0.4,0.4,0.5,0.9,0.4,1.3l-0.6,3 c-0.1,0.3-0.3,0.6-0.6,0.8C18.1,19.7,17.8,19.8,17.5,19.8z M2.1,2.2c0,0.1,0,0.2,0,0.6c0.7,3.9,2.5,7.5,5.1,10.3 c2.7,2.8,6.3,4.8,9.8,5.3c0.4,0.1,0.6,0,0.6,0l0.6-2.8c0,0,0,0,0-0.1c-0.2-0.1-0.5-0.2-0.9-0.4c-0.7-0.3-1.6-0.7-2.2-1 c-0.1-0.1-0.3,0-0.3,0l-0.4,0.7c-0.2,0.4-0.6,0.7-1,0.8c-1.5,0.4-4.9-3.1-5.3-3.5C7.5,11.5,4.2,8,4.6,6.5c0.1-0.4,0.4-0.8,0.8-1 L6,5.1c0.1,0,0.1-0.2,0-0.3c-0.5-1-0.8-2-1-2.9c0-0.1-0.2-0.2-0.2-0.2C4.8,1.6,4.5,1.6,2.1,2.2z M2,2.2C2,2.2,2,2.2,2,2.2 C2,2.2,2,2.2,2,2.2z">
-																						</path>
-																						<path
-																							d="M15.7,9.8c-0.4,0-0.6-0.3-0.6-0.7c0-2.8-2.2-5.1-5-5.1C9.8,4,9.5,3.7,9.5,3.3s0.3-0.7,0.6-0.7c3.4,0,6.2,2.9,6.2,6.5 C16.4,9.5,16.1,9.8,15.7,9.8z">
-																						</path>
-																						<path
-																							d="M18.1,9.8c-0.4,0-0.6-0.3-0.6-0.7c0-4.2-3.3-7.6-7.3-7.6c-0.4,0-0.6-0.3-0.6-0.7s0.3-0.7,0.6-0.7c4.7,0,8.6,4,8.6,8.9 C18.8,9.5,18.5,9.8,18.1,9.8z">
-																						</path>
-																					</svg></i></span></div>
-																		<div class="wdt-button-text"><span>Book
-																				Now</span></div>
-																	</a></div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</section> --}}
-									</div>
-								</div>
-							</div>
-						</section>
 
 
 
 
 						<section
-							class="elementor-section elementor-top-section elementor-element elementor-element-6e63532 wdt-no-full-section elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+							class="elementor-section elementor-top-section elementor-element elementor-element-6e63532 wdt-no-full-section elementor-section-boxed elementor-section-height-default elementor-section-height-default customTopMargin"
 							data-id="6e63532" data-element_type="section" data-settings="{"
 							wdt_bg_image":{"url":"","id":"","size":""},"wdt_bg_image_laptop":{"url":"","id":"","size":""},"wdt_bg_image_tablet_extra":{"url":"","id":"","size":""},"wdt_bg_image_tablet":{"url":"","id":"","size":""},"wdt_bg_image_mobile_extra":{"url":"","id":"","size":""},"wdt_bg_image_mobile":{"url":"","id":"","size":""},"wdt_bg_position":"center=""
 							center","wdt_animation_effect":"none"}"="">
@@ -6007,7 +5763,7 @@
 																<div class="wdt-content-item">
 																	<div class="wdt-content-media-group">
 																		<div class="wdt-content-image-wrapper ">
-																			<div class="wdt-content-image"><a
+																			{{-- <div class="wdt-content-image"><a
 																					href="#"><img loading="lazy"
 																						decoding="async" width="500"
 																						height="500"
@@ -6016,24 +5772,11 @@
 																						alt="testimonial-4"
 																						srcset="assets/images/testimonial-4.jpg 500w, assets/images/testimonial-4-300x300.jpg 300w, assets/images/testimonial-4-150x150.jpg 150w, assets/images/testimonial-4-205x205.jpg 205w, assets/images/testimonial-4-60x60.jpg 60w, assets/images/testimonial-4-100x100.jpg 100w"
 																						sizes="(max-width: 500px) 100vw, 500px"></a>
-																			</div>
+																			</div> --}}
 																		</div>
 																	</div>
 																	<div class="wdt-content-detail-group">
-																		<div class="wdt-rating-container">
-																			<ul class="wdt-rating">
-																				<li><span class="wdticon-star"
-																						data-value="1"></span></li>
-																				<li><span class="wdticon-star"
-																						data-value="2"></span></li>
-																				<li><span class="wdticon-star"
-																						data-value="3"></span></li>
-																				<li><span class="wdticon-star"
-																						data-value="4"></span></li>
-																				<li><span class="wdticon-star-o"
-																						data-value="5"></span></li>
-																			</ul>
-																		</div>
+
 																		<div class="wdt-content-description customHeightMain">I recently completed 5 sessions of my laser hair removal sessions with Gurr, and I couldn’t be more pleased with the results! From the very first consultation, Gurr was incredibly professional, knowledgeable, and attentive to my needs. Now my skin feels very soft and I’m very happy with the result.
                                                                             I highly recommend Gurr to anyone considering laser hair removal.Thank you Gurr for such a fantastic experience!😃😃😍</div>
 																		<div class="wdt-content-separator separator-2">
@@ -6046,27 +5789,8 @@
 																			{{-- <div class="wdt-content-subtitle">
 																				Hydra facial</div> --}}
 																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="swiper-slide custom">
-																<div class="wdt-content-item">
-																	<div class="wdt-content-media-group">
-																		<div class="wdt-content-image-wrapper ">
-																			<div class="wdt-content-image"><a
-																					href="#"><img loading="lazy"
-																						decoding="async" width="500"
-																						height="500"
-																						src="assets/images/testimonial-3.jpg"
-																						class="attachment-full size-full wp-image-1238"
-																						alt="testimonial-3"
-																						srcset="assets/images/testimonial-3.jpg 500w, assets/images/testimonial-3-300x300.jpg 300w, assets/images/testimonial-3-150x150.jpg 150w, assets/images/testimonial-3-205x205.jpg 205w, assets/images/testimonial-3-60x60.jpg 60w, assets/images/testimonial-3-100x100.jpg 100w"
-																						sizes="(max-width: 500px) 100vw, 500px"></a>
-																			</div>
-																		</div>
-																	</div>
-																	<div class="wdt-content-detail-group">
-																		<div class="wdt-rating-container">
+
+                                                                        <div class="wdt-rating-container">
 																			<ul class="wdt-rating">
 																				<li><span class="wdticon-star"
 																						data-value="1"></span></li>
@@ -6080,6 +5804,28 @@
 																						data-value="5"></span></li>
 																			</ul>
 																		</div>
+
+																	</div>
+																</div>
+															</div>
+															<div class="swiper-slide custom">
+																<div class="wdt-content-item">
+																	<div class="wdt-content-media-group">
+																		<div class="wdt-content-image-wrapper ">
+																			{{-- <div class="wdt-content-image"><a
+																					href="#"><img loading="lazy"
+																						decoding="async" width="500"
+																						height="500"
+																						src="assets/images/testimonial-3.jpg"
+																						class="attachment-full size-full wp-image-1238"
+																						alt="testimonial-3"
+																						srcset="assets/images/testimonial-3.jpg 500w, assets/images/testimonial-3-300x300.jpg 300w, assets/images/testimonial-3-150x150.jpg 150w, assets/images/testimonial-3-205x205.jpg 205w, assets/images/testimonial-3-60x60.jpg 60w, assets/images/testimonial-3-100x100.jpg 100w"
+																						sizes="(max-width: 500px) 100vw, 500px"></a>
+																			</div> --}}
+																		</div>
+																	</div>
+																	<div class="wdt-content-detail-group">
+
 																		<div class="wdt-content-description customHeightMain">I recently visited Gurr laser and skincare for laser treatments, and I'm absolutely thrilled with the results! Gurr is highly knowledgeable and guided me through each step of the process, answering all my questions and ensuring I was comfortable. The clinic was spotless. I noticed a significant improvement after just a few sessions, and my skin has never looked better. Highly recommend Gurr for anyone considering laser treatments!</div>
 																		<div class="wdt-content-separator separator-2">
 																			<span></span>
@@ -6091,27 +5837,7 @@
 																			{{-- <div class="wdt-content-subtitle">Fat
 																				Reduction</div> --}}
 																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="swiper-slide custom">
-																<div class="wdt-content-item">
-																	<div class="wdt-content-media-group">
-																		<div class="wdt-content-image-wrapper ">
-																			<div class="wdt-content-image"><a
-																					href="#"><img loading="lazy"
-																						decoding="async" width="500"
-																						height="500"
-																						src="assets/images/testimonial-2.jpg"
-																						class="attachment-full size-full wp-image-1237"
-																						alt="testimonial-2"
-																						srcset="assets/images/testimonial-2.jpg 500w, assets/images/testimonial-2-300x300.jpg 300w, assets/images/testimonial-2-150x150.jpg 150w, assets/images/testimonial-2-205x205.jpg 205w, assets/images/testimonial-2-60x60.jpg 60w, assets/images/testimonial-2-100x100.jpg 100w"
-																						sizes="(max-width: 500px) 100vw, 500px"></a>
-																			</div>
-																		</div>
-																	</div>
-																	<div class="wdt-content-detail-group">
-																		<div class="wdt-rating-container">
+                                                                        <div class="wdt-rating-container">
 																			<ul class="wdt-rating">
 																				<li><span class="wdticon-star"
 																						data-value="1"></span></li>
@@ -6121,10 +5847,31 @@
 																						data-value="3"></span></li>
 																				<li><span class="wdticon-star"
 																						data-value="4"></span></li>
-																				<li><span class="wdticon-star"
+																				<li><span class="wdticon-star-o"
 																						data-value="5"></span></li>
 																			</ul>
 																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="swiper-slide custom">
+																<div class="wdt-content-item">
+																	<div class="wdt-content-media-group">
+																		<div class="wdt-content-image-wrapper ">
+																			{{-- <div class="wdt-content-image"><a
+																					href="#"><img loading="lazy"
+																						decoding="async" width="500"
+																						height="500"
+																						src="assets/images/testimonial-2.jpg"
+																						class="attachment-full size-full wp-image-1237"
+																						alt="testimonial-2"
+																						srcset="assets/images/testimonial-2.jpg 500w, assets/images/testimonial-2-300x300.jpg 300w, assets/images/testimonial-2-150x150.jpg 150w, assets/images/testimonial-2-205x205.jpg 205w, assets/images/testimonial-2-60x60.jpg 60w, assets/images/testimonial-2-100x100.jpg 100w"
+																						sizes="(max-width: 500px) 100vw, 500px"></a>
+																			</div> --}}
+																		</div>
+																	</div>
+																	<div class="wdt-content-detail-group">
+
 																		<div class="wdt-content-description customHeightMain">I've had few sessions for the laser hair treatment and i'm very happy with the results. I see a huge difference in my hair growth. Gurr does an excellent job. She is friendly and professional.
                                                                             Definitely recommend this place.</div>
 																		<div class="wdt-content-separator separator-2">
@@ -6136,27 +5883,7 @@
 																			</div><span></span>
 																			{{-- <div class="wdt-content-subtitle">Microneedling</div> --}}
 																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="swiper-slide custom">
-																<div class="wdt-content-item">
-																	<div class="wdt-content-media-group">
-																		<div class="wdt-content-image-wrapper ">
-																			<div class="wdt-content-image"><a
-																					href="#"><img loading="lazy"
-																						decoding="async" width="500"
-																						height="500"
-																						src="assets/images/testimonial-1.jpg"
-																						class="attachment-full size-full wp-image-1236"
-																						alt="testimonial-1"
-																						srcset="assets/images/testimonial-1.jpg 500w, assets/images/testimonial-1-300x300.jpg 300w, assets/images/testimonial-1-150x150.jpg 150w, assets/images/testimonial-1-205x205.jpg 205w, assets/images/testimonial-1-60x60.jpg 60w, assets/images/testimonial-1-100x100.jpg 100w"
-																						sizes="(max-width: 500px) 100vw, 500px"></a>
-																			</div>
-																		</div>
-																	</div>
-																	<div class="wdt-content-detail-group">
-																		<div class="wdt-rating-container">
+                                                                        <div class="wdt-rating-container">
 																			<ul class="wdt-rating">
 																				<li><span class="wdticon-star"
 																						data-value="1"></span></li>
@@ -6166,10 +5893,31 @@
 																						data-value="3"></span></li>
 																				<li><span class="wdticon-star"
 																						data-value="4"></span></li>
-																				<li><span class="wdticon-star-o"
+																				<li><span class="wdticon-star"
 																						data-value="5"></span></li>
 																			</ul>
 																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="swiper-slide custom">
+																<div class="wdt-content-item">
+																	<div class="wdt-content-media-group">
+																		<div class="wdt-content-image-wrapper ">
+																			{{-- <div class="wdt-content-image"><a
+																					href="#"><img loading="lazy"
+																						decoding="async" width="500"
+																						height="500"
+																						src="assets/images/testimonial-1.jpg"
+																						class="attachment-full size-full wp-image-1236"
+																						alt="testimonial-1"
+																						srcset="assets/images/testimonial-1.jpg 500w, assets/images/testimonial-1-300x300.jpg 300w, assets/images/testimonial-1-150x150.jpg 150w, assets/images/testimonial-1-205x205.jpg 205w, assets/images/testimonial-1-60x60.jpg 60w, assets/images/testimonial-1-100x100.jpg 100w"
+																						sizes="(max-width: 500px) 100vw, 500px"></a>
+																			</div> --}}
+																		</div>
+																	</div>
+																	<div class="wdt-content-detail-group">
+
 																		<div class="wdt-content-description customHeightMain">Gurr is very professional, kind and patient. I have seen incredible results within only 2 sessions with her. The laser she uses is way less painful then other lasers I have done in the past. The prices are amazing and good compared to others. I am definitely recommending her to anyone who wants to be hair free.</div>
 																		<div class="wdt-content-separator separator-2">
 																			<span></span>
@@ -6181,27 +5929,7 @@
 																			{{-- <div class="wdt-content-subtitle">
 																				Hollywood Facial</div> --}}
 																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="swiper-slide custom">
-																<div class="wdt-content-item">
-																	<div class="wdt-content-media-group">
-																		<div class="wdt-content-image-wrapper ">
-																			<div class="wdt-content-image"><a
-																					href="#"><img loading="lazy"
-																						decoding="async" width="500"
-																						height="500"
-																						src="assets/images/testimonial-4.jpg"
-																						class="attachment-full size-full wp-image-1239"
-																						alt="testimonial-4"
-																						srcset="assets/images/testimonial-4.jpg 500w, assets/images/testimonial-4-300x300.jpg 300w, assets/images/testimonial-4-150x150.jpg 150w, assets/images/testimonial-4-205x205.jpg 205w, assets/images/testimonial-4-60x60.jpg 60w, assets/images/testimonial-4-100x100.jpg 100w"
-																						sizes="(max-width: 500px) 100vw, 500px"></a>
-																			</div>
-																		</div>
-																	</div>
-																	<div class="wdt-content-detail-group">
-																		<div class="wdt-rating-container">
+                                                                        <div class="wdt-rating-container">
 																			<ul class="wdt-rating">
 																				<li><span class="wdticon-star"
 																						data-value="1"></span></li>
@@ -6215,6 +5943,27 @@
 																						data-value="5"></span></li>
 																			</ul>
 																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="swiper-slide custom">
+																<div class="wdt-content-item">
+																	<div class="wdt-content-media-group">
+																		<div class="wdt-content-image-wrapper ">
+																			{{-- <div class="wdt-content-image"><a
+																					href="#"><img loading="lazy"
+																						decoding="async" width="500"
+																						height="500"
+																						src="assets/images/testimonial-4.jpg"
+																						class="attachment-full size-full wp-image-1239"
+																						alt="testimonial-4"
+																						srcset="assets/images/testimonial-4.jpg 500w, assets/images/testimonial-4-300x300.jpg 300w, assets/images/testimonial-4-150x150.jpg 150w, assets/images/testimonial-4-205x205.jpg 205w, assets/images/testimonial-4-60x60.jpg 60w, assets/images/testimonial-4-100x100.jpg 100w"
+																						sizes="(max-width: 500px) 100vw, 500px"></a>
+																			</div> --}}
+																		</div>
+																	</div>
+																	<div class="wdt-content-detail-group">
+
 																		<div class="wdt-content-description customHeightMain">I recently completed three sessions of full-body laser hair removal with Gur, and I couldn't be happier with the results! After struggling with daily shaving, I've noticed a significant reduction in hair growth on my hands and legs. Now, I only need to shave about once a week. Gur is professional, knowledgeable, and makes the experience comfortable. Highly recommend for anyone considering laser hair removal!</div>
 																		<div class="wdt-content-separator separator-2">
 																			<span></span>
@@ -6226,27 +5975,7 @@
 																			{{-- <div class="wdt-content-subtitle">
 																				Hydra facial</div> --}}
 																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="swiper-slide custom">
-																<div class="wdt-content-item">
-																	<div class="wdt-content-media-group">
-																		<div class="wdt-content-image-wrapper ">
-																			<div class="wdt-content-image"><a
-																					href="#"><img loading="lazy"
-																						decoding="async" width="500"
-																						height="500"
-																						src="assets/images/testimonial-3.jpg"
-																						class="attachment-full size-full wp-image-1238"
-																						alt="testimonial-3"
-																						srcset="assets/images/testimonial-3.jpg 500w, assets/images/testimonial-3-300x300.jpg 300w, assets/images/testimonial-3-150x150.jpg 150w, assets/images/testimonial-3-205x205.jpg 205w, assets/images/testimonial-3-60x60.jpg 60w, assets/images/testimonial-3-100x100.jpg 100w"
-																						sizes="(max-width: 500px) 100vw, 500px"></a>
-																			</div>
-																		</div>
-																	</div>
-																	<div class="wdt-content-detail-group">
-																		<div class="wdt-rating-container">
+                                                                        <div class="wdt-rating-container">
 																			<ul class="wdt-rating">
 																				<li><span class="wdticon-star"
 																						data-value="1"></span></li>
@@ -6260,6 +5989,27 @@
 																						data-value="5"></span></li>
 																			</ul>
 																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="swiper-slide custom">
+																<div class="wdt-content-item">
+																	<div class="wdt-content-media-group">
+																		<div class="wdt-content-image-wrapper ">
+																			{{-- <div class="wdt-content-image"><a
+																					href="#"><img loading="lazy"
+																						decoding="async" width="500"
+																						height="500"
+																						src="assets/images/testimonial-3.jpg"
+																						class="attachment-full size-full wp-image-1238"
+																						alt="testimonial-3"
+																						srcset="assets/images/testimonial-3.jpg 500w, assets/images/testimonial-3-300x300.jpg 300w, assets/images/testimonial-3-150x150.jpg 150w, assets/images/testimonial-3-205x205.jpg 205w, assets/images/testimonial-3-60x60.jpg 60w, assets/images/testimonial-3-100x100.jpg 100w"
+																						sizes="(max-width: 500px) 100vw, 500px"></a>
+																			</div> --}}
+																		</div>
+																	</div>
+																	<div class="wdt-content-detail-group">
+
 																		<div class="wdt-content-description customHeightMain">I recently had two algae peel sessions at Gurr Laser &Skin Care  and saw great results. The clinic is clean and inviting, and the staff are friendly and professional. She explained everything clearly and made sure I was comfortable throughout the treatment. After just two sessions, my skin looks clearer and smoother. I highly recommend Gurr for their excellent service and effective treatments.</div>
 																		<div class="wdt-content-separator separator-2">
 																			<span></span>
@@ -6270,6 +6020,20 @@
 																			</div><span></span>
 																			{{-- <div class="wdt-content-subtitle">Fat
 																				Reduction</div> --}}
+																		</div>
+                                                                        <div class="wdt-rating-container">
+																			<ul class="wdt-rating">
+																				<li><span class="wdticon-star"
+																						data-value="1"></span></li>
+																				<li><span class="wdticon-star"
+																						data-value="2"></span></li>
+																				<li><span class="wdticon-star"
+																						data-value="3"></span></li>
+																				<li><span class="wdticon-star"
+																						data-value="4"></span></li>
+																				<li><span class="wdticon-star-o"
+																						data-value="5"></span></li>
+																			</ul>
 																		</div>
 																	</div>
 																</div>
@@ -6492,11 +6256,9 @@
 																			</div>
 																		</div>
 																		<div class="wdt-content-detail-group">
-																			<div class="wdt-content-subtitle">We
-																				Prioritize Your Skin Care</div>
 																			<div class="wdt-content-title">
-																				<h5><a href="tel:000%20123%20456789">24/7
-																						Customer Support </a></h5>
+																				<h5><a>We
+                                                                                    Prioritize Your Skin Care</a></h5>
 																			</div>
 																			<div
 																				class="wdt-content-button wdt-button-clone">
@@ -6529,7 +6291,7 @@
 																<div
 																	class="dt-sc-appointment-wrapper wdt-dark-bg home-reserve-form">
 																	<div class="dt-sc-title">
-																		<h2>Reserve A Consultation</h2>
+																		<h2>Book Your Appointment</h2>
 																	</div>
                                                                         {!! Form::open(['url'=> route('appointmentStore'),'method'=>'POST','class'=>'dt-sc-reservation-form dt-appointment-form'])!!}
 
@@ -6565,17 +6327,23 @@
                                                                                     {!! Form::date('date', null, ['class'=>'frm-control','required','id'=>'appointment_date']) !!}
                                                                                 </div>
                                                                             </div>
+
+
+
                                                                             <div class="dt-sc-one-column column">
-                                                                                <div
-                                                                                    class="frm-group dt-appoint-date form-calendar-icon">
-                                                                                    {{-- <div class="placeholder">
-                                                                                        <label for="name">Preferred
-                                                                                            Date</label>
-                                                                                        <span class="star">*</span>
-                                                                                    </div> --}}
+                                                                                <div class="frm-group">
+                                                                                    <div class="placeholder">
+                                                                                        <label
+                                                                                            for="location">Select Time</label>
+                                                                                    </div>
+                                                                                    <div class="outerCustom">
                                                                                     {!! Form::time('time', null, ['class'=>'frm-control','required','id'=>'appointment_time',"min"=>"09:00" ,"max"=>"16:00"]) !!}
                                                                                 </div>
+                                                                                </div>
                                                                             </div>
+
+
+
 
                                                                             <div class="dt-sc-one-column column">
                                                                                 <div class="frm-group">
@@ -7373,7 +7141,7 @@
 																data-settings="{" wdt_animation_effect":"none"}"=""
 																data-widget_type="text-editor.default">
 																<div class="elementor-widget-container">
-																	<p>@2024 <a href="/">Code Academics</a>.
+																	<p>@2024 <a href="/">Globency Media</a>.
 																		All Rights Reserved</p>
 																</div>
 															</div>

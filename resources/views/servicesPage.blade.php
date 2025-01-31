@@ -36,6 +36,12 @@
 			padding: 0 !important;
 		}
 
+        .outerCustom {
+            padding: 20px 140px;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+
 		.swiper-container {
 			width: 100%;
 			height: 100%;
@@ -3723,7 +3729,7 @@
                                                                                 <div class="swiper-slide custom">
                                                                                     <div class="dt-sc-service-item type1">
                                                                                         <div class="image">
-                                                                                            <div class="image-item"><img
+                                                                                            <div class="image-item customMinheight"><img
                                                                                                     fetchpriority="high"
                                                                                                     decoding="async"
                                                                                                     width="1620"
@@ -4447,11 +4453,9 @@
 																			</div>
 																		</div>
 																		<div class="wdt-content-detail-group">
-																			<div class="wdt-content-subtitle">We
-																				Prioritize Your Skin Care</div>
 																			<div class="wdt-content-title">
-																				<h5><a href="tel:000%20123%20456789">24/7
-																						Customer Support </a></h5>
+																				<h5><a >We
+                                                                                    Prioritize Your Skin Care </a></h5>
 																			</div>
 																			<div
 																				class="wdt-content-button wdt-button-clone">
@@ -4484,7 +4488,7 @@
 																<div
 																	class="dt-sc-appointment-wrapper wdt-dark-bg home-reserve-form">
 																	<div class="dt-sc-title">
-																		<h2>Reserve A Consultation</h2>
+																		<h2>Book Your Appointment</h2>
 																	</div>
 																	{!! Form::open(['url'=> route('appointmentStore'),'method'=>'POST','class'=>'dt-sc-reservation-form dt-appointment-form'])!!}
 
@@ -4523,12 +4527,13 @@
                                                                             <div class="dt-sc-one-column column">
                                                                                 <div
                                                                                     class="frm-group dt-appoint-date form-calendar-icon">
-                                                                                    {{-- <div class="placeholder">
-                                                                                        <label for="name">Preferred
-                                                                                            Date</label>
-                                                                                        <span class="star">*</span>
-                                                                                    </div> --}}
+                                                                                    <div class="placeholder">
+                                                                                        <label
+                                                                                            for="location">Select Time</label>
+                                                                                    </div>
+                                                                                    <div class="outerCustom">
                                                                                     {!! Form::time('time', null, ['class'=>'frm-control','required','id'=>'appointment_time',"min"=>"09:00" ,"max"=>"16:00"]) !!}
+                                                                                </div>
                                                                                 </div>
                                                                             </div>
 
