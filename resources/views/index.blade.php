@@ -6531,7 +6531,7 @@
 																	<div class="dt-sc-title">
 																		<h2>Reserve A Consultation</h2>
 																	</div>
-                                                                        {!! Form::open(['url'=> route('storeEnquiry'),'method'=>'POST','class'=>'dt-sc-reservation-form dt-appointment-form'])!!}
+                                                                        {!! Form::open(['url'=> route('appointmentStore'),'method'=>'POST','class'=>'dt-sc-reservation-form dt-appointment-form'])!!}
 
 
                                                                             <div class="dt-sc-one-column column">
@@ -6562,10 +6562,20 @@
                                                                                             Date</label>
                                                                                         <span class="star">*</span>
                                                                                     </div> --}}
-                                                                                    {!! Form::date('date', null, ['class'=>'frm-control','required']) !!}
+                                                                                    {!! Form::date('date', null, ['class'=>'frm-control','required','id'=>'appointment_date']) !!}
                                                                                 </div>
                                                                             </div>
-
+                                                                            <div class="dt-sc-one-column column">
+                                                                                <div
+                                                                                    class="frm-group dt-appoint-date form-calendar-icon">
+                                                                                    {{-- <div class="placeholder">
+                                                                                        <label for="name">Preferred
+                                                                                            Date</label>
+                                                                                        <span class="star">*</span>
+                                                                                    </div> --}}
+                                                                                    {!! Form::time('time', null, ['class'=>'frm-control','required','id'=>'appointment_time']) !!}
+                                                                                </div>
+                                                                            </div>
 
                                                                             <div class="dt-sc-one-column column">
                                                                                 <div class="frm-group">
@@ -6577,14 +6587,25 @@
                                                                                 </div>
                                                                             </div>
 
-                                                                            {{-- <div class="dt-sc-one-column column">
-                                                                                <div class="frm-group">
-                                                                                    <input type="checkbox" name="chkterms"
-                                                                                        value="yes" class="frm-control"
-                                                                                        required=""><span> I here by accept
-                                                                                        all terms and conditions.</span>
+                                                                            @php
+
+                                                                            $options=[];
+                                                                            foreach($services as $service)
+                                                                            {
+                                                                                $option             =   $service->name.'&nbsp;&nbsp;-&nbsp;&nbsp;$ '.$service->price;
+                                                                                $options[$option]   =   $option;
+                                                                            }
+
+                                                                        @endphp
+
+                                                                        <div class="dt-sc-one-column column">
+                                                                            <div class="frm-group">
+                                                                                <div class="placeholder">
+                                                                                    <label for="service">Select Service</label>
                                                                                 </div>
-                                                                            </div> --}}
+                                                                                {!! Form::select('service', $options,null, ['class'=>'frm-control','required','placeholder'=>'Select Service','data-placeholder'=>'Select Service']) !!}
+                                                                            </div>
+                                                                        </div>
 
                                                                             <div class="dt-sc-one-column column">
                                                                                 <div class="alignleft">
@@ -7413,7 +7434,58 @@
 		</div><!-- **Inner Wrapper - End** -->
 
 	</div><!-- **Wrapper - End** -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let dateInput = document.getElementById("appointment_date");
+            let timeInput = document.getElementById("appointment_time");
 
+            // Disable past dates
+            let today = new Date().toISOString().split("T")[0];
+            dateInput.setAttribute("min", today);
+
+            // Disable past times if today is selected
+            dateInput.addEventListener("change", function () {
+                let selectedDate = new Date(dateInput.value);
+                let now = new Date();
+
+                if (selectedDate.toDateString() === now.toDateString()) {
+                    // If selected date is today, disable past times
+                    let currentTime = now.getHours().toString().padStart(2, '0') + ":" + now.getMinutes().toString().padStart(2, '0');
+                    timeInput.setAttribute("min", currentTime);
+                } else {
+                    timeInput.removeAttribute("min");
+                }
+            });
+
+            // Check if the selected time slot is available
+            timeInput.addEventListener("change", function () {
+                let selectedDate = dateInput.value;
+                let selectedTime = timeInput.value;
+
+                if (selectedDate && selectedTime) {
+                    fetch('/check-appointment', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-CSRF-TOKEN': '{{ csrf_token() }}' // Laravel CSRF token
+                        },
+                        body: JSON.stringify({ date: selectedDate, time: selectedTime })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (!data.available) {
+                            alert("This time slot is already booked. Please select another time.");
+                            timeInput.value = ""; // Reset the time field
+                        }
+                    })
+                    .catch(error => {
+                        console.error("Error checking appointment availability:", error);
+                        alert("Error checking appointment availability. Please try again.");
+                    });
+                }
+            });
+        });
+        </script>
 	<script type="text/javascript">
 		const lazyloadRunObserver = () => {
 			const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);

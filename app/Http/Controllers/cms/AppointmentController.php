@@ -23,7 +23,15 @@ class AppointmentController extends Controller
 
             return DataTables::of($data)
                 ->addIndexColumn()
-                ->addColumn('status',function($data){
+                ->editColumn('service_type',function($data){
+                    if($data->is_laser_service == 1)
+                    {
+                        return '<span class="badge badge-success"> Laser Service</span>';
+                    }else{
+                        return '<span class="badge badge-info"> Service</span>';
+                    }
+                })
+                ->editColumn('status',function($data){
                     if($data->status == 'rejected')
                     {
                         return '<span class="badge badge-danger">'. ucfirst($data->status) .'</span>';
@@ -32,14 +40,14 @@ class AppointmentController extends Controller
                     }else{
                         return '<span class="badge badge-warning">'. ucfirst($data->status) .'</span>';
                     }
-                })->editColumn('action', function ($data) {
+                })->addColumn('action', function ($data) {
                     $editUrl        =   route('appointment.edit', ['appointment' => $data->id]);
                     $btn            =   '<div class="row">';
                     $btn            .=  '<a href="' . $editUrl . '"><i class="fa fa-edit"></i></a>';
                     $btn            .=  '</div>';
                     return $btn;
                 })
-                ->rawColumns(['status','action'])
+                ->rawColumns(['service_type','status','action'])
                 ->make(true);
         }
         return view('cms.appointment.index');
@@ -63,7 +71,8 @@ class AppointmentController extends Controller
         $appointment->email             =       $request->email;
         $appointment->date              =       $request->date;
         $appointment->location          =       $request->location;
-        $appointment->laser_service     =       $request->laser_service;
+        $appointment->service           =       $request->service;
+        $appointment->is_laser_service  =       !empty($request->is_laser_service) ? 1 : 0;
         $appointment->time              =       $request->time;
         $appointment->status            =       'pending';
         $appointment->save();

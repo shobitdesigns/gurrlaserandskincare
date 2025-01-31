@@ -56,27 +56,44 @@
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="form-group col-4">
-                        {{ Form::label('status', 'Status', []) }}<span style="color: red;"> *</span>
-                        {{ Form::select('status', $status,null, ['class' => 'form-control', 'placeholder' => 'Select Status', 'required']) }}
+                @if($object->status == 'pending')
+                    <div class="row">
+                        <div class="form-group col-4">
+                            {{ Form::label('status', 'Status', []) }}<span style="color: red;"> *</span>
+                            {{ Form::select('status', $status,null, ['class' => 'form-control', 'placeholder' => 'Select Status', 'required']) }}
+                        </div>
+                        <div class="form-group col-8" id="reason-group">
+                            {{ Form::label('reason', 'Reason', []) }}<span style="color: red;"> *</span>
+                            {{ Form::text('reason',null, ['class' => 'form-control', 'placeholder' => 'Enter reason', 'id' => 'reason','required' => false]) }}
+                        </div>
                     </div>
-                    <div class="form-group col-8" id="reason-group">
-                        {{ Form::label('reason', 'Reason', []) }}<span style="color: red;"> *</span>
-                        {{ Form::text('reason',null, ['class' => 'form-control', 'placeholder' => 'Enter reason', 'id' => 'reason','required' => false]) }}
+                @else
+                    <div class="row">
+                        <div class="form-group col-4">
+                            {{ Form::label('status', 'Status', []) }}<span style="color: red;"> *</span>
+                            {{ Form::text('status', ucfirst($object->status), ['class' => 'form-control', 'placeholder' => 'Enter Status', 'disabled']) }}
+                        </div>
+                        @if($object->status == 'rejected' && !empty($object->reason))
+                            <div class="form-group col-8">
+                                {{ Form::label('reason', 'Reason', []) }}<span style="color: red;"> *</span>
+                                {{ Form::text('reason', $object->reason, ['class' => 'form-control', 'placeholder' => 'Enter Reason', 'disabled']) }}
+                            </div>
+                        @endif
                     </div>
-                </div>
+                @endif
 
             </div>
             <!-- /.card-body -->
 
-            <div class="card-footer">
-                <div class="row">
-                    <div class="col-md-6">
-                        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+            @if($object->status == 'pending')
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+                        </div>
                     </div>
                 </div>
-            </div>
+            @endif
             {!! Form::close() !!}
         </div>
     </div>

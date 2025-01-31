@@ -4530,7 +4530,7 @@
 																	<div class="dt-sc-title">
 																		<h2>Reserve A Consultation</h2>
 																	</div>
-																	{!! Form::open(['url'=> route('appintmentStore'),'method'=>'POST','class'=>'dt-sc-reservation-form dt-appointment-form'])!!}
+																	{!! Form::open(['url'=> route('appointmentStore'),'method'=>'POST','class'=>'dt-sc-reservation-form dt-appointment-form'])!!}
 
 
                                                                             <div class="dt-sc-one-column column">
@@ -4601,11 +4601,12 @@
                                                                             <div class="dt-sc-one-column column">
                                                                                 <div class="frm-group">
                                                                                     <div class="placeholder">
-                                                                                        <label for="laser_service">Select Laser Service</label>
+                                                                                        <label for="service">Select Laser Service</label>
                                                                                     </div>
-                                                                                    {!! Form::select('laser_service', $options,null, ['class'=>'frm-control','required','placeholder'=>'Select Laser Service','data-placeholder'=>'Select Laser Service']) !!}
+                                                                                    {!! Form::select('service', $options,null, ['class'=>'frm-control','required','placeholder'=>'Select Laser Service','data-placeholder'=>'Select Laser Service']) !!}
                                                                                 </div>
                                                                             </div>
+                                                                            <input type="hidden" name="is_laser_service" value="1">
 
                                                                             {{-- <div class="dt-sc-one-column column">
                                                                                 <div class="frm-group">

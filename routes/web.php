@@ -28,7 +28,7 @@ Route::get('/laser-service/{id}',       [DashboardController::class,'laserServic
 
 
 Route::post('submit-enquiry',           [EnquiryController::class,'storeEnquiry'])->name('storeEnquiry');
-Route::post('appintment-store',         [AppointmentController::class,'store'])->name('appintmentStore');
+Route::post('appintment-store',         [AppointmentController::class,'store'])->name('appointmentStore');
 Route::post('/check-appointment',       [AppointmentController::class, 'checkAppointment'])->name('checkAppointment');
 
 

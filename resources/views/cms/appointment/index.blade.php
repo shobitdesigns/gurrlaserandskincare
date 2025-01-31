@@ -24,6 +24,7 @@
                                 <th>Id</th>
                                 <th>Name</th>
                                 <th>Email</th>
+                                <th>Service Type</th>
                                 <th>Service</th>
                                 <th>Location</th>
                                 <th>Date</th>
@@ -69,8 +70,12 @@
                         name: 'email',
                     },
                     {
-                        data: 'laser_service',
-                        name: 'laser_service',
+                        data: 'service_type',
+                        name: 'service_type',
+                    },
+                    {
+                        data: 'service',
+                        name: 'service',
                     },
                     {
                         data: 'location',

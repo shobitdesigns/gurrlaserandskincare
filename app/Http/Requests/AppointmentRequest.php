@@ -26,7 +26,7 @@ class AppointmentRequest extends FormRequest
             'email'             =>      'required|email',
             'date'              =>      'required',
             'location'          =>      'required',
-            'laser_service'     =>      'required',
+            'service'           =>      'required',
             'time'              =>      'required'
         ];
     }
