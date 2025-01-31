@@ -52,7 +52,7 @@
                 "serverSide": true,
                 ajax: "{{ route('appointment.index') }}",
                 order: [
-                    [5, "desc"]
+                    [6, "desc"]
                 ],
                 sorting: true,
                 columns: [{

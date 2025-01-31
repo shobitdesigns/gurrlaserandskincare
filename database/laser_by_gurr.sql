@@ -34,7 +34,7 @@ CREATE TABLE `appointments` (
   `created_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 /*Data for the table `appointments` */
 
@@ -45,7 +45,8 @@ insert  into `appointments`(`id`,`name`,`email`,`location`,`date`,`time`,`servic
 (4,'karan','karan@gmail.com','jalandhar','2025-02-01','14:56:00','mohit  -  $ 3213.00',0,'approved',NULL,'2025-01-31 15:02:06','2025-01-31 09:32:06'),
 (5,'shobit','shobit@gmail.com','jalandhar','2025-02-07','15:11:00','Hydra facial  -  $ 120.00',0,'approved',NULL,'2025-01-31 15:09:46','2025-01-31 09:39:46'),
 (6,'chahal','chahal@gmail.com','jalandhar','2025-01-31','15:10:00','Microneedling  -  $ 276.00',0,'rejected','testing','2025-01-31 15:10:45','2025-01-31 09:40:45'),
-(7,'chahal','chahal@gmail.com','canada','2025-01-31','15:11:00','Full body head to toe  -  $ 300.00',1,'approved',NULL,'2025-01-31 15:11:50','2025-01-31 09:41:50');
+(7,'chahal','chahal@gmail.com','canada','2025-01-31','15:11:00','Full body head to toe  -  $ 300.00',1,'approved',NULL,'2025-01-31 15:11:50','2025-01-31 09:41:50'),
+(8,'raj','raj@gmail.com','jalandhar','2025-01-31','15:14:00','Full body head to toe  -  $ 300.00',1,'approved',NULL,'2025-01-31 15:40:00','2025-01-31 10:10:00');
 
 /*Table structure for table `enquiries` */
 

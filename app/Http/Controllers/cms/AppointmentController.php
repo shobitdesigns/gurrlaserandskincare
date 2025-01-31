@@ -6,6 +6,7 @@ use App\Models\Appointment;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Mail;
+use App\Mail\AppointmentApprovedMail;
 use App\Mail\AppointmentResponseMail;
 use Illuminate\Support\Facades\Session;
 use Yajra\DataTables\Facades\DataTables;
@@ -129,6 +130,12 @@ class AppointmentController extends Controller
         $appointment->reason        =       $request->reason;
         $appointment->update();
         Mail::to($appointment->email)->send(new AppointmentResponseMail($appointment));
+
+        if( $appointment->status == 'approved')
+        {
+            $data                   =       $appointment;
+            // Mail::to('laserbygurr@gmail.com')->send(new AppointmentApprovedMail($data));
+        }
 
         return redirect()->route('appointment.index')->with('success', 'Data updated successfully!');
     }
