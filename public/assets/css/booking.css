@@ -74,7 +74,7 @@ color: var(--wdtBodyTxtColor);}
 /* IE 10+ */
 color: var(--wdtBodyTxtColor);}
 
-:-moz-placeholder 
+:-moz-placeholder
 {
 /* Firefox 18- */
 color: var(--wdtBodyTxtColor);}
@@ -340,7 +340,7 @@ ul.time-table>li:nth-child(6n+1),
 
 
 
-@media(max-width: 1280px) 
+@media(max-width: 1280px)
 {
 .dt-sc-reserve-appointment.type3 ul.time-table>li ul.time-slots>li {width: auto;}
 }
@@ -465,10 +465,10 @@ form[id*="reserveloginform"] input[type=password]:focus {border-color: var(--wdt
 .dt-sc-reservation-form.dt-appointment-form p>label {display: none;}
 .dt-sc-reservation-form.dt-appointment-form input[type="submit"] { background-color: var(--wdtPrimaryColor); margin-top: 0px; }
 
-.wdt-dark-bg .dt-sc-reservation-form.dt-appointment-form input[type="submit"] { 
+.wdt-dark-bg .dt-sc-reservation-form.dt-appointment-form input[type="submit"] {
     background-color: #fff; color: #000 !important; }
 .wdt-dark-bg .dt-sc-reservation-form.dt-appointment-form input[type="submit"]:hover,
-.wdt-dark-bg .dt-sc-reservation-form.dt-appointment-form input[type="submit"]:focus { 
+.wdt-dark-bg .dt-sc-reservation-form.dt-appointment-form input[type="submit"]:focus {
     background-color: var(--wdtSecondaryColor); color: #fff !important; }
 
 .dt-sc-reservation-form.dt-appointment-form .wpcf7-form-control-wrap:before {height: 2px;}
@@ -511,10 +511,10 @@ ul.time-slots>li a {border: 1px solid rgba(0, 0, 0, .06);display: inline-block;m
 
 .dt-sc-service-item.type1 { position: relative; }
 
-.dt-sc-service-item.type1 .image img { height: 100%; width: 100%; object-position: center center;
+.dt-sc-service-item.type1 .image img { height: 800px; width: 100%; object-position: center center;
     object-fit: cover; border-radius: var(--wdtRadius_3X); }
 
-.dt-sc-service-item.type1 > .image > .image-service-details { padding: clamp(1.25rem, 1.1058rem + 0.641vw, 1.875rem) /*20px - 30px*/; 
+.dt-sc-service-item.type1 > .image > .image-service-details { padding: clamp(1.25rem, 1.1058rem + 0.641vw, 1.875rem) /*20px - 30px*/;
     padding-top: 60px; text-align: start; align-self: end; z-index: 2; }
 
 .dt-sc-service-item.type1 > .image > .image-service-details > *:not(:last-child) { margin: 0 0 14px; }
@@ -522,25 +522,25 @@ ul.time-slots>li a {border: 1px solid rgba(0, 0, 0, .06);display: inline-block;m
 .dt-sc-service-item.type1 .service-details { text-align: left; padding: clamp(0.625rem, 0.4808rem + 0.641vw, 1.25rem) /* 10px - 20px */ 0px;
     -webkit-transition: var(--wdtAltTransition); transition: var(--wdtAltTransition); }
 
-.dt-sc-service-item.type1 .image-service-details .dt-sc-service-button > .dt-sc-button { 
-    font-size: var(--wdtFontSize_Ext); display: inline-block; -webkit-border-radius: var(--wdtRadius_Part); border-radius: var(--wdtRadius_Part); 
+.dt-sc-service-item.type1 .image-service-details .dt-sc-service-button > .dt-sc-button {
+    font-size: var(--wdtFontSize_Ext); display: inline-block; -webkit-border-radius: var(--wdtRadius_Part); border-radius: var(--wdtRadius_Part);
     padding: var(--wdtPadding_Btn); line-height: normal; width: auto; height: auto; background: transparent; border: 1px solid currentColor; }
 
 .dt-sc-service-item.type1 .image-service-details .dt-sc-service-button > .dt-sc-button:hover { border-color: var(--wdtSecondaryColor); }
 
-.dt-sc-service-item.type1 .image:before { content: ''; position: absolute; top: auto; bottom: 0px; left: 0px; width: 100%; height: 100%; 
-    background: linear-gradient(180deg, rgba(var(--wdtPrimaryColorRgb), 0) 0%, var(--wdtPrimaryColor) 90%); 
+.dt-sc-service-item.type1 .image:before { content: ''; position: absolute; top: auto; bottom: 0px; left: 0px; width: 100%; height: 100%;
+    background: linear-gradient(180deg, rgba(var(--wdtPrimaryColorRgb), 0) 0%, var(--wdtPrimaryColor) 90%);
     border-radius: var(--wdtRadius_3X); opacity: 0; pointer-events: none; }
 .dt-sc-service-item.type1:hover .image:before { opacity: 1; }
 
-.dt-sc-service-item.type1 .image-service-details > .dt-sc-service-price-group { display: flex; flex-wrap: wrap; margin-left: -10px !important; 
+.dt-sc-service-item.type1 .image-service-details > .dt-sc-service-price-group { display: flex; flex-wrap: wrap; margin-left: -10px !important;
     margin-right: -10px !important; width: auto; align-items: center; }
 .dt-sc-service-item.type1 .image-service-details > .dt-sc-service-price-group > .dt-sc-service-duration { margin: 0px; padding: 4px 10px; }
 .dt-sc-service-item.type1 .image-service-details > .dt-sc-service-price-group > .dt-sc-service-price {
     font-size: 120%; font-weight: 600; line-height: 1; margin-left: 10px; padding: 4px 10px; position: relative; }
 
 .dt-sc-service-item.type1 .image-service-details > .dt-sc-service-price-group > .dt-sc-service-price:before {
-    content: ""; position: absolute; background-color: currentColor; height: 1em; width: 1px; top: 50%; left: -1px; 
+    content: ""; position: absolute; background-color: currentColor; height: 1em; width: 1px; top: 50%; left: -1px;
     transform: translate(-50%, -50%) rotate(15deg); }
 
 
@@ -557,16 +557,16 @@ body[class*="archive-dt_service"] .dt-sc-service-item.type1 .service-details h4 
     .dt-sc-service-item.type1 > .image > .image-item,
     .dt-sc-service-item.type1 > .image > .image-service-details { grid-area: 1/-1; align-content: end; }
 
-    .dt-sc-service-item.type1 .image img { min-height: clamp(21.875rem, 18.8462rem + 13.4615vw, 35rem) /* 350px - 560px */; }
+    .dt-sc-service-item.type1 .image img {height: 800px; }
 
     .dt-sc-service-item.type1 .image-service-details h4 a { color: var(--wdtAccentTxtColor); }
     .dt-sc-service-item.type1 .image-service-details h4 a:hover { color: var(--wdtAccentTxtColor); opacity: 0.75; }
 
-    .dt-sc-service-item.type1 .image-service-details .dt-sc-service-duration, 
+    .dt-sc-service-item.type1 .image-service-details .dt-sc-service-duration,
     .dt-sc-service-item.type1 .image-service-details .dt-sc-service-meta ul li,
     .dt-sc-service-item.type1 .image-service-details .dt-sc-service-price,
     .dt-sc-service-item.type1 .image-service-details p,
-    .dt-sc-service-item.type1 .image-service-details .dt-sc-button { 
+    .dt-sc-service-item.type1 .image-service-details .dt-sc-button {
         -webkit-transition: var(--wdtAltTransition); transition: var(--wdtAltTransition); color: var(--wdtAccentTxtColor); }
 
 
@@ -575,7 +575,7 @@ body[class*="archive-dt_service"] .dt-sc-service-item.type1 .service-details h4 
     .dt-sc-service-item.type1 .image-service-details > div.dt-sc-service-price-group,
     .dt-sc-service-item.type1 .image-service-details > div.dt-sc-service-description,
     .dt-sc-service-item.type1 .image-service-details > div.dt-sc-service-button,
-    .dt-sc-service-item.type1 > .image:before { 
+    .dt-sc-service-item.type1 > .image:before {
         -webkit-transition: 375ms cubic-bezier(0.7, 0, 0.3, 1); transition: 375ms cubic-bezier(0.7, 0, 0.3, 1); }
 
     .dt-sc-service-item.type1:hover .service-details > .dt-sc-service-title,
@@ -586,9 +586,9 @@ body[class*="archive-dt_service"] .dt-sc-service-item.type1 .service-details h4 
     .dt-sc-service-item.type1:hover > .image:before {
         -webkit-transition: 500ms cubic-bezier(0.7, 0, 0.3, 1); transition: 500ms cubic-bezier(0.7, 0, 0.3, 1); }
 
-    .dt-sc-service-item.type1 .service-details > .dt-sc-service-title { 
+    .dt-sc-service-item.type1 .service-details > .dt-sc-service-title {
         transition-delay: 70ms; -webkit-transform: translateX(0px); transform: translateX(0px); opacity: 1; visibility: visible; }
-    .dt-sc-service-item.type1 .image-service-details > .dt-sc-service-title { 
+    .dt-sc-service-item.type1 .image-service-details > .dt-sc-service-title {
         transition-delay: 70ms; -webkit-transform: translateX(-30px); transform: translateX(-30px); opacity: 0; }
     .dt-sc-service-item.type1 .image-service-details > div.dt-sc-service-price-group {
         transition-delay: 60ms; -webkit-transform: translateX(-30px); transform: translateX(-30px); opacity: 0; }
@@ -609,13 +609,13 @@ body[class*="archive-dt_service"] .dt-sc-service-item.type1 .service-details h4 
         transition-delay: 350ms; -webkit-transform: translateX(0); transform: translateX(0); opacity: 1; }
 }
 
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
 
     .dt-sc-service-item.type1 > .image:before,
     .dt-sc-service-item.type1 .service-details { display: none; }
     .dt-sc-service-item.type1 > .image > .image-service-details { padding: clamp(1.25rem, 1.1058rem + 0.641vw, 1.875rem) /*20px - 30px*/ 0px; }
 
-    .dt-sc-service-item.type1 .image img { min-height: 260px; }
+    .dt-sc-service-item.type1 .image img { min-height: 400px; }
 
     .dt-sc-service-item.type1 .image-service-details .dt-sc-service-button > .dt-sc-button { color: var(--wdtHeadAltColor) !important; }
     .dt-sc-service-item.type1 .image-service-details .dt-sc-service-button > .dt-sc-button:hover { color: var(--wdtAccentTxtColor) !important; }
@@ -623,7 +623,7 @@ body[class*="archive-dt_service"] .dt-sc-service-item.type1 .service-details h4 
 
 
 
-@media (max-width:767px) 
+@media (max-width:767px)
 {
 .form-control { margin-bottom: 10px; }
 .form-control:has(> span.dt-sc-captcha) { margin: 30px 0; }
@@ -632,12 +632,12 @@ body[class*="archive-dt_service"] .dt-sc-service-item.type1 .service-details h4 
 
 /* Type - 1 End */
 
-@media (max-width:1280px) 
+@media (max-width:1280px)
 {
 .dt-sc-service-items-container {grid-template-columns: repeat(2, 1fr);}
 }
 
-@media screen and (max-width: 1024px) 
+@media screen and (max-width: 1024px)
 {
 .dt-sc-service-item.type1 .image>.image-item,
 .dt-sc-service-item.type2 .image>.image-item,
@@ -657,12 +657,12 @@ body[class*="archive-dt_service"] .dt-sc-service-item.type1 .service-details h4 
 .dt-sc-service-items-container::-webkit-scrollbar-thumb {background-color: var(--wdtPrimaryColor);border-radius: 0px;}
 }
 
-@media screen and (max-width: 600px) 
+@media screen and (max-width: 600px)
 {
 .dt-sc-service-items-container {grid-template-columns: 1fr;gap: 40px;}
 }
 
-@media screen and (max-width: 479px) 
+@media screen and (max-width: 479px)
 {
 .dt-sc-service-items-container {grid-template-columns: 1fr;gap: 30px;}
 }
@@ -746,7 +746,7 @@ body[class*="archive-dt_service"] .dt-sc-service-item.type1 .service-details h4 
 .dt_service-single {width: 100%;}
 .dt_service-single>.attachment-post-thumbnail {margin: 0 auto;display: block;}
 
-@media only screen and (min-width:1400px) 
+@media only screen and (min-width:1400px)
 {
 .dt_service-single>.attachment-post-thumbnail {object-fit: cover;height: 700px !important;object-position: center center;}
 }
@@ -806,7 +806,7 @@ form[class*="dt-sc-"] input[type=checkbox] + label.error { position: absolute; b
 .default-button a:hover,
 .default-button a:focus {-webkit-animation: pulse-shadow 1s;animation: pulse-shadow 1s;-webkit-box-shadow: 0 0 0 2em rgba(0, 0, 0, 0);box-shadow: 0 0 0 2em rgba(0, 0, 0, 0);}
 
-@keyframes pulse-shadow 
+@keyframes pulse-shadow
 {
 0% {-webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.06);box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.06);}
 }
@@ -853,12 +853,12 @@ form[class*="dt-sc-"] input[type=checkbox] + label.error { position: absolute; b
 /*** Responsive ***/
 
 
-@media only screen and (min-width: 768px) and (max-width: 1599px) 
+@media only screen and (min-width: 768px) and (max-width: 1599px)
 {
 .dt-sc-reserve-appointment2 .dt-sc-appointment-scheduler-form {margin: 0 auto;width: 100%;}
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) 
+@media only screen and (min-width: 768px) and (max-width: 1024px)
 {
 .center-service {text-align: center;}
 .center-service .elementor-widget-container {display: inline-block;}
@@ -868,12 +868,12 @@ form[class*="dt-sc-"] input[type=checkbox] + label.error { position: absolute; b
 .dt-sc-reserve-appointment2 .dt-sc-appointment-scheduler-form .dt-sc-one-third.column {margin: 0;width: 100%;}
 }
 
-@media only screen and (max-width:1280px) 
+@media only screen and (max-width:1280px)
 {
 .res-position {left: 0 !important;right: 0 !important;}
 }
 
-@media only screen and (max-width:1025px) 
+@media only screen and (max-width:1025px)
 {
 .type1.expert-archive {margin-bottom: -980px !important;}
 .res-position {position: static !important;text-align: center !important;}
@@ -882,13 +882,13 @@ form[class*="dt-sc-"] input[type=checkbox] + label.error { position: absolute; b
 .fw-section-2 {padding-right: 0 !important;}
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1380px) 
+@media only screen and (min-width: 1200px) and (max-width: 1380px)
 {
 body[class*="single"] #content,
 body[class*="archive"] #content {max-width: 1080px;}
 }
 
-@media only screen and (min-width:1200px) 
+@media only screen and (min-width:1200px)
 {
 .vc_row.wide-row,
 .dt-sc-view-reservations {max-width: 800px !important;margin: 0 auto !important;}
@@ -899,7 +899,7 @@ body[class*="archive"] #content {max-width: 1080px;}
 }
 
 
-@media only screen and (min-width:992px) and (max-width:1199px) 
+@media only screen and (min-width:992px) and (max-width:1199px)
 {
 .dt-sc-staff-item .staff-details h3 {font-size: 22px;}
 .page-two-column .vc_col-sm-6 .dt-sc-service-item.type2 {padding: 50px 15px 50px;}
@@ -945,12 +945,12 @@ body[class*="archive"] #content {max-width: 710px;}
 .staff-info h4 {font-size: 1.4rem;}
 }
 
-@media only screen and (min-width: 768px) 
+@media only screen and (min-width: 768px)
 {
 .staff-info {padding-left: 30px;}
 }
 
-@media only screen and (max-width: 767px) 
+@media only screen and (max-width: 767px)
 {
 .time-table-wrap ul.time-table>li {min-width: 50%;}
 .dt_staff-single>.attachment-post-thumbnail {width: 100% !important;margin: 0 auto;float: none;display: block;}
@@ -967,7 +967,7 @@ body[class*="archive"] #content {max-width: 710px;}
 .dt-sc-button {margin-top: 14px;padding: 12px 25px;}
 }
 
-@media only screen and (max-width: 767px) 
+@media only screen and (max-width: 767px)
 {
 .column {margin-bottom: 20px;margin-left: 0;}
 .dt-sc-one-fourth,
@@ -1039,7 +1039,7 @@ form[id*="reserveloginform"] input[type=text],
 form[id*="reserveloginform"] input[type=password] {width: 100%;}
 form[id*="reserveloginform"]>p:first-child {margin-bottom: 0;}}
 
-@media only screen and (max-width: 479px) 
+@media only screen and (max-width: 479px)
 {
 .tbl-view-reservations td,
 .tbl-view-reservations th {font-size: 12px;}
@@ -1074,7 +1074,7 @@ body[class*="archive"] #content {max-width: 260px;}
 .dt-sc-staff-items-container .dt-sc-staff-item.type2 {width: 25%;}
 .dt-sc-staff-items-container .dt-sc-staff-item.type3 {width: 100%;}
 .dt-sc-staff-items-container .dt-sc-staff-item a:empty { display: none; }
-.dt-sc-staff-items-container .dt-sc-staff-item.type1 .image > a { 
+.dt-sc-staff-items-container .dt-sc-staff-item.type1 .image > a {
     border-radius: var(--wdt-booking-Radius_Zero, 0); overflow: hidden; width: 100%; }
 .dt-sc-staff-items-container .dt-sc-staff-item.type1 .image > a .dt-image-item {
     position: relative;overflow: hidden; border-radius: var(--wdtRadius_3X); }
@@ -1083,27 +1083,27 @@ body[class*="archive"] #content {max-width: 260px;}
     -webkit-transition: var(--wdt-booking-Base_Transition); }
 .dt-sc-staff-items-container .dt-sc-staff-item.type1:hover .image > a .dt-image-item img {
     transform: scale(1);-webkit-transform: scale(1);}
-.dt-sc-staff-items-container .dt-sc-staff-item.type1 .image { display: grid; 
+.dt-sc-staff-items-container .dt-sc-staff-item.type1 .image { display: grid;
     margin: 0 0 clamp(1.25rem, 1.1058rem + 0.641vw, 1.875rem); overflow: hidden; width: 100%; }
 .dt-sc-staff-items-container .dt-sc-staff-item.type1 .image > a,
 .dt-sc-staff-items-container .dt-sc-staff-item.type1 .image > .dt-sc-staff-overlay { grid-area: 1/-1; }
-.dt-sc-staff-items-container .dt-sc-staff-item.type1 .image > .dt-sc-staff-overlay { z-index: 1; 
-    height: fit-content; width: fit-content; margin: 20px 20px auto auto; display: flex; align-items: flex-start; 
-    justify-content: flex-end; position: relative; bottom: 0; top: 0; opacity: 0; visibility: hidden; 
+.dt-sc-staff-items-container .dt-sc-staff-item.type1 .image > .dt-sc-staff-overlay { z-index: 1;
+    height: fit-content; width: fit-content; margin: 20px 20px auto auto; display: flex; align-items: flex-start;
+    justify-content: flex-end; position: relative; bottom: 0; top: 0; opacity: 0; visibility: hidden;
     transition: var(--wdt-booking-Alt_Transition); transition-delay: 0ms; transform: translateX(30px); }
 
-.dt-sc-staff-items-container .dt-sc-staff-item.type1:hover .image > .dt-sc-staff-overlay { 
+.dt-sc-staff-items-container .dt-sc-staff-item.type1:hover .image > .dt-sc-staff-overlay {
     transform: translateX(0px); opacity: 1; visibility: visible; transition-delay: 100ms; }
 
 .dt-sc-staff-items-container .dt-sc-staff-item:hover { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
-.dt-sc-staff-items-container .dt-sc-staff-item.type1 .staff-details { 
+.dt-sc-staff-items-container .dt-sc-staff-item.type1 .staff-details {
     padding: 0px; background-color: transparent; width: 100%; margin-top: 0;
     position: relative; transition: var(--wdt-booking-Alt_Transition); -webkit-transition: var(--wdt-booking-Alt_Transition); }
 
 .dt-sc-staff-items-container .dt-sc-staff-item.type1 .staff-details > div:not(:last-child) { margin: 0 0 8px; }
 .dt-sc-staff-items-container .dt-sc-staff-item.type1 .staff-details > div.dt-sc-staff-time { font-size: clamp(0.875rem, 0.8462rem + 0.1282vw, 1rem); }
 
-.dt-sc-staff-items-container .dt-sc-staff-item.type1 .staff-details h3 { 
+.dt-sc-staff-items-container .dt-sc-staff-item.type1 .staff-details h3 {
     font-size: clamp(1.25rem, 1.175rem + 0.375vw, 1.625rem); /* Min-20 & Max-26 */font-weight: var(--wdtFontWeight_Alt); margin: 0px;}
 .dt-sc-staff-items-container .dt-sc-staff-item.type1 .staff-details h3 a {color: var(--wdtLinkColor, #000000);}
 .dt-sc-staff-items-container .dt-sc-staff-item.type1 .staff-details h3 a:hover {color: var(--wdtLinkHoverColor, #D58F76);}
@@ -1111,26 +1111,26 @@ body[class*="archive"] #content {max-width: 260px;}
 /* .dt-sc-staff-items-container .dt-sc-staff-item.type1 .staff-details>p {display: block;margin: 0;font-size: 0;} */
 
 /* .dt-sc-staff-items-container .dt-sc-staff-item.type1 .staff-details > .dt-sc-button-item > a { margin-left: 28px;
-    font-size: var(--wdtFontSize_Base); margin-top: 0px; font-weight: normal !important; color: var(--wdtLinkHoverColor) !important; 
+    font-size: var(--wdtFontSize_Base); margin-top: 0px; font-weight: normal !important; color: var(--wdtLinkHoverColor) !important;
     background: transparent; padding: 2px 0px; position: relative; }
 .dt-sc-staff-items-container .dt-sc-staff-item.type1 .staff-details > .dt-sc-button-item > a:hover { background: transparent !important; } */
 
-.dt-sc-staff-items-container .dt-sc-staff-item.type1 .staff-details > .dt-sc-button-item > a { padding: 0; margin-top: 15px; 
-    position: relative; margin-left: 28px; color: var(--wdtSecondaryColor) !important; display: inline; 
+.dt-sc-staff-items-container .dt-sc-staff-item.type1 .staff-details > .dt-sc-button-item > a { padding: 0; margin-top: 15px;
+    position: relative; margin-left: 28px; color: var(--wdtSecondaryColor) !important; display: inline;
     background-image: linear-gradient(45deg, currentColor, currentColor) !important; background-color: transparent !important;
-    background-repeat: no-repeat !important; background-size: 0% 1px !important; background-position: bottom left !important; 
+    background-repeat: no-repeat !important; background-size: 0% 1px !important; background-position: bottom left !important;
     padding-bottom: 1px !important; }
 
 .dt-sc-staff-items-container .dt-sc-staff-item.type1 .staff-details > .dt-sc-button-item > a:hover,
-.dt-sc-staff-items-container .dt-sc-staff-item.type1 .staff-details > .dt-sc-button-item > a:focus { 
+.dt-sc-staff-items-container .dt-sc-staff-item.type1 .staff-details > .dt-sc-button-item > a:focus {
     background-size: 100% 1px !important; color: var(--wdtLinkHoverColor) !important; }
 
 /* .dt-sc-staff-items-container .dt-sc-staff-item.type1 .staff-details > .dt-sc-button-item > a:before {
-    content: ""; height: 1px; left: 0px; right: 0px; bottom: 1px; top: auto; background: currentColor; position: absolute; 
-    -webkit-transform: scale(1, 1); transform: scale(1, 1); -webkit-transition: transform var(--wdt-Ad-Transition); 
+    content: ""; height: 1px; left: 0px; right: 0px; bottom: 1px; top: auto; background: currentColor; position: absolute;
+    -webkit-transform: scale(1, 1); transform: scale(1, 1); -webkit-transition: transform var(--wdt-Ad-Transition);
     transition: transform var(--wdt-Ad-Transition); -webkit-transform-origin: left bottom; transform-origin: left bottom; */
 /* } */
-/* .dt-sc-staff-items-container .dt-sc-staff-item.type1 .staff-details > .dt-sc-button-item > a:hover:before { 
+/* .dt-sc-staff-items-container .dt-sc-staff-item.type1 .staff-details > .dt-sc-button-item > a:hover:before {
     -webkit-transform: scale(0, 1); transform: scale(0, 1); -webkit-transform-origin: right bottom; transform-origin: right bottom; } */
 
 .dt-sc-staff-items-container .dt-sc-staff-item.type1 .staff-details > .dt-sc-button-item > a:after {
@@ -1142,7 +1142,7 @@ body[class*="archive"] #content {max-width: 260px;}
 }
 .dt-sc-staff-items-container .dt-sc-staff-item.type1 .image > h6 {
     font-family: var(--wdtFontTypo_Base); color: var(--wdtLinkHoverColor);
-    font-size: clamp(0.75rem, 0.7212rem + 0.1282vw, 0.875rem); font-weight: var(--wdtFontWeight_Ext); text-transform: capitalize; 
+    font-size: clamp(0.75rem, 0.7212rem + 0.1282vw, 0.875rem); font-weight: var(--wdtFontWeight_Ext); text-transform: capitalize;
     letter-spacing: 0px; bottom: 0; left: 0; padding: 0.6em 1.5em; background: var(--wdtTertiaryColor); border-radius: var(--wdtRadius_Part);
     transition: var(--wdt-Ad-Transition); position: absolute; width: calc(100% - 2em); margin: 1em; max-width: max-content; }
 
@@ -1154,13 +1154,13 @@ body[class*="archive"] #content {max-width: 260px;}
   background-color: var(--wdtPrimaryColor); border-radius: var(--wdtRadius_Full); color: var(--wdtAccentTxtColor); position: relative;
   transition: var(--wdt-booking-Base_Transition); -webkit-transition: var(--wdt-booking-Base_Transition); z-index: 0; }
 .dt-sc-staff-items-container .dt-sc-staff-item.type1 .image>.dt-sc-staff-overlay .dt-sc-team-social li a.fab:hover,
-.dt-sc-staff-items-container .dt-sc-staff-item.type4 .dt-sc-team-social-share .dt-sc-team-social li a:hover { 
+.dt-sc-staff-items-container .dt-sc-staff-item.type4 .dt-sc-team-social-share .dt-sc-team-social li a:hover {
     color: var(--wdtAccentTxtColor, #fff); background-color: var(--wdtSecondaryColor, #D58F76); }
-.dt-sc-staff-items-container .dt-sc-staff-item.type1 .image>.dt-sc-staff-overlay .dt-sc-team-social { 
+.dt-sc-staff-items-container .dt-sc-staff-item.type1 .image>.dt-sc-staff-overlay .dt-sc-team-social {
     display: flex; flex-direction: column; margin: -5px 0; }
 .dt-sc-staff-items-container .dt-sc-staff-item.type1 .image>.dt-sc-staff-overlay .dt-sc-team-social > li,
-.dt-sc-staff-items-container .dt-sc-staff-item.type4 .dt-sc-team-social-share .dt-sc-team-social li { 
-    margin: 5px 0; transform: translateX(20px); -webkit-transform: translateX(20px); opacity: 0; 
+.dt-sc-staff-items-container .dt-sc-staff-item.type4 .dt-sc-team-social-share .dt-sc-team-social li {
+    margin: 5px 0; transform: translateX(20px); -webkit-transform: translateX(20px); opacity: 0;
     transition: var(--wdt-Ad-Transition); -webkit-transition: var(--wdt-Ad-Transition); }
 
 /* team transaction delay */
@@ -1212,14 +1212,14 @@ body[class*="archive"] #content {max-width: 260px;}
 .dt-sc-staff-items-container .dt-sc-staff-item.type4:hover .dt-sc-team-social-share .dt-sc-team-social li:nth-child(5),
 .dt-sc-staff-items-container .dt-sc-staff-item.type4 .dt-sc-team-social-share .dt-sc-team-social li:nth-child(1) {animation-delay: var(--wdt-staff-social-delay-05);-webkit-animation-delay: var(--wdt-staff-social-delay-05);}
 
-@keyframes wdt-staff-social-animation 
+@keyframes wdt-staff-social-animation
 {
 0% {transform: rotateY(0);-webkit-transform: rotateY(0);}
 50% {transform: rotateY(90deg);-webkit-transform: rotateY(90deg);}
 100% {transform: rotateY(0);-webkit-transform: rotateY(0);}
 }
 
-@-webkit-keyframes wdt-staff-social-animation 
+@-webkit-keyframes wdt-staff-social-animation
 {
 0% {transform: rotateY(0);-webkit-transform: rotateY(0);}
 50% {transform: rotateY(90deg);-webkit-transform: rotateY(90deg);}
@@ -1234,19 +1234,19 @@ body[class*="archive"] #content {max-width: 260px;}
 
 /* responsive */
 
-@media (max-width:1540px) 
+@media (max-width:1540px)
 {
 .dt-sc-staff-items-container:has(> .dt-sc-staff-item.type4) { grid-template-columns: repeat(2,1fr); }
 }
 
-@media (max-width:1280px) 
+@media (max-width:1280px)
 {
 .dt-sc-staff-items-container:has(.dt-sc-staff-item.type1):not(.swiper) {grid-template-columns: repeat(3, 1fr);}
 .dt-sc-team.type4 .dt-sc-team-details {padding: 30px 20px;}
 }
 
 
-@media screen and (max-width: 1024px) 
+@media screen and (max-width: 1024px)
 {
 .dt-sc-staff-items-container .dt-sc-staff-item.type1 .image>a {-webkit-mask-image: none;mask-image: none;}
 .dt-sc-staff-items-container .dt-sc-staff-item.type1 .image {width: 100%;}
@@ -1277,13 +1277,13 @@ body[class*="archive"] #content {max-width: 260px;}
 .swiper.dt-sc-staff-items-container .dt-sc-staff-item.type4 .dt-sc-team-thumb { flex: unset; }
 }
 
-@media (max-width:767px) 
+@media (max-width:767px)
 {
 .dt-sc-staff-items-container:has(> .dt-sc-staff-item.type4) {grid-template-columns: 1fr;}
 .dt-sc-staff-items-container:has(.dt-sc-staff-item.type1) {gap: 30px 20px;}
 }
 
-@media screen and (max-width: 600px) 
+@media screen and (max-width: 600px)
 {
 .dt-sc-staff-items-container .dt-sc-staff-item:not(.type3, .type4) {flex: 0 0 60%;}
 .dt-sc-staff-items-container:has(.dt-sc-staff-item.type1):not(.swiper) {grid-template-columns: 1fr;gap: 40px;}
@@ -1291,7 +1291,7 @@ body[class*="archive"] #content {max-width: 260px;}
 .dt-sc-staff-items-container .dt-sc-staff-item.type4 .dt-sc-team-thumb { flex: unset; }
 }
 
-@media screen and (max-width: 479px) 
+@media screen and (max-width: 479px)
 {
 .dt-sc-staff-items-container .dt-sc-staff-item:not(.type3) {flex: 0 0 80%;}
 .dt-sc-staff-items-container:has(.dt-sc-staff-item.type1):not(.swiper) {grid-template-columns: 1fr;gap: 30px;}
@@ -1312,7 +1312,7 @@ If Carousel Enabled
 /* popup form */
 
 .elementor-widget-dt-service-item:has(> .elementor-widget-container > .dt-sc-service-items-container.swiper > .swiper-wrapper > .swiper-slide > .dt-sc-service-item.type2 > .dt-sc-service-item-type2.active) {z-index: 99999;position: fixed;top: 0;left: 0;bottom: 0;right: 0;}
-.elementor-widget-dt-service-item .dt-sc-service-items-container.swiper .swiper-wrapper .swiper-slide 
+.elementor-widget-dt-service-item .dt-sc-service-items-container.swiper .swiper-wrapper .swiper-slide
 .dt-sc-service-item.type2:has(> .dt-sc-service-item-type2.active) { width: auto; }
 .elementor-widget-dt-service-item .dt-sc-service-items-container.swiper .swiper-wrapper .swiper-slide:has(> .dt-sc-service-item.type2 > .dt-sc-service-item-type2.active) {z-index: 99999;width: 100% !important;position: absolute;top: 0;left: 0;bottom: 0;right: 0;cursor: auto;pointer-events: none;transform: unset !important;-webkit-transform: unset !important;}
 .elementor-widget-dt-service-item .dt-sc-service-items-container.swiper .swiper-wrapper:has( > .swiper-slide > .dt-sc-service-item.type2 > .dt-sc-service-item-type2.active) {transform: unset !important;-webkit-transform: unset !important;}
@@ -1323,12 +1323,12 @@ If Carousel Enabled
 /* pagination dots */
 
 .elementor-widget-dt-service-item .dt-sc-service-items-container.swiper .swiper-pagination-bullets,
-.elementor-widget-dt-staff-item .dt-sc-staff-items-container.swiper .swiper-pagination-bullets { 
+.elementor-widget-dt-staff-item .dt-sc-staff-items-container.swiper .swiper-pagination-bullets {
     margin-top: clamp(1.875rem, 1.5865rem + 1.2821vw, 3.125rem); margin-bottom: -6px;width: fit-content;margin-left: auto;
     margin-right: auto;text-align: center;}
 .elementor-widget-dt-service-item .dt-sc-service-items-container.swiper .swiper-pagination-bullets .swiper-pagination-bullet,
 .elementor-widget-dt-staff-item .dt-sc-staff-items-container.swiper .swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 6px; width: 15px; height: 12px; padding: 0; background: none; opacity: 1; 
+    margin: 6px; width: 15px; height: 12px; padding: 0; background: none; opacity: 1;
     border-radius: var(--wdtRadius_Zero);-webkit-border-radius: var(--wdtRadius_Zero);position: relative;
     transition: var(--wdt-booking-Alt_Transition);-webkit-transition: var(--wdt-booking-Alt_Transition);}
 .elementor-widget-dt-service-item .dt-sc-service-items-container.swiper .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active,
@@ -1347,15 +1347,15 @@ If Carousel Enabled
 .elementor-widget-dt-staff-item .dt-sc-staff-items-container.swiper .swiper-pagination-bullets .swiper-pagination-bullet:hover:after {
     background-color: var(--wdtHeadAltColor); }
 /* .elementor-widget-dt-service-item .dt-sc-service-items-container.swiper .swiper-pagination-bullets .swiper-pagination-bullet:before,
-.elementor-widget-dt-staff-item .dt-sc-staff-items-container.swiper .swiper-pagination-bullets .swiper-pagination-bullet:before { 
+.elementor-widget-dt-staff-item .dt-sc-staff-items-container.swiper .swiper-pagination-bullets .swiper-pagination-bullet:before {
     width: 100%; height: 100%; border: 2px solid var(--wdtPrimaryColor); opacity: 0; }
 .elementor-widget-dt-service-item .dt-sc-service-items-container.swiper .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active:before,
-.elementor-widget-dt-staff-item .dt-sc-staff-items-container.swiper .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active:before { 
+.elementor-widget-dt-staff-item .dt-sc-staff-items-container.swiper .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active:before {
     opacity: 1; } */
 
 /* responsive */
 
-@media (max-width:1280px) 
+@media (max-width:1280px)
 {
 .elementor-widget-dt-service-item .dt-sc-service-items-container.swiper,
 .elementor-widget-dt-staff-item .dt-sc-staff-items-container.swiper {margin: 0 -10px;}
@@ -1370,12 +1370,12 @@ If Carousel Enabled
 
 @media(min-width: 1281px) {
 
-    .elementor-widget-dt-service-item .dt-sc-service-items-container.swiper .swiper-wrapper .swiper-slide:nth-child(odd) { 
+    .elementor-widget-dt-service-item .dt-sc-service-items-container.swiper .swiper-wrapper .swiper-slide:nth-child(odd) {
         padding-bottom: clamp(1.25rem, -2rem + 4.0625vw, 2.875rem); }
-    .elementor-widget-dt-service-item .dt-sc-service-items-container.swiper .swiper-wrapper .swiper-slide:nth-child(even) { 
+    .elementor-widget-dt-service-item .dt-sc-service-items-container.swiper .swiper-wrapper .swiper-slide:nth-child(even) {
         padding-top: clamp(1.25rem, -2rem + 4.0625vw, 2.875rem); }
 
-    .elementor-widget-dt-service-item .dt-sc-service-items-container.swiper { overflow: visible; 
+    .elementor-widget-dt-service-item .dt-sc-service-items-container.swiper { overflow: visible;
         -webkit-clip-path: inset(-2px -100vmax -2px -100vmax); clip-path: inset(-2px -100vmax -2px -100vmax); }
 }
 
@@ -1411,101 +1411,101 @@ Social Icons
 .dt-sc-reserve-appointment,
 .dt-sc-reserve-appointment2{background: var(--wdtTertiaryColor);padding: clamp(1.25rem, 0.875rem + 1.875vw, 3.125rem);border-radius: var(--wdtRadius_3X);float: left;width: 100%;}
 .elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] label{font-weight: var(--wdtFontWeight_Ext);color: var(--wdtHeadAltColor);font-size: var(--wdtFontSize_Base);margin-bottom: 5px;}
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="text"], 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="password"], 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="email"], 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="url"], 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="tel"], 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="number"], 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="range"], 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="date"], 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="search"], 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input.text, 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] textarea, 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] select, 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-search .select2-search__field, 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-search--dropdown .select2-search__field, 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-search--inline .select2-search__field, 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-selection--single, 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-selection--multiple, 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="text"], 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="password"], 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="email"], 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="url"], 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="tel"], 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="number"], 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="range"], 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="date"], 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="search"], 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input.text, 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form textarea, .elementor-widget-dt-reserve-appointment .dt-sc-reservation-form select, 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-search .select2-search__field, 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-search--dropdown .select2-search__field, 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-search--inline .select2-search__field, 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-selection--single, 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-selection--multiple, 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .form-control.dtstaff-drop-down .button, 
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="text"],
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="password"],
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="email"],
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="url"],
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="tel"],
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="number"],
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="range"],
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="date"],
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="search"],
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input.text,
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] textarea,
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] select,
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-search .select2-search__field,
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-search--dropdown .select2-search__field,
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-search--inline .select2-search__field,
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-selection--single,
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-selection--multiple,
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="text"],
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="password"],
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="email"],
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="url"],
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="tel"],
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="number"],
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="range"],
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="date"],
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="search"],
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input.text,
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form textarea, .elementor-widget-dt-reserve-appointment .dt-sc-reservation-form select,
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-search .select2-search__field,
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-search--dropdown .select2-search__field,
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-search--inline .select2-search__field,
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-selection--single,
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-selection--multiple,
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .form-control.dtstaff-drop-down .button,
 .elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .form-control.dtstaff-drop-down .button{
     background-color: transparent !important;border-width: 1px;border-color: rgba(var(--wdtHeadAltColorRgb), 0.15) !important;
     font-weight: var(--wdtFontWeight_Base);color: var(--wdtBodyTxtColor);padding: var(--wdtInputPadding);
     font-size: var(--wdtFontSize_Ext);border-radius: var(--wdtRadius_3X);line-height: 1;backface-visibility: hidden;}
 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="text"]:focus, 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="password"]:focus, 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="email"]:focus, 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="url"]:focus, 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="tel"]:focus, 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="number"]:focus, 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="range"]:focus, 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="date"]:focus, 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="search"]:focus, 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input.text:focus, 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] textarea:focus, 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] select:focus, 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-search .select2-search__field:focus, 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-search--dropdown .select2-search__field:focus, 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-search--inline .select2-search__field:focus, 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-selection--single:focus, 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-selection--multiple:focus, 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="text"]:focus, 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="password"]:focus, 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="email"]:focus, 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="url"]:focus, 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="tel"]:focus, 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="number"]:focus, 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="range"]:focus, 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="date"]:focus, 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="search"]:focus, 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input.text:focus, 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form textarea:focus, .elementor-widget-dt-reserve-appointment .dt-sc-reservation-form select:focus, 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-search .select2-search__field:focus, 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-search--dropdown .select2-search__field:focus, 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-search--inline .select2-search__field:focus, 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-selection--single:focus, 
-.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-selection--multiple:focus, 
-.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .form-control.dtstaff-drop-down .button:focus, 
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="text"]:focus,
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="password"]:focus,
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="email"]:focus,
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="url"]:focus,
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="tel"]:focus,
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="number"]:focus,
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="range"]:focus,
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="date"]:focus,
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="search"]:focus,
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input.text:focus,
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] textarea:focus,
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] select:focus,
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-search .select2-search__field:focus,
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-search--dropdown .select2-search__field:focus,
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-search--inline .select2-search__field:focus,
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-selection--single:focus,
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-selection--multiple:focus,
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="text"]:focus,
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="password"]:focus,
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="email"]:focus,
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="url"]:focus,
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="tel"]:focus,
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="number"]:focus,
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="range"]:focus,
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="date"]:focus,
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="search"]:focus,
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input.text:focus,
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form textarea:focus, .elementor-widget-dt-reserve-appointment .dt-sc-reservation-form select:focus,
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-search .select2-search__field:focus,
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-search--dropdown .select2-search__field:focus,
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-search--inline .select2-search__field:focus,
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-selection--single:focus,
+.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-selection--multiple:focus,
+.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .form-control.dtstaff-drop-down .button:focus,
 .elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .form-control.dtstaff-drop-down .button:focus{border-color: rgba(var(--wdtHeadAltColorRgb), 1) !important;}
 .form-control.dtstaff-drop-down .button span{padding: 2px 0;color: var(--wdtBodyTxtColor);line-height: normal;}
-.elementor-widget-dt-reserve-appointment .dt-sc-schedule-box, 
-.elementor-widget-dt-reserve-appointment .dt-sc-contactdetails-box, 
+.elementor-widget-dt-reserve-appointment .dt-sc-schedule-box,
+.elementor-widget-dt-reserve-appointment .dt-sc-contactdetails-box,
 .elementor-widget-dt-reserve-appointment .dt-sc-notification-box{float: unset;}
 .elementor-widget-dt-reserve-appointment .dt-sc-schedule-progress.dt-sc-current-step .dt-sc-progress-step span{color: var(--wdtAccentTxtColor);}
-.elementor-widget-dt-reserve-appointment .entry-content button, 
-.elementor-widget-dt-reserve-appointment .entry-content input[type="button"], 
-.elementor-widget-dt-reserve-appointment .entry-content input[type="submit"], 
-.elementor-widget-dt-reserve-appointment .entry-content .dt-sc-button, 
+.elementor-widget-dt-reserve-appointment .entry-content button,
+.elementor-widget-dt-reserve-appointment .entry-content input[type="button"],
+.elementor-widget-dt-reserve-appointment .entry-content input[type="submit"],
+.elementor-widget-dt-reserve-appointment .entry-content .dt-sc-button,
 .elementor-widget-dt-reserve-appointment .dt-sc-button{text-transform: capitalize;font-size: var(--wdtFontSize_Ext);padding: var(--wdtPadding_Btn);font-family: var(--wdtFontTypo_Base);font-weight: var(--wdtFontWeight_Ext);line-height: 1;background: var(--wdtPrimaryColor);-webkit-border-radius: var(--wdtRadius_Part);border-radius: var(--wdtRadius_Part);margin-top: 0;}
-.elementor-widget-dt-reserve-appointment .entry-content button:hover, 
-.elementor-widget-dt-reserve-appointment .entry-content input[type="button"]:hover, 
-.elementor-widget-dt-reserve-appointment .entry-content input[type="submit"]:hover, 
-.elementor-widget-dt-reserve-appointment .entry-content .dt-sc-button:hover, 
-.elementor-widget-dt-reserve-appointment .entry-content button:focus, 
-.elementor-widget-dt-reserve-appointment .entry-content input[type="button"]:focus, 
-.elementor-widget-dt-reserve-appointment .entry-content input[type="submit"]:focus, 
-.elementor-widget-dt-reserve-appointment .entry-content .dt-sc-button:focus, 
-.elementor-widget-dt-reserve-appointment .dt-sc-button:hover, 
-.elementor-widget-dt-reserve-appointment .dt-sc-button:focus, 
-.elementor-widget-dt-reserve-appointment .default-button a:hover, 
+.elementor-widget-dt-reserve-appointment .entry-content button:hover,
+.elementor-widget-dt-reserve-appointment .entry-content input[type="button"]:hover,
+.elementor-widget-dt-reserve-appointment .entry-content input[type="submit"]:hover,
+.elementor-widget-dt-reserve-appointment .entry-content .dt-sc-button:hover,
+.elementor-widget-dt-reserve-appointment .entry-content button:focus,
+.elementor-widget-dt-reserve-appointment .entry-content input[type="button"]:focus,
+.elementor-widget-dt-reserve-appointment .entry-content input[type="submit"]:focus,
+.elementor-widget-dt-reserve-appointment .entry-content .dt-sc-button:focus,
+.elementor-widget-dt-reserve-appointment .dt-sc-button:hover,
+.elementor-widget-dt-reserve-appointment .dt-sc-button:focus,
+.elementor-widget-dt-reserve-appointment .default-button a:hover,
 .elementor-widget-dt-reserve-appointment .default-button a:focus{color: var(--wdtAccentTxtColor) !important;}
 .elementor-widget-dt-reserve-appointment .dt-sc-title h2.appointment-title,
 .elementor-widget-dt-reserve-appointment .dt-sc-schedule-box h2 {margin-bottom: 25px;}
@@ -1523,12 +1523,12 @@ Social Icons
 .form-control.dtstaff-drop-down .select-list li span.staff-role i{color: var(--wdtHeadAltColor);font-size: var(--wdtFontSize_Base);line-height: 1;}
 .ui-datepicker th{color: var(--wdtAccentTxtColor);font-family: var(--wdtFontTypo_Base);}
 .ui-datepicker .ui-datepicker-title{font-family: var(--wdtFontTypo_Base);}
-#ui-datepicker-div .ui-widget-header, 
-#ui-datepicker-div .ui-state-default, 
-#ui-datepicker-div .ui-widget-content .ui-state-default, 
+#ui-datepicker-div .ui-widget-header,
+#ui-datepicker-div .ui-state-default,
+#ui-datepicker-div .ui-widget-content .ui-state-default,
 #ui-datepicker-div .ui-widget-header .ui-state-default{font-family: var(--wdtFontTypo_Base);font-weight: var(--wdtFontWeight_Ext);}
 .elementor-widget-dt-reserve-appointment ul.time-table > li span,
-.elementor-widget-dt-reserve-appointment ul.time-table > li .time-head > span.name, 
+.elementor-widget-dt-reserve-appointment ul.time-table > li .time-head > span.name,
 .elementor-widget-dt-reserve-appointment ul.time-table > li .time-head > span.price{display: inline-block;margin: 0 8px;font-size: var(--wdtFontSize_Base);font-family: var(--wdtFontTypo_Base);font-weight: var(--wdtFontWeight_Base);}
 .dt-sc-reserve-appointment.type1 ul.time-table > li ul.time-slots > li a{border: none;font-size: var(--wdtFontSize_Ext);font-weight: var(--wdtFontWeight_Ext);color: var(--wdtHeadAltColor);padding: 12px 0px;line-height: 1;margin: 2px 0; }
 .dt-sc-reserve-appointment.type1 ul.time-table > li ul.time-slots > li a:hover{background-color: var(--wdtPrimaryColor);color: var(--wdtAccentTxtColor);}
@@ -1540,7 +1540,7 @@ ul.time-table > li.selected{background-color: rgba(var(--wdtSecondaryColorRgb), 
 .dt-sc-booking-reservation .aligncenter .dt-sc-button{margin-top: 20px;}
 .elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] form.dt-sc-booking-reservation.default .select2-container.select2-container--default .select2-selection--single{display: flex;align-items: center;}
 .total-cinfo-wrapper span.dt-sc-display-timing{border-bottom: 1px solid rgba(var(--wdtSecondaryColorRgb), 0.35);}
-.dt-sc-booking-reservation.default input[name="captcha"] + .dt-sc-captcha, 
+.dt-sc-booking-reservation.default input[name="captcha"] + .dt-sc-captcha,
 .dt-sc-booking-reservation.default input[name="captcha"] + label + .dt-sc-captcha{background: transparent;border: 1px solid rgba(var(--wdtHeadAltColorRgb), 0.15);border-radius: var(--wdtRadius_2X);}
 .admin-bar .select2-container--open .select2-dropdown{border-radius: 0 !important;}
 ul.time-table > li{-webkit-box-shadow: none;box-shadow: none;background: var(--wdtBodyBGColor);}
@@ -1552,17 +1552,17 @@ ul.time-table > li{-webkit-box-shadow: none;box-shadow: none;background: var(--w
 .dt-sc-reserve-appointment.type3 .hasDatepicker .ui-datepicker .ui-datepicker-header{background-color: var(--wdtPrimaryColor) !important;border: none !important;}
 .dt-sc-reserve-appointment.type3 .hasDatepicker .ui-datepicker .ui-datepicker-title{color: var(--wdtAccentTxtColor);}
 .dt-sc-reserve-appointment.type3 .ui-datepicker th{border-top: 2px solid var(--wdtBorderColor);background-color: rgba(var(--wdtPrimaryColorRgb), 0.95) !important;color: var(--wdtAccentTxtColor);}
-.dt-sc-reserve-appointment.type3 .ui-state-default, 
-.dt-sc-reserve-appointment.type3 .ui-widget-content .ui-state-default, 
+.dt-sc-reserve-appointment.type3 .ui-state-default,
+.dt-sc-reserve-appointment.type3 .ui-widget-content .ui-state-default,
 .dt-sc-reserve-appointment.type3 .ui-widget-header .ui-state-default{font-family: var(--wdtFontTypo_Base);font-weight: var(--wdtFontWeight_Ext);}
-.dt-sc-reserve-appointment.type3 td:not(.ui-state-disabled) .ui-state-default:hover, 
-.dt-sc-reserve-appointment.type3 .ui-widget-content td:not(.ui-state-disabled) .ui-state-default:hover, 
+.dt-sc-reserve-appointment.type3 td:not(.ui-state-disabled) .ui-state-default:hover,
+.dt-sc-reserve-appointment.type3 .ui-widget-content td:not(.ui-state-disabled) .ui-state-default:hover,
 .dt-sc-reserve-appointment.type3 .ui-widget-content td:not(.ui-state-disabled) .ui-state-active{background: var(--wdtPrimaryColor);color: var(--wdtAccentTxtColor);}
 .dt-sc-reserve-appointment.type3 > div.column:nth-child(8):has(div#caldatepickerContent:empty) {margin: 0 !important;}
 .dt-sc-reserve-appointment.type3 .ui-widget-header .ui-icon::before{background-color: var(--wdtAccentTxtColor);}
 
 /* .elementor-widget-dt-reserve-appointment .available-times .dt-sc-title span.price{color: var(--wdtHeadAltColor);} */
-[class*="dt-sc-reserve-appointment"] input[type="checkbox"], 
+[class*="dt-sc-reserve-appointment"] input[type="checkbox"],
 [class*="dt-sc-reserve-appointment"] input[type="radio"]{top: 6px;}
 
 .available-times .dt-sc-title h3{background: var(--wdtPrimaryColor);color: var(--wdtAccentTxtColor);}
@@ -1580,58 +1580,58 @@ ul.time-table > li{-webkit-box-shadow: none;box-shadow: none;background: var(--w
 
 /* wdt-dark-bg */
 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .entry-content button, 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .entry-content input[type="button"], 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .entry-content input[type="submit"], 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .entry-content .dt-sc-button, 
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .entry-content button,
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .entry-content input[type="button"],
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .entry-content input[type="submit"],
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .entry-content .dt-sc-button,
 .wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-button{border: 1px solid;color: var(--wdtAccentTxtColor) !important;}
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .entry-content button:hover, 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .entry-content input[type="button"]:hover, 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .entry-content input[type="submit"]:hover, 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .entry-content .dt-sc-button:hover, 
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .entry-content button:hover,
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .entry-content input[type="button"]:hover,
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .entry-content input[type="submit"]:hover,
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .entry-content .dt-sc-button:hover,
 .wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-button:hover{color: var(--wdtSecondaryColor) !important;}
 .wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] label{color: var(--wdtAccentTxtColor);}
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="text"], 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="password"], 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="email"], 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="url"], 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="tel"], 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="number"], 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="range"], 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="date"], 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="search"], 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input.text, 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] textarea, 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] select, 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-search .select2-search__field, 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-search--dropdown .select2-search__field, 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-search--inline .select2-search__field, 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-selection--single, 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-selection--multiple, 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="text"], 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="password"], 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="email"], 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="url"], 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="tel"], 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="number"], 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="range"], 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="date"], 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="search"], 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input.text, 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form textarea, 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form select, 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-search .select2-search__field, 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-search--dropdown .select2-search__field, 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-search--inline .select2-search__field, 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-selection--single, 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-selection--multiple, 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .form-control.dtstaff-drop-down .button, 
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="text"],
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="password"],
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="email"],
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="url"],
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="tel"],
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="number"],
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="range"],
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="date"],
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input[type="search"],
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] input.text,
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] textarea,
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] select,
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-search .select2-search__field,
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-search--dropdown .select2-search__field,
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-search--inline .select2-search__field,
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-selection--single,
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .select2-container.select2-container--default .select2-selection--multiple,
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="text"],
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="password"],
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="email"],
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="url"],
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="tel"],
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="number"],
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="range"],
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="date"],
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input[type="search"],
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form input.text,
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form textarea,
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form select,
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-search .select2-search__field,
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-search--dropdown .select2-search__field,
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-search--inline .select2-search__field,
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-selection--single,
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .select2-container.select2-container--default .select2-selection--multiple,
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] .form-control.dtstaff-drop-down .button,
 .wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-reservation-form .form-control.dtstaff-drop-down .button,
 .wdt-dark-bg .form-control.dtstaff-drop-down .button span{color: var(--wdtAccentTxtColor);}
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .entry-content button:hover, 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .entry-content input[type="button"]:hover, 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .entry-content input[type="submit"]:hover, 
-.wdt-dark-bg.elementor-widget-dt-reserve-appointment .entry-content .dt-sc-button:hover, 
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .entry-content button:hover,
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .entry-content input[type="button"]:hover,
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .entry-content input[type="submit"]:hover,
+.wdt-dark-bg.elementor-widget-dt-reserve-appointment .entry-content .dt-sc-button:hover,
 .wdt-dark-bg.elementor-widget-dt-reserve-appointment .dt-sc-button:hover{color: var(--wdtAccentTxtColor) !important;background: var(--wdtHeadAltColor) !important;border-color: var(--wdtHeadAltColor);}
 
 .wdt-dark-bg.elementor-widget-dt-reserve-appointment [class*="dt-sc-reserve-appointment"] select option{color: var(--wdtBodyTxtColor);}
@@ -1639,7 +1639,7 @@ ul.time-table > li{-webkit-box-shadow: none;box-shadow: none;background: var(--w
 @media only screen and (max-width:480px)
 {
     .dt-sc-booking-reservation.default input[name="captcha"]{    width: 100%;}
-    .dt-sc-booking-reservation.default input[name="captcha"]+.dt-sc-captcha, 
+    .dt-sc-booking-reservation.default input[name="captcha"]+.dt-sc-captcha,
     .dt-sc-booking-reservation.default input[name="captcha"]+label+.dt-sc-captcha{position: relative;-webkit-transform: unset;transform: unset;margin-top: 30px;padding: 5px 0;}
     .dt-sc-reserve-appointment.type1 ul.time-table>li ul.time-slots>li a{width: auto;max-width: unset;min-width: unset;}
     .available-times .dt-sc-title h3{flex-wrap: wrap;gap: 10px;}
