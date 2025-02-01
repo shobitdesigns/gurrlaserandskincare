@@ -2938,6 +2938,34 @@
 																											</li>
 																										</ul>
 																									</li> -->
+
+                                                                                                    <li id="menu-item-149"
+                                                                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-149 menu-item-depth-0">
+                                                                                                     <a
+                                                                                                        href="javascript:void(0)"><span
+                                                                                                            data-text="%1$s">Laser Treatment Options</span></a>
+                                                                                                     <ul
+                                                                                                        class="sub-menu is-hidden">
+                                                                                                        <li
+                                                                                                        class="close-nav">
+                                                                                                        <a
+                                                                                                            href="javascript:void(0);"></a>
+                                                                                                    </li>
+                                                                                                    <li class="go-back">
+                                                                                                        <a
+                                                                                                            href="javascript:void(0);"></a>
+                                                                                                    </li>
+                                                                                                        @foreach($laserHairRemovalOptions as $laserHairRemovalOption)
+                                                                                                        <li id="menu-item-142"
+                                                                                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-142 menu-item-depth-1">
+                                                                                                            <a
+                                                                                                                href="{{ route('laserServiceDetail',['id'=>$laserHairRemovalOption->id]) }}"><span
+                                                                                                                    data-text="%1$s">{{ $laserHairRemovalOption->name }}</span></a>
+                                                                                                        </li>
+                                                                                                        @endforeach
+
+                                                                                                    </ul>
+                                                                                                </li>
 																									<li
 																										class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1543 menu-item-depth-0">
 																										<a
