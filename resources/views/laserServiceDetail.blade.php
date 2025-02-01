@@ -2985,7 +2985,7 @@
                                                                                                         href="javascript:void(0)"><span
                                                                                                             data-text="%1$s">Laser Treatment Options</span></a>
                                                                                                      <ul
-                                                                                                        class="sub-menu is-hidden">
+                                                                                                        class="sub-menu is-hidden customHeightmenu">
                                                                                                         <li
                                                                                                         class="close-nav">
                                                                                                         <a
