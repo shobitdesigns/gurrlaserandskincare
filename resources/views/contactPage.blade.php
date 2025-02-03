@@ -6735,8 +6735,7 @@
 																				wdt_animation_effect":"none"}"=""
 																				data-widget_type="text-editor.default">
 																				<div class="elementor-widget-container">
-																					<p>@2024 <a href="/">Code
-																							Academics</a>.
+																					<p>@2024 <a href="/"> Globency Media</a>.
 																						All Rights Reserved</p>
 																				</div>
 																			</div>
@@ -7673,8 +7672,7 @@
 																				wdt_animation_effect":"none"}"=""
 																				data-widget_type="text-editor.default">
 																				<div class="elementor-widget-container">
-																					<p>@2024 <a href="/">Code
-																							Academics</a>.
+																					<p>@2024 <a href="/"> Globency Media</a>.
 																						All Rights Reserved</p>
 																				</div>
 																			</div>
