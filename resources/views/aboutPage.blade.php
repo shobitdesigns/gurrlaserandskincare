@@ -3771,10 +3771,7 @@
 																		class="wdt-heading-title-wrapper wdt-heading-align- wdt-heading-deco-wrapper">
 																		<span class="wdt-heading-title">Enable You To
 																			Speak With Our Specialist</span></h2>
-																	<div class="wdt-heading-content-wrapper"> Hac
-																		faucibus maximus tellus; dui porta lacinia a
-																		risus porttitor. Platea dapibus inceptos a mi
-																		magna mus posuere.</div>
+																	<div class="wdt-heading-content-wrapper"> Our specialists are ready to assist you. Get expert advice tailored to your needs.</div>
 																</div>
 															</div>
 														</div>

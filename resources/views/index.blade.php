@@ -5742,9 +5742,7 @@
 														class="wdt-heading-title-wrapper wdt-heading-align- wdt-heading-deco-wrapper">
 														<span class="wdt-heading-title">Client Feedback</span>
 													</h2>
-													<div class="wdt-heading-content-wrapper">Curabitur adipiscing
-														gravida parturient aliquet sodales consequat vehicula
-														nulla.Tempus ante nec tristique aenean non scelerisque.</div>
+													<div class="wdt-heading-content-wrapper">Discover radiant, healthy skin with our expert skincare solutions. From nourishing creams to targeted treatments, we bring you the best in skincare for every skin type. Experience the glow you deserve with products designed to hydrate, protect, and rejuvenate.</div>
 												</div>
 											</div>
 										</div>

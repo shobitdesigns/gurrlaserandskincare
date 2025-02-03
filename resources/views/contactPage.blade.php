@@ -3636,23 +3636,7 @@
 																															</h2>
 																															<div
 																																class="wdt-heading-content-wrapper">
-																																Hac
-																																curabitur
-																																viverra
-																																montes
-																																eleifend
-																																convallis
-																																lectus
-																																nullam
-																																montes.
-																																Congue
-																																massa
-																																scelerisque
-																																ipsum
-																																a
-																																pellentesque
-																																sem
-																																placerat.
+																																Explore our in-town branches conveniently located to serve you. Our branches offer expert skincare consultations and premium products to meet your needs.
 																															</div>
 																														</div>
 																													</div>
