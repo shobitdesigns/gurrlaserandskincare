@@ -3788,7 +3788,7 @@
                                                                                         <p>{{$laserService->description}}</p>
                                                                                     </div>
 
-                                                                                    <a href="" class="calltoaction">Book now</a>
+                                                                                    <a href="{{ route('bookAppointment') }}" class="calltoaction">Book now</a>
                                                                                 </div>
                                                                                 <div class="rightOne">
                                                                                     <span>
