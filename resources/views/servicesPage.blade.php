@@ -3588,7 +3588,7 @@
 																		<div class="wdt-button-holder wdt-template-filled wdt-button-link wdt-button-style-default wdt-button-size-nm wdt-animation- wdt-button-icon-before"
 																			id="wdt-button-375f80a"><a
 																				class="wdt-button"
-																				href="/">
+																				href=" {{ route('bookAppointment') }}">
 																				<div class="wdt-button-icon">
 																					<span><i><svg
 																								xmlns="http://www.w3.org/2000/svg"
@@ -3605,7 +3605,7 @@
 																							</svg></i></span>
 																				</div>
 																				<div class="wdt-button-text">
-																					<span><a href="{{ route('bookAppointment') }}">Appointment</a></span>
+																					<span>Appointment</span>
 																				</div>
 																			</a></div>
 																	</div>

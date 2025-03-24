@@ -2159,6 +2159,15 @@
 																											</li>
 																										</ul> -->
 																									</li>
+
+                                                                                                    <li
+                                                                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-126 menu-item-depth-0">
+                                                                                                    <a
+                                                                                                        href="{{ route('bookAppointment') }}"><span
+                                                                                                            data-text="%1$s">Book Appointment
+                                                                                                            </span></a>
+
+                                                                                                </li>
 																									<li
 																										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-301 menu-item-depth-0">
 																										<a
@@ -2223,14 +2232,7 @@
 																												Us</span></a>
 
 																									</li>
-																									<li
-																										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-126 menu-item-depth-0">
-																										<a
-																											href="{{ route('bookAppointment') }}"><span
-																												data-text="%1$s">Book Appointment
-																												</span></a>
 
-																									</li>
 																								</ul>
 																								<div
 																									class="sub-menu-overlay">
@@ -2619,7 +2621,8 @@
 																		<div class="wdt-button-holder wdt-template-filled wdt-button-link wdt-button-style-default wdt-button-size-nm wdt-animation- wdt-button-icon-before"
 																			id="wdt-button-ba04b25"><a
 																				class="wdt-button"
-																				href="/">
+																				href=" {{ route('bookAppointment') }}">
+
 																				<div class="wdt-button-icon">
 																					<span><i><svg
 																								xmlns="http://www.w3.org/2000/svg"
@@ -2636,7 +2639,7 @@
 																							</svg></i></span>
 																				</div>
 																				<div class="wdt-button-text">
-																					<span><a href="{{ route('bookAppointment') }}">Appointment</a></span>
+																					<span>Appointment</span>
 																				</div>
 																			</a></div>
 																	</div>

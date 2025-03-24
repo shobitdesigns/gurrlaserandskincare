@@ -152,6 +152,8 @@
         <div class="loader"></div>
     </div>
 
+
+
     <div class="tabs">
         <div class="tab active" data-target="serviceTab">Service</div>
         <div class="tab" data-target="laserTab">Laser Service</div>
@@ -250,11 +252,14 @@
             let location = document.getElementById("userLocation").value.trim();
             let date = document.getElementById("appointmentDate").value;
             let token = document.querySelector('meta[name="csrf-token"]').getAttribute("content");
+            let loader = document.querySelector('.loaderparent');
 
             if (!name || !email || !location || !date || !selectedTime || !selectedServiceName) {
                 alert("Please fill in all fields and select a time slot.");
                 return;
             }
+
+            loader.style.display = "flex";
 
             fetch("{{ route('appointmentStore') }}", {
                     method: "POST",
@@ -276,6 +281,7 @@
                 .then(response => response.json())
                 .then(data => {
                     if (data.success) {
+                        loader.style.display = "none";
                         alert(data.message || "Appointment confirmed successfully!");
                         document.getElementById('userName').value = '';
                         document.getElementById('userEmail').value = '';
