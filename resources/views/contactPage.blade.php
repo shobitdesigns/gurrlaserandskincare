@@ -3308,7 +3308,7 @@
 																							</svg></i></span>
 																				</div>
 																				<div class="wdt-button-text">
-																					<span>Appointment</span>
+																					<span><a href="{{ route('bookAppointment') }}">Appointment</a></span>
 																				</div>
 																			</a></div>
 																	</div>

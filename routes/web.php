@@ -25,6 +25,7 @@ Route::get('/about',                    [DashboardController::class,'about'])->n
 Route::get('/contact-us',               [DashboardController::class,'contact'])->name('contact');
 Route::get('/service',                  [DashboardController::class,'service'])->name('services');
 Route::get('/laser-service/{id}',       [DashboardController::class,'laserServiceDetail'])->name('laserServiceDetail');
+Route::get('/book-appointment',         [DashboardController::class,'bookAppointment'])->name('bookAppointment');
 
 
 Route::post('submit-enquiry',           [EnquiryController::class,'storeEnquiry'])->name('storeEnquiry');

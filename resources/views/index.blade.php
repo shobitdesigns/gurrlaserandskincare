@@ -2221,53 +2221,15 @@
 																											href="{{ route('contact') }}"><span
 																												data-text="%1$s">Contact
 																												Us</span></a>
-																										<!-- <ul
-																											class="sub-menu is-hidden">
-																											<li
-																												class="close-nav">
-																												<a
-																													href="javascript:void(0);"></a>
-																											</li>
-																											<li
-																												class="go-back">
-																												<a
-																													href="javascript:void(0);"></a>
-																											</li>
-																											<li
-																												class="see-all">
-																											</li>
-																											<li
-																												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1535 menu-item-depth-1">
-																												<a
-																													href=" /contact-us/"><span
-																														data-text="%1$s">Help
-																														Center</span></a>
-																											</li>
-																											<li
-																												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523 menu-item-depth-1">
-																												<a
-																													href="/"><span
-																														data-text="%1$s">Reservation
-																														–
-																														I</span></a>
-																											</li>
-																											<li
-																												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-521 menu-item-depth-1">
-																												<a
-																													href=" /reservation-2/"><span
-																														data-text="%1$s">Reservation
-																														–
-																														II</span></a>
-																											</li>
-																											<li
-																												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-522 menu-item-depth-1">
-																												<a
-																													href=" /reservation-3/"><span
-																														data-text="%1$s">Reservation
-																														–
-																														III</span></a>
-																											</li>
-																										</ul> -->
+
+																									</li>
+																									<li
+																										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-126 menu-item-depth-0">
+																										<a
+																											href="{{ route('bookAppointment') }}"><span
+																												data-text="%1$s">Book Appointment
+																												</span></a>
+
 																									</li>
 																								</ul>
 																								<div
@@ -2628,6 +2590,11 @@
 																						<a href="{{ route('contact') }}"><span
 																								data-text="%1$s">Contact</span></a>
 																					</li>
+                                                                                    <li
+																						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-137 menu-item-depth-0">
+																						<a href="{{ route('bookAppointment') }}"><span
+																								data-text="%1$s">Book Appointment</span></a>
+																					</li>
 
                                                                                      {{-- phone menu started  --}}
 																				</ul>
@@ -2669,7 +2636,7 @@
 																							</svg></i></span>
 																				</div>
 																				<div class="wdt-button-text">
-																					<span>Appointment</span>
+																					<span><a href="{{ route('bookAppointment') }}">Appointment</a></span>
 																				</div>
 																			</a></div>
 																	</div>
@@ -6076,7 +6043,7 @@
 								</div>
 							</div>
 						</section>
-						<section
+						{{-- <section
 							class="elementor-section elementor-top-section elementor-element elementor-element-14e8423 wdt-no-full-section elementor-section-boxed elementor-section-height-default elementor-section-height-default"
 							data-id="14e8423" data-element_type="section" data-settings="{"
 							background_background":"classic","wdt_bg_image":{"url":"","id":"","size":""},"wdt_bg_image_laptop":{"url":"","id":"","size":""},"wdt_bg_image_tablet_extra":{"url":"","id":"","size":""},"wdt_bg_image_tablet":{"url":"","id":"","size":""},"wdt_bg_image_mobile_extra":{"url":"","id":"","size":""},"wdt_bg_image_mobile":{"url":"","id":"","size":""},"wdt_bg_position":"center=""
@@ -6317,11 +6284,7 @@
                                                                             <div class="dt-sc-one-column column">
                                                                                 <div
                                                                                     class="frm-group dt-appoint-date form-calendar-icon">
-                                                                                    {{-- <div class="placeholder">
-                                                                                        <label for="name">Preferred
-                                                                                            Date</label>
-                                                                                        <span class="star">*</span>
-                                                                                    </div> --}}
+
                                                                                     {!! Form::date('date', null, ['class'=>'frm-control','required','id'=>'appointment_date']) !!}
                                                                                 </div>
                                                                             </div>
@@ -6394,7 +6357,7 @@
 									</div>
 								</div>
 							</div>
-						</section>
+						</section> --}}
 						<section
 							class="elementor-section elementor-top-section elementor-element elementor-element-a505512 wdt-no-full-section elementor-section-boxed elementor-section-height-default elementor-section-height-default"
 							data-id="a505512" data-element_type="section" data-settings="{"

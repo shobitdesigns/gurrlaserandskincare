@@ -42,15 +42,24 @@
                 </div>
 
                 <div class="row">
-                    <div class="form-group col-4">
-                        {{ Form::label('laser_service', 'Laser Service', []) }}<span style="color: red;"> *</span>
-                        {{ Form::text('laser_service', null, ['class' => 'form-control laser_service', 'placeholder' => 'Enter First Laser Service', 'disabled']) }}
+                    <div class="form-group col-3">
+                        {{ Form::label('service', 'Service', []) }}<span style="color: red;"> *</span>
+                        {{ Form::text('service', null, ['class' => 'form-control laser_service', 'placeholder' => 'Enter First Laser Service', 'disabled']) }}
                     </div>
-                    <div class="form-group col-4">
+                    <div class="form-group col-3">
+                        {{ Form::label('service_type', 'Service Type', []) }}<span style="color: red;"> *</span>
+                        @if($object->is_laser_service == 1)
+                            {{ Form::text('service_type', 'Laser Service', ['class' => 'form-control laser_service',  'disabled']) }}
+                        @else
+                            {{ Form::text('service_type', 'Service', ['class' => 'form-control laser_service',  'disabled']) }}
+
+                        @endif
+                    </div>
+                    <div class="form-group col-3">
                         {{ Form::label('date', 'Date', []) }}<span style="color: red;"> *</span>
                         {{ Form::text('date', null, ['class' => 'form-control', 'placeholder' => 'Enter Date', 'disabled']) }}
                     </div>
-                    <div class="form-group col-4">
+                    <div class="form-group col-3">
                         {{ Form::label('time', 'Time', []) }}<span style="color: red;"> *</span>
                         {{ Form::text('time', null, ['class' => 'form-control', 'placeholder' => 'Enter Time', 'disabled']) }}
                     </div>

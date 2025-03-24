@@ -3633,7 +3633,7 @@
 																							</svg></i></span>
 																				</div>
 																				<div class="wdt-button-text">
-																					<span>Appointment</span>
+																					<span><a href="{{ route('bookAppointment') }}">Appointment</a></span>
 																				</div>
 																			</a></div>
 																	</div>
@@ -4347,7 +4347,7 @@
 								</div>
 							</div>
 						</section> -->
-						<section
+						{{-- <section
 							class="elementor-section elementor-top-section elementor-element elementor-element-ff8f525 wdt-no-full-section elementor-section-boxed elementor-section-height-default elementor-section-height-default"
 							data-id="ff8f525" data-element_type="section" data-settings="{"
 							background_background":"classic","wdt_bg_image":{"url":"","id":"","size":""},"wdt_bg_image_laptop":{"url":"","id":"","size":""},"wdt_bg_image_tablet_extra":{"url":"","id":"","size":""},"wdt_bg_image_tablet":{"url":"","id":"","size":""},"wdt_bg_image_mobile_extra":{"url":"","id":"","size":""},"wdt_bg_image_mobile":{"url":"","id":"","size":""},"wdt_bg_position":"center=""
@@ -4588,11 +4588,7 @@
                                                                             <div class="dt-sc-one-column column">
                                                                                 <div
                                                                                     class="frm-group dt-appoint-date form-calendar-icon">
-                                                                                    {{-- <div class="placeholder">
-                                                                                        <label for="name">Preferred
-                                                                                            Date</label>
-                                                                                        <span class="star">*</span>
-                                                                                    </div> --}}
+
                                                                                     {!! Form::date('date', null, ['class'=>'frm-control','required','id'=>'appointment_date']) !!}
                                                                                 </div>
                                                                             </div>
@@ -4641,14 +4637,7 @@
                                                                             </div>
                                                                             <input type="hidden" name="is_laser_service" value="1">
 
-                                                                            {{-- <div class="dt-sc-one-column column">
-                                                                                <div class="frm-group">
-                                                                                    <input type="checkbox" name="chkterms"
-                                                                                        value="yes" class="frm-control"
-                                                                                        required=""><span> I here by accept
-                                                                                        all terms and conditions.</span>
-                                                                                </div>
-                                                                            </div> --}}
+
 
                                                                             <div class="dt-sc-one-column column">
                                                                                 <div class="alignleft">
@@ -4674,7 +4663,7 @@
 									</div>
 								</div>
 							</div>
-						</section>
+						</section> --}}
 
 
 						{{-- <section

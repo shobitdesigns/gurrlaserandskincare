@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Service;
+use App\Models\Appointment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
@@ -46,5 +47,16 @@ class DashboardController extends Controller
         $data['laserHairRemovalOptions']        =       Service::where('is_laser_option',1)->get();
 
         return view('laserServiceDetail',$data);
+    }
+
+    public function bookAppointment()
+    {
+        $data['services']                       =       Service::where('is_laser_option', 0)->get();
+        $data['laserHairRemovalOptions']        =       Service::where('is_laser_option', 1)->get();
+
+        $bookedAppointments                     =       Appointment::pluck('date', 'time')->toArray();
+        $data['bookedAppointments']             =       $bookedAppointments;
+
+        return view('bookAppointments', $data);
     }
 }

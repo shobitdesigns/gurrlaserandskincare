@@ -21,7 +21,7 @@ class AppointmentController extends Controller
     public function index(Request $request)
     {
         if ($request->ajax()) {
-            $data = Appointment::select('*');
+            $data = Appointment::select('*')->orderBy('created_at','desc');
 
             return DataTables::of($data)
                 ->addIndexColumn()
@@ -68,6 +68,14 @@ class AppointmentController extends Controller
      */
     public function store(AppointmentRequest $request)
     {
+
+        $existingAppointment            =       Appointment::where('date', $request->appointment_date)
+                                                ->where('time', $request->appointment_time)
+                                                ->exists();
+
+        if ($existingAppointment) {
+            return response()->json(['error' => 'This time slot is already booked.'], 400);
+        }
         $appointment                    =       new Appointment();
         $appointment->name              =       $request->name;
         $appointment->email             =       $request->email;
@@ -80,7 +88,11 @@ class AppointmentController extends Controller
         $appointment->save();
         Mail::to('laserbygurr@gmail.com')->send(new NewAppointmentMail($appointment));
 
-        return back()->with('success','Appointment Submitted');
+        if ($appointment) {
+            return response()->json(['success' => true, 'message' => 'Appointment booked successfully!']);
+        } else {
+            return response()->json(['success' => false, 'message' => 'Booking failed'], 500);
+        }
     }
 
     /**
