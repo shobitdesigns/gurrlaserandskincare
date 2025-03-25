@@ -36,6 +36,21 @@
 			padding: 0 !important;
 		}
 
+        .headingcenter{
+            text-align: center!important;
+    justify-content: center !important;
+    justify-items: center !important;
+        }
+
+        .custommarginauto{
+            margin: auto;
+            display: flex
+            text-align: center;
+            align-items: center;
+    justify-content: center;
+
+        }
+
         .outerCustom {
             padding: 20px 140px;
             background-color: #ffffff;
@@ -195,7 +210,7 @@
 			--wp--preset--color--pale-cyan-blue: #8ed1fc;
 			--wp--preset--color--vivid-cyan-blue: #0693e3;
 			--wp--preset--color--vivid-purple: #9b51e0;
-			--wp--preset--color--primary: #F8C8DC;
+			--wp--preset--color--primary: #89cddf;
 			--wp--preset--color--secondary: #B5AD8F;
 			--wp--preset--color--tertiary: #f0ebd8;
 			--wp--preset--color--body-bg: #ffffff;
@@ -521,7 +536,7 @@
 			--wdt-elementor-color-secondary-rgb: 0, 0, 0;
 			--wdt-elementor-color-text: #000000;
 			--wdt-elementor-color-text-rgb: 0, 0, 0;
-			--wdt-elementor-color-accent: #F8C8DC;
+			--wdt-elementor-color-accent: #89cddf;
 			--wdt-elementor-color-accent-rgb: 137, 205, 223;
 			--wdt-elementor-color-custom-1: #B5AD8F;
 			--wdt-elementor-color-custom-1-rgb: 181, 173, 143;
@@ -597,7 +612,7 @@
 	<link rel="stylesheet" id="dermis-css" href="{{ asset('assets/css/style.css')}}" type="text/css" media="all">
 	<style id="dermis-inline-css" type="text/css">
 		:root {
-			--wdtPrimaryColor: #F8C8DC;
+			--wdtPrimaryColor: #89cddf;
 			--wdtPrimaryColorRgb: 137, 205, 223;
 			--wdtSecondaryColor: #b5ad8f;
 			--wdtSecondaryColorRgb: 181, 173, 143;
@@ -3752,8 +3767,8 @@
 																		<div class="swiper-wrapper custom">
 
                                                                             @foreach($services as $service)
-                                                                                <div class="swiper-slide custom">
-                                                                                    <div class="dt-sc-service-item type1">
+                                                                                <div class="swiper-slide custom" >
+                                                                                    <div class="dt-sc-service-item type1" >
                                                                                         <div class="image">
                                                                                             <div class="image-item customMinheight"><img
                                                                                                     fetchpriority="high"
@@ -3769,7 +3784,7 @@
                                                                                                 class="image-service-details">
                                                                                                 <h4
                                                                                                     class="dt-sc-service-title">
-                                                                                                    <a href="javascript:void(0)"
+                                                                                                    <a href=" {{ route('bookAppointment') }}"
                                                                                                         title="{{ $service->name }}">{{ $service->name }}</a>
                                                                                                 </h4>
                                                                                                 <div
@@ -4637,6 +4652,34 @@
 															data-settings="{"
 															slides_to_show_opts":"5","gap":{"unit":"dpt","size":"12","sizes":[]},"slides_to_show_opts_tablet_extra":"4","slides_to_show_opts_tablet":"3","slides_to_show_opts_mobile_extra":"2","direction":"horizontal","effect":"default","slides_to_show_opts_laptop":4,"slides_to_show_opts_mobile":1,"slides_to_scroll_opts":"single","mouse_wheel_scroll":"false","speed":300,"gap_laptop":{"unit":"px","size":"","sizes":[]},"gap_tablet_extra":{"unit":"px","size":"","sizes":[]},"gap_tablet":{"unit":"px","size":"","sizes":[]},"gap_mobile_extra":{"unit":"px","size":"","sizes":[]},"gap_mobile":{"unit":"px","size":"","sizes":[]},"allow_touch":"yes","centered_slides":"no","carousel_arrows_prev_arrow_vertical_top_indent":{"unit":"%","size":"","sizes":[]},"carousel_arrows_prev_arrow_vertical_top_indent_laptop":{"unit":"px","size":"","sizes":[]},"carousel_arrows_prev_arrow_vertical_top_indent_tablet_extra":{"unit":"px","size":"","sizes":[]},"carousel_arrows_prev_arrow_vertical_top_indent_tablet":{"unit":"%","size":"","sizes":[]},"carousel_arrows_prev_arrow_vertical_top_indent_mobile_extra":{"unit":"px","size":"","sizes":[]},"carousel_arrows_prev_arrow_vertical_top_indent_mobile":{"unit":"%","size":"","sizes":[]},"carousel_arrows_prev_arrow_horizontal_left_indent":{"unit":"%","size":"","sizes":[]},"carousel_arrows_prev_arrow_horizontal_left_indent_laptop":{"unit":"px","size":"","sizes":[]},"carousel_arrows_prev_arrow_horizontal_left_indent_tablet_extra":{"unit":"px","size":"","sizes":[]},"carousel_arrows_prev_arrow_horizontal_left_indent_tablet":{"unit":"%","size":"","sizes":[]},"carousel_arrows_prev_arrow_horizontal_left_indent_mobile_extra":{"unit":"px","size":"","sizes":[]},"carousel_arrows_prev_arrow_horizontal_left_indent_mobile":{"unit":"%","size":"","sizes":[]},"carousel_arrows_next_arrow_vertical_top_indent":{"unit":"%","size":"","sizes":[]},"carousel_arrows_next_arrow_vertical_top_indent_laptop":{"unit":"px","size":"","sizes":[]},"carousel_arrows_next_arrow_vertical_top_indent_tablet_extra":{"unit":"px","size":"","sizes":[]},"carousel_arrows_next_arrow_vertical_top_indent_tablet":{"unit":"%","size":"","sizes":[]},"carousel_arrows_next_arrow_vertical_top_indent_mobile_extra":{"unit":"px","size":"","sizes":[]},"carousel_arrows_next_arrow_vertical_top_indent_mobile":{"unit":"%","size":"","sizes":[]},"carousel_arrows_next_arrow_horizontal_left_indent":{"unit":"%","size":"","sizes":[]},"carousel_arrows_next_arrow_horizontal_left_indent_laptop":{"unit":"px","size":"","sizes":[]},"carousel_arrows_next_arrow_horizontal_left_indent_tablet_extra":{"unit":"px","size":"","sizes":[]},"carousel_arrows_next_arrow_horizontal_left_indent_tablet":{"unit":"%","size":"","sizes":[]},"carousel_arrows_next_arrow_horizontal_left_indent_mobile_extra":{"unit":"px","size":"","sizes":[]},"carousel_arrows_next_arrow_horizontal_left_indent_mobile":{"unit":"%","size":"","sizes":[]},"wdt_animation_effect":"none"}"=""
 															data-widget_type="wdt-image-box.default">
+                                                            <div class="elementor-container elementor-column-gap-no custommarginauto">
+                                                                <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-8146387"
+                                                                    data-id="8146387" data-element_type="column">
+                                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                                        <div class="elementor-element elementor-element-f522b34 wdt-common-heading animated-fast elementor-invisible elementor-widget elementor-widget-wdt-heading"
+                                                                            data-id="f522b34" data-element_type="widget"
+                                                                            data-settings="{"
+                                                                            _animation":"fadeinleft","wdt_animation_effect":"none"}"=""
+                                                                            data-widget_type="wdt-heading.default">
+                                                                            <div class="elementor-widget-container">
+                                                                                <div class="wdt-heading-holder headingcenter "
+                                                                                    id="wdt-heading-f522b34" >
+                                                                                    <div
+                                                                                        class="wdt-heading-subtitle-wrapper wdt-heading-align- ">
+                                                                                        <span class="wdt-heading-subtitle">Learn About
+                                                                                            Our Offerings</span>
+                                                                                    </div>
+                                                                                    <h2
+                                                                                        class="wdt-heading-title-wrapper wdt-heading-align- wdt-heading-deco-wrapper">
+                                                                                        <span class="wdt-heading-title">Check Out Our
+                                                                                            Packages</span>
+                                                                                    </h2>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
 															<div class="elementor-widget-container">
 																<div class="wdt-image-box-holder  wdt-content-item-holder wdt-carousel-holder wdt-rc-template-custom-template"
 																	id="wdt-image-box-830e416" data-id="830e416"
@@ -4654,7 +4697,7 @@
 																						class="wdt-content-media-group">
 																						<div
 																							class="wdt-content-subtitle">
-																							Package Number 1</div>
+																							Package 1</div>
 																						<div
 																							class="wdt-content-image-wrapper ">
 																							<div
@@ -4689,7 +4732,7 @@
 																						class="wdt-content-media-group">
 																						<div
 																							class="wdt-content-subtitle">
-																							Package Number 2</div>
+																							Package 2</div>
 																						<div
 																							class="wdt-content-image-wrapper ">
 																							<div
@@ -4726,7 +4769,7 @@
 																						class="wdt-content-media-group">
 																						<div
 																							class="wdt-content-subtitle">
-																							Package Number 3</div>
+																							Package 3</div>
 																						<div
 																							class="wdt-content-image-wrapper ">
 																							<div
@@ -4761,7 +4804,7 @@
 																						class="wdt-content-media-group">
 																						<div
 																							class="wdt-content-subtitle">
-																							Package Number 4</div>
+																							Package 4</div>
 																						<div
 																							class="wdt-content-image-wrapper ">
 																							<div
@@ -4796,7 +4839,7 @@
 																						class="wdt-content-media-group">
 																						<div
 																							class="wdt-content-subtitle">
-																							Package Number 5</div>
+																							Package 5</div>
 																						<div
 																							class="wdt-content-image-wrapper ">
 																							<div
@@ -5257,7 +5300,7 @@
 																								class="wdt-content-detail-group">
 																								<div
 																									class="wdt-content-title">
-																									<h5>103 king st,London Ontario N6A 6K1</h5>
+																									<h5>103 King St,London Ontario N6A 6K1</h5>
 																								</div>
 																							</div>
 																						</div>
@@ -6183,7 +6226,7 @@
 																								class="wdt-content-detail-group">
 																								<div
 																									class="wdt-content-title">
-																									<h5>103 king st,London Ontario N6A 6K1</h5>
+																									<h5>103 King St,London Ontario N6A 6K1</h5>
 																								</div>
 																							</div>
 																						</div>

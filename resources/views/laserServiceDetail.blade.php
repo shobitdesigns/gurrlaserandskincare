@@ -225,7 +225,7 @@
 			--wp--preset--color--pale-cyan-blue: #8ed1fc;
 			--wp--preset--color--vivid-cyan-blue: #0693e3;
 			--wp--preset--color--vivid-purple: #9b51e0;
-			--wp--preset--color--primary: #F8C8DC;
+			--wp--preset--color--primary: #89cddf;
 			--wp--preset--color--secondary: #B5AD8F;
 			--wp--preset--color--tertiary: #f0ebd8;
 			--wp--preset--color--body-bg: #ffffff;
@@ -551,7 +551,7 @@
 			--wdt-elementor-color-secondary-rgb: 0, 0, 0;
 			--wdt-elementor-color-text: #000000;
 			--wdt-elementor-color-text-rgb: 0, 0, 0;
-			--wdt-elementor-color-accent: #F8C8DC;
+			--wdt-elementor-color-accent: #89cddf;
 			--wdt-elementor-color-accent-rgb: 137, 205, 223;
 			--wdt-elementor-color-custom-1: #B5AD8F;
 			--wdt-elementor-color-custom-1-rgb: 181, 173, 143;
@@ -625,7 +625,7 @@
 	<link rel="stylesheet" id="dermis-css" href="{{ asset('/assets/css/style.css')}}" type="text/css" media="all">
 	<style id="dermis-inline-css" type="text/css">
 		:root {
-			--wdtPrimaryColor: #F8C8DC;
+			--wdtPrimaryColor: #89cddf;
 			--wdtPrimaryColorRgb: 137, 205, 223;
 			--wdtSecondaryColor: #b5ad8f;
 			--wdtSecondaryColorRgb: 181, 173, 143;
@@ -5309,7 +5309,7 @@
 																								class="wdt-content-detail-group">
 																								<div
 																									class="wdt-content-title">
-																									<h5>103 king st,London Ontario N6A 6K1</h5>
+																									<h5>103 King St,London Ontario N6A 6K1</h5>
 																								</div>
 																							</div>
 																						</div>
@@ -6235,7 +6235,7 @@
 																								class="wdt-content-detail-group">
 																								<div
 																									class="wdt-content-title">
-																									<h5>103 king st,London Ontario N6A 6K1</h5>
+																									<h5>103 King St,London Ontario N6A 6K1</h5>
 																								</div>
 																							</div>
 																						</div>

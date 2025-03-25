@@ -220,7 +220,7 @@
 			--wp--preset--color--pale-cyan-blue: #8ed1fc;
 			--wp--preset--color--vivid-cyan-blue: #0693e3;
 			--wp--preset--color--vivid-purple: #9b51e0;
-			--wp--preset--color--primary: #F8C8DC;
+			--wp--preset--color--primary: #89cddf;
 			--wp--preset--color--secondary: #B5AD8F;
 			--wp--preset--color--tertiary: #f0ebd8;
 			--wp--preset--color--body-bg: #ffffff;
@@ -546,7 +546,7 @@
 			--wdt-elementor-color-secondary-rgb: 0, 0, 0;
 			--wdt-elementor-color-text: #000000;
 			--wdt-elementor-color-text-rgb: 0, 0, 0;
-			--wdt-elementor-color-accent: #F8C8DC;
+			--wdt-elementor-color-accent: #89cddf;
 			--wdt-elementor-color-accent-rgb: 137, 205, 223;
 			--wdt-elementor-color-custom-1: #B5AD8F;
 			--wdt-elementor-color-custom-1-rgb: 181, 173, 143;
@@ -625,7 +625,7 @@
 	<link rel="stylesheet" id="dermis-css" href="{{ asset('assets/css/style_2.css')}}" type="text/css" media="all">
 	<style id="dermis-inline-css" type="text/css">
 		:root {
-			--wdtPrimaryColor: #F8C8DC;
+			--wdtPrimaryColor: #89cddf;
 			--wdtPrimaryColorRgb: 137, 205, 223;
 			--wdtSecondaryColor: #b5ad8f;
 			--wdtSecondaryColorRgb: 181, 173, 143;
@@ -1826,7 +1826,7 @@
 																					data-widget_type="text-editor.default">
 																					<div
 																						class="elementor-widget-container">
-																						<p>Mon – Sat 09:00AM – 07:00PM
+																						<p>Mon : Sat 09:00AM – 06:00PM
 																						</p>
 																					</div>
 																				</div>
@@ -1838,7 +1838,7 @@
 																					data-widget_type="text-editor.default">
 																					<div
 																						class="elementor-widget-container">
-																						<p>Call Us – <a
+																						<p>Call Us : <a
 																								href="tel:000519-852-6001">(+1)
 																								519-852-6001</a></p>
 																					</div>
@@ -2224,14 +2224,14 @@
 																											</li> --}}
 																										</ul>
 																									</li>
-																									<li
+																									{{-- <li
 																										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-126 menu-item-depth-0">
 																										<a
 																											href="{{ route('contact') }}"><span
 																												data-text="%1$s">Contact
 																												Us</span></a>
 
-																									</li>
+																									</li> --}}
 
 																								</ul>
 																								<div
@@ -3637,7 +3637,7 @@
                                                                                                 class="image-service-details">
                                                                                                 <h4
                                                                                                     class="dt-sc-service-title">
-                                                                                                    <a href=" /blog/wdt-services/hair-loss-treatment/"
+                                                                                                    <a href=" {{ route('bookAppointment') }}"
                                                                                                         title="{{ $service->name }}">{{ $service->name }}</a>
                                                                                                 </h4>
                                                                                                 <div
@@ -3742,7 +3742,7 @@
 																<div class="wdt-content-detail-group">
 																	<div class="wdt-content-title">
 																		<h5><a href="javascript:void(0)"
-																				rel="nofollow">Fill our form to contact us</a></h5>
+																				rel="nofollow">Contact Us</a></h5>
 																	</div>
 																</div>
 															</div>
@@ -4061,7 +4061,7 @@
 																									</div>
 																								</a>
 																							</div>
-																							<div
+																							{{-- <div
 																								class="wdt-content-button wdt-button-clone">
 																								<a
 																									href="tel:91-%20123%20-%20456789">
@@ -4071,7 +4071,7 @@
 																											519-852-6001</span>
 																									</div>
 																								</a>
-																							</div>
+																							</div> --}}
 																						</div>
 																					</div>
 																				</div>
@@ -4119,7 +4119,7 @@
 																						</div>
 																						<div
 																							class="wdt-content-description">
-																							Mon to Sat 09.00 AM to 05.00
+																							Mon to Sat 09.00 AM to 06.00
 																							PM
 																							Sunday - Holiday</div>
 																					</div>
@@ -4166,7 +4166,7 @@
 																									</div>
 																								</a>
 																							</div>
-																							<div
+																							{{-- <div
 																								class="wdt-content-button wdt-button-clone">
 																								<a
 																									href="mailto:Laserbygurr@gmail.com">
@@ -4175,7 +4175,7 @@
 																										<span>Laserbygurr@gmail.com</span>
 																									</div>
 																								</a>
-																							</div>
+																							</div> --}}
 																						</div>
 																					</div>
 																				</div>
@@ -6933,7 +6933,7 @@
 																						d="M4.7,9.1C3.6,9.1,2.5,8.8,1.4,8L2,7.2c2.1,1.6,4.4,0.8,5.2,0c0.5-0.5,1.4-0.9,2.2-1.3c0.6-0.3,1.6-0.8,1.7-1 c-0.5-1-1.8-1.5-2.7-1.9C7.6,2.6,7.1,2.4,7,1.9c0-0.1,0-0.4,0.2-0.6L7.9,2C8,2,8,1.9,8,1.8c0-0.1,0-0.2-0.1-0.2C8,1.7,8.4,1.9,8.8,2 c1,0.4,2.6,1.1,3.2,2.4c0.1,0.3,0.1,0.5,0.1,0.8c-0.2,0.7-1.1,1.1-2.2,1.6C9.1,7.1,8.3,7.5,7.9,7.9C7.3,8.6,6.1,9.1,4.7,9.1z">
 																					</path>
 																				</svg> </span>
-																			<span class="elementor-icon-list-text">103 king st,London Ontario N6A 6K1</span>
+																			<span class="elementor-icon-list-text">103 King St,London Ontario N6A 6K1</span>
 																		</li>
 																	</ul>
 																</div>
@@ -7033,7 +7033,7 @@
 																						d="M4.7,9.1C3.6,9.1,2.5,8.8,1.4,8L2,7.2c2.1,1.6,4.4,0.8,5.2,0c0.5-0.5,1.4-0.9,2.2-1.3c0.6-0.3,1.6-0.8,1.7-1 c-0.5-1-1.8-1.5-2.7-1.9C7.6,2.6,7.1,2.4,7,1.9c0-0.1,0-0.4,0.2-0.6L7.9,2C8,2,8,1.9,8,1.8c0-0.1,0-0.2-0.1-0.2C8,1.7,8.4,1.9,8.8,2 c1,0.4,2.6,1.1,3.2,2.4c0.1,0.3,0.1,0.5,0.1,0.8c-0.2,0.7-1.1,1.1-2.2,1.6C9.1,7.1,8.3,7.5,7.9,7.9C7.3,8.6,6.1,9.1,4.7,9.1z">
 																					</path>
 																				</svg> </span>
-																			<span class="elementor-icon-list-text">103 king st,London Ontario N6A 6K1</span>
+																			<span class="elementor-icon-list-text">103 King St,London Ontario N6A 6K1</span>
 																		</li>
 																	</ul>
 																</div>

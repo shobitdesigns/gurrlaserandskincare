@@ -31,7 +31,7 @@
         }
 
         .tab.active {
-            background: #f8c8dc;
+            background: #89cddf;
             color: white;
         }
 
@@ -65,7 +65,7 @@
 
         .service-box:hover,
         .service-box.selected {
-            background: #f8c8dc;
+            background: #89cddf;
             color: white;
         }
 
@@ -73,7 +73,7 @@
         .confirm-btn {
             margin-top: 20px;
             padding: 10px 15px;
-            background: #f8c8dc;
+            background: #89cddf;
             color: white;
             border: none;
             border-radius: 5px;
